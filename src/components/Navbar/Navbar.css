@@ -1,0 +1,193 @@
+/* Navbar Container */
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+/* Logo Section */
+.NavLogo img {
+  height: 50px;
+}
+
+/* Navigation Items */
+.NavItems ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.NavItems li {
+  position: relative;
+  margin: 0 15px;
+}
+
+/* Dropdown Button */
+.NavItems button {
+  background: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #535862;
+}
+
+.NavItems button:hover,
+.NavItems a:hover {
+  color: #004aad;
+}
+
+/* Links without dropdown */
+.NavItems a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #535862;
+  padding: 5px 10px;
+}
+
+.NavItems a:hover {
+  color: #004aad;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 10;
+  flex-direction: column;
+  text-align: center; /* Center align text in the dropdown */
+}
+
+/* Display dropdown menu on hover or when open */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.open {
+  display: flex;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+  padding: 10px 15px;
+  position: relative;
+  text-align: center; /* Ensure text is centered in each item */
+}
+
+/* Submenu (Blog submenu inside About Us) */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 15;
+  flex-direction: column;
+  text-align: center; /* Center align text in the submenu */
+}
+
+/* Show submenu when active */
+.dropdown-menu li:hover > .submenu,
+.submenu-active {
+  display: flex;
+}
+
+/* Submenu Items */
+.submenu li {
+  padding: 10px 15px;
+  white-space: nowrap;
+  text-align: center; /* Center align text in submenu items */
+}
+
+.submenu li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #535862;
+  display: block;
+  text-align: center; /* Center text in the anchor tags */
+}
+
+.submenu li a:hover {
+  background-color: #f1f1f1;
+  color: #004aad;
+}
+
+/* Adjust margins for a clean layout */
+.NavItems ul {
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center align the navigation items */
+}
+
+.NavItems li {
+  margin: 0 10px;
+  text-align: center; /* Center align the individual list items */
+}
+
+.NavOthers {
+  margin-top: 5px;
+}
+
+/* Buttons for Sign Up and Log In */
+.NavButtons {
+  display: flex;
+  align-items: center;
+}
+
+.NavButtons button {
+  margin-left: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.sign-up {
+  background-color: #004aad;
+  color: #ffffff;
+}
+
+.sign-up:hover {
+  background-color: #f1f1f1ff;
+  color: #004aad;
+}
+
+.log-in {
+  background-color: #f1f1f1ff;
+  color: #535862;
+  border: 2px solid #535862;
+  border-radius: 5px;
+}
+
+.log-in:hover {
+  background-color: #535862;
+  color: #ffffff;
+  border-color: #535862;
+}

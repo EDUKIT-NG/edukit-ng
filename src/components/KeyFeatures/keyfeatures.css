@@ -1,0 +1,117 @@
+.key-features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f3f7fa;
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 984px;
+}
+
+.key-features-left {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.title {
+  font-family: Signika;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: #004aad;
+}
+
+.head {
+  width: 400px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  margin: 5px 0;
+  font-family: Signika;
+  font-weight: 600;
+  text-align: left;
+  color: #252b37;
+}
+
+.description {
+  width: 400px;
+  height: 84px;
+  font-size: 15px;
+  font-weight: 350;
+  font-family: Open Sans;
+  text-align: left;
+  color: #535862;
+}
+
+.cta-button {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  padding: 0.75rem 1.5rem;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #535862;
+}
+
+.key-features-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  background-color: white;
+  width: 280px;
+  height: 368px;
+  padding: 24px 16px;
+  border-radius: 16px;
+  border: 0.5px solid #ddd;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.feature-heading {
+  font-family: Signika;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #252b37;
+}
+
+.feature-text {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #535862;
+}

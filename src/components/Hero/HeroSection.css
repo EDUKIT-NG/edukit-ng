@@ -1,0 +1,138 @@
+/* Hero Section Container */
+.HeroSection {
+  width: 100%;
+  max-width: 1440px;
+  height: 880px;
+  margin: 2px auto 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slider Container */
+.HeroSlider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Individual Slide Images */
+.HeroSlider .slide {
+  position: absolute;
+  width: 100%;
+  height: 880px;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Active Slide */
+.HeroSlider .slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+/* Exiting Slide */
+.HeroSlider .slide.exiting {
+  opacity: 0;
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+/* Hero Content Section */
+.HeroContent {
+  position: absolute;
+  top: 50%; /* Vertically centered */
+  left: 5%; /* Position towards the left */
+  transform: translateY(-50%);
+  color: white;
+  z-index: 3; /* Ensure it stays above the slides */
+  max-width: 400px;
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Edukit Nigeria Text */
+.hero-subtitle {
+  font-family: Signika;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 1.5px;
+  margin: 0 0 10px;
+  color: #529cff;
+}
+
+/* Main Title */
+.hero-title {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  margin: 10px 0;
+  line-height: 1.2;
+  font-family: Signika;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+}
+
+/* Small Subtext */
+.hero-small-text {
+  font-size: 15px;
+  font-weight: 350;
+  margin: 10px 0 20px;
+  font-family: Open Sans;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Buttons Section */
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.donation {
+  background-color: #004aad;
+  color: white;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.donation:hover {
+  background-color: #535862;
+}
+
+.request {
+  background-color: #fff;
+  color: #004aad;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.request:hover {
+  background-color: #535862;
+  color: #fff;
+}

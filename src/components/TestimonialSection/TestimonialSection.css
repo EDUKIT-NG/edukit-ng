@@ -1,0 +1,233 @@
+/* General Section Styles */
+.testimonial-section {
+  max-width: 1500px;
+  height: 808px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+}
+
+.small-title {
+  font-family: Signika;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: #004aad;
+  margin: 112px 0 16px 0;
+}
+
+.big-title {
+  font-family: Signika;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #252b37;
+  margin: 0 0 80px 0;
+}
+
+/* Card Container */
+.card-container {
+  max-width: 1216px;
+  margin: 80px auto; /* Centers the container horizontally */
+  display: flex;
+  justify-content: space-between; /* Ensures equal spacing between cards */
+  gap: 32px; /* Spacing between cards */
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  box-shadow: 0px 20px 24px -4px #0a0d1214;
+  width: 384px;
+  padding: 24px;
+  height: 260px;
+  border-radius: 16px;
+  text-align: left;
+  border: 0.5px solid #a4a7ae;
+}
+
+.testimonial-text {
+  width: 336px;
+  height: 180px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  margin: 24px 0;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.author-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #004aad;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.author-name {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #101828;
+  margin: 0;
+}
+
+.author-role {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #667085;
+  margin: 0;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 120px;
+  background-color: #f0f0f0;
+  border: 2px dashed #ccc;
+  margin: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.upload-label .plus-icon {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+}
+
+.upload-label .upload-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+#img-upload {
+  display: none;
+}
+
+.plus-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.plus-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 80px 0 112px 0;
+}
+
+.control-button {
+  width: 42.67px;
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+.control-button.active {
+  background-color: #004aad;
+}
+
+/* Form Styles */
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.testimonial-form input,
+.testimonial-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.testimonial-form button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.testimonial-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.testimonial-form button[type="button"] {
+  background-color: #ccc;
+  color: #000;
+}

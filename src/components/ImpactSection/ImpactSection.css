@@ -1,0 +1,80 @@
+.impact-section {
+  height: 528px;
+  width: 100%;
+  background-image: url("../ImpactSection/Background.png"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.impact-rectangle {
+  width: 1216px;
+  height: 236px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 31, 71, 0.35) 38.38%,
+    rgba(0, 31, 71, 0.35) 173.06%
+  );
+  backdrop-filter: blur(8px);
+  color: ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 180px, 112px, 112px, 112px;
+}
+
+.impact-title {
+  font-family: Signika;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.impact-numbers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+  gap: 60px; /* Space between numbers */
+}
+
+.impact-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.impact-number h3 {
+  font-family: Signika;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  transition: transform 0.3s ease, color 0.3s ease; /* Adds smooth hover transition */
+}
+
+.impact-number h3:hover {
+  transform: scale(1.1); /* Slightly enlarges the number */
+  color: #00d1b2; /* Changes color to blue */
+}
+
+.impact-number small {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 8px;
+}
