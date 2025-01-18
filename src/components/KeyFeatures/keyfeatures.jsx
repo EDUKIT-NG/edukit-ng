@@ -28,8 +28,8 @@ const KeyFeatures = () => {
           <h3 className="feature-heading">Resource Donation Platform</h3>
           <p className="feature-text">
             We accept donation of educational materials, from textbooks and
-            stationery to school bags. Ensuring students receive quality
-            resources they might otherwise lack.
+            stationery to school bags, as well as funds, to ensure students
+            receive essential resources they might lack.
           </p>
         </div>
         <div className="feature-card">
@@ -52,12 +52,12 @@ const KeyFeatures = () => {
         </div>
         <div className="feature-card">
           <img src={Feat4} alt="Feat4" className="feature-image" />
-          <h3 className="feature-heading">E-Library Access</h3>
+          <h3 className="feature-heading">Learning Hub Access</h3>
           <p className="feature-text">
-            We provide digital access to textbooks, novels, and other learning
-            materials. The digital library offers a vast collection of
-            educational materials, helping students with essential educational
-            digital content.
+            Through the Learning Hub, students access an e-library of textbooks
+            and learning materials, book academic counselors, join a student
+            community, and schedule expert tutors for personalized online
+            learning and growth.
           </p>
         </div>
       </div>

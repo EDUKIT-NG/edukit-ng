@@ -1,4 +1,7 @@
 /* Navbar Container */
+* {
+  font-family: "Open Sans", serif;
+}
 .Navbar {
   display: flex;
   align-items: center;
@@ -12,7 +15,8 @@
 
 /* Logo Section */
 .NavLogo img {
-  height: 50px;
+  height: 55px;
+  margin-left: 50px;
 }
 
 /* Navigation Items */
@@ -23,16 +27,11 @@
   padding: 0;
 }
 
-.NavItems li {
-  position: relative;
-  margin: 0 15px;
-}
-
 /* Dropdown Button */
 .NavItems button {
   background: none;
   border: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -56,7 +55,8 @@
   line-height: 24px;
   text-align: left;
   color: #535862;
-  padding: 5px 10px;
+
+  /* padding: 5px 10px; */
 }
 
 .NavItems a:hover {
@@ -65,10 +65,12 @@
 
 /* Dropdown Menu */
 .dropdown-menu {
+  width: 220px;
+  height: 250px;
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 46px;
+  left: -30px;
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   list-style: none;
@@ -76,7 +78,13 @@
   margin: 0;
   z-index: 10;
   flex-direction: column;
-  text-align: center; /* Center align text in the dropdown */
+  /* text-align: center; Center align text in the dropdown */
+  border-radius: 12px;
+  justify-self: start;
+}
+.dropdown button i {
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 /* Display dropdown menu on hover or when open */
@@ -87,9 +95,14 @@
 
 /* Dropdown Menu Items */
 .dropdown-menu li {
-  padding: 10px 15px;
-  position: relative;
-  text-align: center; /* Ensure text is centered in each item */
+  padding: 10px 10px;
+  text-align: left;
+  /* background-color: darkgray; */
+}
+.dropdown-menu li a {
+  /* background-color: #004aad; */
+  width: 70%;
+  height: 60px;
 }
 
 /* Submenu (Blog submenu inside About Us) */
@@ -140,12 +153,14 @@
 .NavItems ul {
   margin: 0;
   padding: 0;
-  text-align: center; /* Center align the navigation items */
+  text-align: center;
 }
 
 .NavItems li {
   margin: 0 10px;
-  text-align: center; /* Center align the individual list items */
+  text-align: left; /* Center align the individual list items */
+  position: relative;
+  margin: 0 15px;
 }
 
 .NavOthers {
@@ -180,7 +195,7 @@
 }
 
 .log-in {
-  background-color: #f1f1f1ff;
+  background-color: transparent;
   color: #535862;
   border: 2px solid #535862;
   border-radius: 5px;
