@@ -42,7 +42,10 @@ const HeroSection = () => {
       </div>
       <div className="HeroContent">
         <p className="hero-subtitle">EDUKIT NIGERIA</p>
-        <h1 className="hero-title">BUILDING GAPS, BUILDING FUTURES!</h1>
+        <h1 className="hero-title">
+          BRIDGING GAPS, <br />
+          BUILDING FUTURES!
+        </h1>
         <p className="hero-small-text">
           Equipping students with essential resources today for a brighter
           future.

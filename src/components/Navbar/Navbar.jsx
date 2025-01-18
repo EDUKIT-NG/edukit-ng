@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../../assets/Logo.png";
+import Logo from "../../assets/EDUKIT LOGO (Main).png";
 import { Link } from "react-router-dom";
 import "./Navbar.css"; // Import the CSS file
 
@@ -49,34 +49,30 @@ const Navbar = () => {
           {/* About Us */}
           <li className="dropdown">
             <button onClick={() => handleDropdownToggle("about-us")}>
-              About Us ▼
+              About Us
+              <i
+                className={`material-icons ${
+                  activeDropdown === "about-us" ? "expand_less" : "expand_more"
+                }`}
+              >
+                {activeDropdown === "about-us" ? "expand_less" : "expand_more"}
+              </i>
             </button>
             {activeDropdown === "about-us" && (
               <ul className="dropdown-menu">
                 <li>
                   <a href="#">Our Profile</a>
                 </li>
-                <li className="dropdown">
-                  <button onClick={() => handleSubmenuToggle("blog")}>
-                    Blog ▶
-                  </button>
-                  {activeSubmenu === "blog" && (
-                    <ul className="submenu">
-                      <li>
-                        <a href="#ImpactSection">Impact Stories</a>
-                      </li>
-                      <li>
-                        <a href="#">Testimonials</a>
-                      </li>
-                      <li>
-                        <a href="#">Educational Insights</a>
-                      </li>
-                      <li>
-                        <a href="#">Newsletter</a>
-                      </li>
-                    </ul>
-                  )}
+                <li>
+                  <a href="#">Our Story</a>
                 </li>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Impact</a>
+                </li>
+
                 <li>
                   <a href="#">Careers</a>
                 </li>
@@ -87,7 +83,14 @@ const Navbar = () => {
           {/* Donate */}
           <li className="dropdown">
             <button onClick={() => handleDropdownToggle("donate")}>
-              Donate ▼
+              Donate
+              <i
+                className={`material-icons ${
+                  activeDropdown === "donate" ? "expand_less" : "expand_more"
+                }`}
+              >
+                {activeDropdown === "donate" ? "expand_less" : "expand_more"}
+              </i>
             </button>
             {activeDropdown === "donate" && (
               <ul className="dropdown-menu">
@@ -104,7 +107,14 @@ const Navbar = () => {
           {/* Request */}
           <li className="dropdown">
             <button onClick={() => handleDropdownToggle("request")}>
-              Request ▼
+              Request
+              <i
+                className={`material-icons ${
+                  activeDropdown === "request" ? "expand_less" : "expand_more"
+                }`}
+              >
+                {activeDropdown === "request" ? "expand_less" : "expand_more"}
+              </i>
             </button>
             {activeDropdown === "request" && (
               <ul className="dropdown-menu">
@@ -118,17 +128,21 @@ const Navbar = () => {
             )}
           </li>
 
-          {/* Volunteer */}
-          <div className="NavOthers">
-            <li>
-              <a href="#">Volunteer</a>
-            </li>
-          </div>
-
           {/* Get Involved */}
           <li className="dropdown">
             <button onClick={() => handleDropdownToggle("get-involved")}>
-              Get Involved ▼
+              Get Involved
+              <i
+                className={`material-icons ${
+                  activeDropdown === "get-involved"
+                    ? "expand_less"
+                    : "expand_more"
+                }`}
+              >
+                {activeDropdown === "get-involved"
+                  ? "expand_less"
+                  : "expand_more"}
+              </i>
             </button>
             {activeDropdown === "get-involved" && (
               <ul className="dropdown-menu">
@@ -142,12 +156,39 @@ const Navbar = () => {
             )}
           </li>
 
-          {/* E-Library */}
-          <div className="NavOthers">
-            <li>
-              <a href="#">E-Library</a>
-            </li>
-          </div>
+          {/* Learning-Hub*/}
+          <li className="dropdown">
+            <button onClick={() => handleDropdownToggle("learning-hub")}>
+              Learning Hub
+              <i
+                className={`material-icons ${
+                  activeDropdown === "learning-hub"
+                    ? "expand_less"
+                    : "expand_more"
+                }`}
+              >
+                {activeDropdown === "get-involved"
+                  ? "expand_less"
+                  : "expand_more"}
+              </i>
+            </button>
+            {activeDropdown === "learning-hub" && (
+              <ul className="dropdown-menu">
+                <li>
+                  <a href="#">E-Library</a>
+                </li>
+                <li>
+                  <a href="#">Book a Counselor</a>
+                </li>
+                <li>
+                  <a href="#">Join Student Commmunity</a>
+                </li>
+                <li>
+                  <a href="#">Book an Online Tutor</a>
+                </li>
+              </ul>
+            )}
+          </li>
 
           {/* Contact Us */}
           <div className="NavOthers">

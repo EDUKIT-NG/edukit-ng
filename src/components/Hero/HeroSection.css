@@ -50,30 +50,34 @@
   transform: translateY(-50%);
   color: white;
   z-index: 3; /* Ensure it stays above the slides */
-  max-width: 400px;
+  width: 592px;
+  height: 382px;
   text-align: left;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
 /* Edukit Nigeria Text */
 .hero-subtitle {
-  font-family: Signika;
+  font-family: "Signika", serif;
   font-size: 30px;
   font-weight: 500;
   line-height: 38px;
   letter-spacing: 1.5px;
   margin: 0 0 10px;
-  color: #529cff;
+  color: #b4c8ff;
 }
 
 /* Main Title */
 .hero-title {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   letter-spacing: 0.02em;
   margin: 10px 0;
   line-height: 1.2;
-  font-family: Signika;
+  font-family: "Signika", serif;
   font-weight: 600;
   text-align: left;
   color: #fff;
@@ -84,7 +88,7 @@
   font-size: 15px;
   font-weight: 350;
   margin: 10px 0 20px;
-  font-family: Open Sans;
+  font-family: "Open Sans", serif;
   line-height: 1.4;
   text-align: left;
 }
@@ -92,14 +96,16 @@
 /* Buttons Section */
 .hero-buttons {
   display: flex;
-  gap: 10px;
+  gap: 17px;
 }
 
 .hero-buttons button {
-  padding: 10px 20px;
+  width: 200px;
+  height: 60px;
+  /* padding: 10px 20px; */
   border: none;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 600;
   cursor: pointer;
 }
@@ -111,7 +117,6 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
-  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
@@ -127,7 +132,6 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
-  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
