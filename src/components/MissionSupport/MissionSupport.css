@@ -1,0 +1,79 @@
+.mission-banner {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    background-image: url('./Support\ Our\ Mission\ Image\ Scroll.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .mission-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: linear-gradient(to right, rgba(0, 82, 204, 0.8), rgba(0, 82, 204, 0.4)); */
+  }
+  
+  .mission-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .mission-title {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+  
+  .support-button {
+    background-color: white;
+    color: #0052CC;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .support-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .mission-banner {
+      min-height: 400px;
+    }
+  
+    .mission-title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .mission-banner {
+      padding: 1.5rem;
+    }
+  
+    .mission-title {
+      font-size: 2rem;
+    }
+  
+    .support-button {
+      padding: 0.875rem 1.5rem;
+    }
+  }
