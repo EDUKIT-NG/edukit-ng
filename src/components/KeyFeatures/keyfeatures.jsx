@@ -12,8 +12,8 @@ const KeyFeatures = () => {
     <div className="key-features">
       {/* Left Side */}
       <div className="key-features-left">
-        <h2 className="title">Key Features</h2>
-        <p className="head">HOW EDUKIT NIGERIA WORKS</p>
+        <h2 className="title">KEY FEATURES</h2>
+        <p className="head">DISCOVER WHO WE ARE</p>
         <p className="description">
           Edukit Nigeria is an initiative aimed at transforming educational
           access for underprivileged students across Nigeria.

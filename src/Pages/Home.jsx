@@ -4,7 +4,7 @@ import HeroSection from "../components/Hero/HeroSection";
 import KeyFeatures from "../components/KeyFeatures/keyfeatures";
 import ImpactSection from "../components/ImpactSection/ImpactSection";
 import TestimonialSection from "../components/TestimonialSection/TestimonialSection";
-import SuccessStories from "../components/SuccessStories/SuccessStories";
+import ProjectsSection from "../components/ProjectsSection/ProjectsSection";
 import MissionSupport from "../components/MissionSupport/MissionSupport";
 import NewsletterFooter from "../components/NewsletterFooter/NewsletterFooter";
 
@@ -16,7 +16,7 @@ const Home = () => {
       <KeyFeatures />
       <ImpactSection />
       <TestimonialSection />
-      <SuccessStories />
+      <ProjectsSection/>
       <MissionSupport />
       <NewsletterFooter />
     </div>
