@@ -93,7 +93,7 @@ const TestimonialSection = () => {
 
   return (
     <section className="testimonial-section">
-      <h3 className="small-title">Testimonials</h3>
+      <h3 className="small-title">TESTIMONIALS</h3>
       <h1 className="big-title">VOICES OF IMPACT</h1>
 
       <div className="card-container">
