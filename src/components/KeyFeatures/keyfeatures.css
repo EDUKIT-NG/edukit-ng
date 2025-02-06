@@ -119,6 +119,8 @@
   color: #535862;
 }
 
+/* Media Queries */
+
 /* ✅ Tablets (1024px and below) */
 @media screen and (max-width: 1024px) {
   .key-features {
@@ -216,6 +218,7 @@
 
   .feature-card {
     padding: 16px;
+    align-items: center;
   }
 
   .feature-heading {
