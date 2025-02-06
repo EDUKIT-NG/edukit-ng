@@ -1,130 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
 
-.projects-main{
-   width: 100%;
-   background-image: linear-gradient(rgba(243, 247, 250, 1), rgba(255, 255, 255, 1));
-   padding-bottom: 112px;
+.projects-main {
+  width: 100%;
+  background-image: linear-gradient(
+    rgba(243, 247, 250, 1),
+    rgba(255, 255, 255, 1)
+  );
+  padding-bottom: 112px;
 }
 
-.projects-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+.projects-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.projects-box h5{
-    color: rgba(0, 74, 173, 1);
-    font-family: 'Signika', sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    text-align: center;
-    margin: 80px 0px 0px 0px;
-    
+.projects-box h5 {
+  color: rgba(0, 74, 173, 1);
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin: 80px 0px 0px 0px;
 }
 
-.projects-box h2{
-    color: rgba(37, 43, 55, 1);
-    font-family: 'Signika', sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    text-align: center;
-    margin: 0 auto;
+.projects-box h2 {
+  color: rgba(37, 43, 55, 1);
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.projects-box p{
-    color:rgba(83, 88, 98, 1);
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 23px;
+.projects-box p {
+  color: rgba(83, 88, 98, 1);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 23px;
 }
 
 .projects-box button {
-    width: 180px;
-    height: 55px;
-    border: 1px;
-    border-radius: 10px;
-    padding: 16px 28px 16px 28px;
+  width: 180px;
+  height: 55px;
+  border: 1px;
+  border-radius: 10px;
+  padding: 16px 28px 16px 28px;
 }
 
-.project-buttons{
-    background-color: rgba(0, 74, 173, 1);
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    cursor: pointer;
+.project-buttons {
+  background-color: rgba(0, 74, 173, 1);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.project-buttons:hover{
-    background-color: white;
-    border: 1px solid rgba(0, 74, 173, 1);
-    color: rgba(0, 74, 173, 1);
+.project-buttons:hover {
+  background-color: white;
+  border: 1px solid rgba(0, 74, 173, 1);
+  color: rgba(0, 74, 173, 1);
 }
 
 .project-container {
-    max-width: 1216px;
-    margin: 40px auto; /* Centers the container horizontally */
-    display: flex;
-    justify-content: space-between; /* Ensures equal spacing between cards */
-    gap: 32px; /* Spacing between cards */
+  max-width: 1216px;
+  margin: 40px auto; /* Centers the container horizontally */
+  display: flex;
+  justify-content: space-between; /* Ensures equal spacing between cards */
+  gap: 32px; /* Spacing between cards */
 }
 
-.projects-cards{
-    width: 480px;
-    height: 450px;
-    background-color: #ffffff;
-    border-radius: 16px;
-    padding-bottom: 32px;
-    box-shadow: 0px 20px 24px -4px #0a0d1214;
+.projects-cards {
+  width: 480px;
+  height: 450px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding-bottom: 32px;
+  box-shadow: 0px 20px 24px -4px #0a0d1214;
 }
 
-.project-image{
-    height: 300px;
-    object-fit: cover;
+.project-image {
+  height: 300px;
+  object-fit: cover;
 }
-.project-info{
-    padding: 0px 16px 0px 16px;
-}
-
-.project-title{
-    color: rgba(0, 0, 0, 1);
-    font-family: 'Signika', sans-serif;
-    font-weight: 600;
-    font-size: 23px;
-    height: 55px;
-    margin-top: 18px;
+.project-info {
+  padding: 0px 16px 0px 16px;
 }
 
-.project-des{
-    color: rgba(83, 88, 98, 1);
-    font-weight: 400;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    height: 56px;
+.project-title {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  height: 55px;
+  margin-top: 18px;
+}
+
+.project-des {
+  color: rgba(83, 88, 98, 1);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  height: 56px;
 }
 
 .cards-controls {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 80px;
-  }
-  
-  .button-control {
-    width: 42.67px;
-    height: 8px;
-    border-radius: 4px;
-    border: none;
-    background-color: #d3d3d3;
-    cursor: pointer;
-  }
-  
-  .button-control.active {
-    background-color: #004aad;
-  }
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 80px;
+}
+
+.button-control {
+  width: 42.67px;
+  height: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #d3d3d3;
+  cursor: pointer;
+}
+
+.button-control.active {
+  background-color: #004aad;
+}
