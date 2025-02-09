@@ -2,13 +2,6 @@
 
 ...
 
-## Changes Made
-
-- Uninstalled `react-scripts` and installed `vite` and `@vitejs/plugin-react` as dependencies.
-- Moved the `index.html` file to the root directory.
-- Created a `vite.config.js` file and configured it.
-- Modified the `package.json` file to update the scripts section for vite
-
 ### Clone the Project
 
 To clone the project, run:
