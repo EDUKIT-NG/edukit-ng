@@ -26,7 +26,8 @@ npm start
 
 The server runs on:
 
-```http://localhost:3000
+```web
+http://localhost:3000
 
 ```
 
