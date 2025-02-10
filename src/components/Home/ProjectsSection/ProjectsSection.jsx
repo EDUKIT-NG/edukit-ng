@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./ProjectsSection.css";
 
 const ProjectsSection = () => {
@@ -68,28 +68,30 @@ const ProjectsSection = () => {
     },
   ]);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const projectsPerPage = 3;
-  const totalPages = 3;
+  const projectContainerRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleScroll = (index) => {
-    setCurrentIndex(index);
+    const container = projectContainerRef.current;
+    const cardWidth = container.children[0].offsetWidth + 32; // Include gap
+    const scrollPosition = cardWidth * (index * 2); // Adjust for overlap
+    container.scrollTo({
+      left: scrollPosition,
+      behavior: "smooth",
+    });
+    setActiveIndex(index);
   };
 
-  const getDisplayedProjects = () => {
-    const startIndex = currentIndex * projectsPerPage;
-    const endIndex = startIndex + projectsPerPage;
-    return projects.slice(startIndex, endIndex);
-  };
-
-  const displayedProjects = getDisplayedProjects();
-
-  const getInitials = (name) => {
-    const names = name.split(" ");
-    return names.length > 1
-      ? `${names[0][0]}${names[1][0]}`.toUpperCase()
-      : name[0]?.toUpperCase();
-  };
+  useEffect(() => {
+    const container = projectContainerRef.current;
+    const handleScroll = () => {
+      const cardWidth = container.children[0].offsetWidth + 32; // Include gap
+      const newIndex = Math.round(container.scrollLeft / (cardWidth * 2)); // Adjust for overlap
+      setActiveIndex(newIndex);
+    };
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <section className="projects-main">
@@ -110,25 +112,28 @@ const ProjectsSection = () => {
         <button className="project-buttons">See More Projects</button>
       </div>
 
-      <div className="project-container">
-        {displayedProjects.map((projects) => (
-          <div key={projects.id} className="projects-cards">
-            <img src={projects.img} className="project-image" />
+      <div className="project-container" ref={projectContainerRef}>
+        {projects.map((project) => (
+          <div key={project.id} className="projects-cards">
+            <img
+              src={project.img}
+              className="project-image"
+              alt={project.title}
+            />
             <div className="project-info">
-              <h4 className="project-title">{projects.title}</h4>
-              <p className="project-des">{projects.description}</p>
+              <h4 className="project-title">{project.title}</h4>
+              <p className="project-des">{project.description}</p>
             </div>
           </div>
         ))}
       </div>
 
       <div className="cards-controls">
-        {/* Always show 3 page buttons */}
-        {Array.from({ length: totalPages }).map((_, index) => (
+        {[...Array(4)].map((_, index) => (
           <button
             key={index}
             className={`button-control ${
-              index === currentIndex ? "active" : ""
+              index === activeIndex ? "active" : ""
             }`}
             onClick={() => handleScroll(index)}
           />
