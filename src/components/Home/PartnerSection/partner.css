@@ -1,0 +1,97 @@
+/* Container Styling */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f3f7fa;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 16px; */
+  /* padding: 20px; */
+}
+
+.sub-title {
+  color: #004aad;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 38px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  /* margin: 10px 0; */
+  color: #252b37;
+  margin: 0 0 30px 0;
+}
+
+.description {
+  color: #535862;
+  font-size: 18px;
+  /* margin-bottom: 15px; */
+  width: 60%;
+  line-height: 28px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  font-family: "open sans" sans-serif;
+  margin: 0;
+}
+
+.button {
+  width: 200px;
+  height: 60px;
+  background-color: #004aad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: "open sans" sans-serif;
+  line-height: 28px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 0;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Sponsor Grid */
+.sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 11em);
+  gap: 32px;
+  margin-top: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Sponsor Box */
+/* .sponsor-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+} */
+
+.sponsor-logo {
+  width: 176px;
+  max-height: 160px;
+  object-fit: contain;
+}

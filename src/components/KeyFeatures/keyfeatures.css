@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
 
 .key-features {
   display: flex;
@@ -117,4 +117,116 @@
   line-height: 24px;
   text-align: left;
   color: #535862;
+}
+
+/* Media Queries */
+
+/* ✅ Tablets (1024px and below) */
+@media screen and (max-width: 1024px) {
+  .key-features {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .key-features-left {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .head {
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .cta-button {
+    margin: 1rem auto;
+  }
+
+  .key-features-right {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 280px;
+    padding: 20px;
+  }
+}
+
+/* ✅ Large Phones (768px and below) */
+@media screen and (max-width: 768px) {
+  .key-features {
+    padding: 1.5rem;
+  }
+
+  .head {
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .key-features-right {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .feature-heading {
+    font-size: 22px;
+  }
+
+  .feature-text {
+    font-size: 14px;
+  }
+}
+
+/* ✅ Small Phones (480px and below) */
+@media screen and (max-width: 480px) {
+  .head {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .key-features {
+    padding: 1rem;
+  }
+
+  .key-features-right {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .feature-card {
+    padding: 16px;
+    align-items: center;
+  }
+
+  .feature-heading {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
 }

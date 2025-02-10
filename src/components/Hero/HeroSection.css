@@ -1,7 +1,7 @@
 /* Hero Section Container */
 .HeroSection {
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%;
   height: 880px;
   margin: 2px auto 0;
   position: relative;
@@ -13,6 +13,7 @@
   width: 100%;
   height: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 /* Individual Slide Images */
@@ -24,7 +25,7 @@
   top: 0;
   left: 0;
   opacity: 0;
-  transform: translateX(100%);
+  transform: translateX(0);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
