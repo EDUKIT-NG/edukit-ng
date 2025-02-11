@@ -12,52 +12,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* gap: 16px; */
-  /* padding: 20px; */
+  gap: 16px;
 }
 
 .sub-title {
   color: #004aad;
-  font-size: 30px;
+  font-size: 1.875rem;
   text-transform: uppercase;
-  line-height: 38px;
+  line-height: 2.375rem;
   font-weight: 600;
   margin: 0 0 10px 0;
 }
 
 .title {
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 600;
-  line-height: 72px;
-  /* margin: 10px 0; */
+  line-height: 4.5rem;
   color: #252b37;
   margin: 0 0 30px 0;
 }
 
 .description {
   color: #535862;
-  font-size: 18px;
-  /* margin-bottom: 15px; */
+  font-size: 1.125rem;
   width: 60%;
-  line-height: 28px;
+  line-height: 1.75rem;
   font-weight: 400;
-  line-height: 24px;
   text-align: center;
-  font-family: "open sans" sans-serif;
+  font-family: "open sans", sans-serif;
   margin: 0;
 }
 
 .button {
-  width: 200px;
-  height: 60px;
+  width: 12.5rem;
+  height: 3.75rem;
   background-color: #004aad;
   color: white;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   border: none;
-  border-radius: 10px;
-  font-size: 18px;
-  font-family: "open sans" sans-serif;
-  line-height: 28px;
+  border-radius: 0.625rem;
+  font-size: 1.125rem;
+  font-family: "open sans", sans-serif;
+  line-height: 1.75rem;
   cursor: pointer;
   transition: background 0.3s ease;
   margin: 0;
@@ -78,20 +74,117 @@
   justify-content: center;
 }
 
-/* Sponsor Box */
-/* .sponsor-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e0e0e0;
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-} */
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
 
+@media (max-width: 992px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .button {
+    width: 12.5rem;
+    height: 3.75rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .sub-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .description {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .button {
+    width: 12.5rem;
+    height: 3.75rem;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .sponsors-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    width: 70%;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.125rem;
+    line-height: 1rem;
+    width: 92%;
+  }
+
+  .button {
+    width: 8.75rem;
+    height: 2.5rem;
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Sponsor Box */
 .sponsor-logo {
   width: 176px;
   max-height: 160px;
   object-fit: contain;
+}
+@media (max-width: 360px) {
+  .description {
+    width: 100%;
+  }
 }
