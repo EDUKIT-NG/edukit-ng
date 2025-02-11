@@ -1,4 +1,4 @@
-Navbar Container
+/* Navbar Container */
 * {
   font-family: "Open Sans", serif;
 }
@@ -19,7 +19,7 @@ Navbar Container
 /* Logo Section */
 .NavLogo img {
   height: 55px;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 /* Whole Navbar */
@@ -76,7 +76,7 @@ Navbar Container
 /* Dropdown Menu */
 .dropdown-menu {
   width: 220px;
-  height: 250px;
+  height: auto;
   display: none;
   position: absolute;
   top: 46px;
@@ -90,7 +90,6 @@ Navbar Container
   flex-direction: column;
   /* text-align: center; Center align text in the dropdown */
   border-radius: 12px;
-  justify-self: start;
 }
 .dropdown button i {
   vertical-align: middle;
@@ -112,7 +111,7 @@ Navbar Container
 .dropdown-menu li a {
   /* background-color: #004aad; */
   width: 70%;
-  height: 60px;
+  height: auto;
 }
 
 /* Submenu (Blog submenu inside About Us) */
@@ -235,7 +234,7 @@ Navbar Container
 }
 
 
-/* Responsive */
+/* Responsive style*/
 
 @media (max-width: 1115px) {
   .NavComp {
