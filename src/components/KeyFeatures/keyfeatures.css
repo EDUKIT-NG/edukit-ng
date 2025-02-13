@@ -201,10 +201,19 @@
 @media screen and (max-width: 480px) {
   .head {
     font-size: 32px;
+    text-align: center;
+  }
+
+  .title {
+    text-align: center;
+    margin-bottom: 10px;
   }
 
   .description {
     font-size: 14px;
+    width: 220px;
+    height: 150px;
+    margin-left: 70px;
   }
 
   .key-features {
@@ -217,7 +226,8 @@
   }
 
   .feature-card {
-    padding: 16px;
+    margin-top: 20px;
+    padding: 15px;
     align-items: center;
   }
 
@@ -228,5 +238,6 @@
   .cta-button {
     font-size: 16px;
     padding: 0.5rem 1rem;
+    margin-top: 20px;
   }
 }
