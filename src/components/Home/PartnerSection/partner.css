@@ -131,7 +131,7 @@
 
   .description {
     font-size: 0.875rem;
-    line-height: 1.25rem;
+    line-height: 1.125rem;
   }
 
   .button {
@@ -158,12 +158,12 @@
 
   .sub-title {
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 1.125rem;
   }
 
   .description {
     font-size: 1.125rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
     width: 92%;
   }
 
@@ -186,5 +186,6 @@
 @media (max-width: 360px) {
   .description {
     width: 100%;
+    line-height: 1.125rem;
   }
 }
