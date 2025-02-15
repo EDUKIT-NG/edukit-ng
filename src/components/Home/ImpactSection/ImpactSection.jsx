@@ -80,15 +80,15 @@ const ImpactSection = () => {
         <div className="impact-numbers">
           <div className="impact-number">
             <h3 ref={booksRef}>000</h3>
-            <small>Number of books Donated</small>
+            <small>Resources Donated</small>
           </div>
           <div className="impact-number">
             <h3 ref={studentsRef}>000</h3>
-            <small>Number of students helped</small>
+            <small>Students helped</small>
           </div>
           <div className="impact-number">
             <h3 ref={schoolsRef}>000</h3>
-            <small>Number of schools reached</small>
+            <small>Schools reached</small>
           </div>
         </div>
       </div>

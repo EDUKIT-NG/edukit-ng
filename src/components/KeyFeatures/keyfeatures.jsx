@@ -25,7 +25,7 @@ const KeyFeatures = () => {
       <div className="key-features-right">
         <div className="feature-card">
           <img src={Feat1} alt="Feat1" className="feature-image" />
-          <h3 className="feature-heading">Ship Learning Kits to 10 Students</h3>
+          <h3 className="feature-heading">Resource Donation Platform</h3>
           <p className="feature-text">
             We accept donations of educational materials like textbooks,
             stationery, and school bags, as well as funds, to ensure students
@@ -34,22 +34,20 @@ const KeyFeatures = () => {
         </div>
         <div className="feature-card">
           <img src={Feat2} alt="Feat2" className="feature-image" />
-          <h3 className="feature-heading">
-            Deliver a Box of Books to a School
-          </h3>
+          <h3 className="feature-heading">Student/School Request System</h3>
           <p className="feature-text">
-            With <span>₦10,000</span>, you can stock a school library with a
-            curated selection of books, helping students and teachers access
-            valuable learning resources.
+            Schools and Students can directly request specific resources through
+            an online system, helping Edukit identify and fulfill the most
+            urgent needs efficiently.
           </p>
         </div>
         <div className="feature-card">
           <img src={Feat3} alt="Feat3" className="feature-image" />
           <h3 className="feature-heading">Volunteer Sign Up Portal</h3>
           <p className="feature-text">
-            Your <span>₦20,000</span> donation will equip an entire classroom
-            with textbooks, stationary, and other essentials, creating a more
-            effective learning environment.
+            A portal for individuals who want to volunteer their time, skills,
+            or resources to support Edukit’s mission, from organizing materials
+            to logistics management.
           </p>
         </div>
         <div className="feature-card">

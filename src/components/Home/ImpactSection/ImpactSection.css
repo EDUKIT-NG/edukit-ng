@@ -19,8 +19,8 @@
   border-radius: 16px;
   background: linear-gradient(
     180deg,
-    rgba(0, 31, 71, 0.35) 38.38%,
-    rgba(0, 31, 71, 0.35) 173.06%
+    rgba(180, 200, 255, 0.3) 38.38%,
+    rgba(0, 74, 173, 0.3) 173.06%
   );
   backdrop-filter: blur(8px);
   color: ffffff;
