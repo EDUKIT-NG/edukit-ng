@@ -141,3 +141,8 @@
   background-color: #535862;
   color: #fff;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+}
