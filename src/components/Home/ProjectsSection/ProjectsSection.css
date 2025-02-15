@@ -75,8 +75,8 @@ body {
 }
 
 .project-container {
-  max-width: 98%;
-  margin: 40px auto; /* Center the container */
+  /* max-width: 100%; */
+  margin: 40px 0px 40px 30px; /* Center the container */
   display: flex;
   justify-content: space-between; /* Ensures equal spacing between cards */
   gap: 32px; /* Spacing between cards */
@@ -92,18 +92,20 @@ body {
 }
 
 .projects-cards {
-  width: 480px;
-  height: 450px;
+  max-width: 450px;
+  max-height: 450px;
   background-color: #ffffff;
   border-radius: 16px;
   padding-bottom: 32px;
   box-shadow: 0px 20px 24px -4px #0a0d1214;
   flex: 0 0 auto;
   scroll-snap-align: start;
+  margin-bottom: 15px;
 }
 
 .project-image {
   max-height: 300px;
+  max-width: 450px;
   object-fit: cover;
 }
 
@@ -116,23 +118,24 @@ body {
   font-family: "Signika", sans-serif;
   font-weight: 600;
   font-size: 23px;
-  max-height: 55px;
+  height: 56px;
   margin-top: 18px;
 }
 
 .project-des {
   color: rgba(83, 88, 98, 1);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Open Sans", sans-serif;
   max-height: 56px;
+  margin-top: 5px;
 }
 
 .cards-controls {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .button-control {
@@ -163,29 +166,62 @@ body {
   .projects-main {max-width: 800px
     }
 }
+
 @media (max-width: 430px)  {
-  .projects-main {max-width: 430px
-    }
-    .project-container  {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      grid-auto-rows: 1fr;
-      margin-left: 20px;
-    }
-  
-    .button-control {
-      border-radius: 50%;
-      width: 4px;
-      height: 10px;
+  .projects-main {
+    max-width: 430px
     }
 
-    .projects-cards {
-      width: 450px;
-      height: 430px;
-    }
-    .projects-box h2 {
-      font-size: 35px;
-    }
+  .project-container  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .button-control {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  .projects-cards {
+    max-width: 500px;
+  }
+
+  .project-des{
+    margin-top: 10px;
+  }
+
+  .project-image{
+    max-width: 400px;
+  }
+
+  .projects-box h2 {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .projects-box h5 {
+    font-size: 20px;
+  }
+
+  .projects-box p{
+    width: 400px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:360px){
+  .projects-cards {
+    max-width: 420px;
+  }
+
+  .project-image{
+    max-width: 320px;
+  }
 }
 
