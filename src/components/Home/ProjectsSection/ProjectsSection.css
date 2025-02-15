@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .projects-box h5 {
@@ -79,16 +79,10 @@ body {
 
 .project-container {
   max-width: 1216px;
-  margin: 40px auto; /* Center the container */
+  margin: 40px auto; /* Centers the container horizontally */
   display: flex;
   justify-content: space-between; /* Ensures equal spacing between cards */
-  gap: 32px;
-  flex-wrap: wrap;
-  /* overflow-x: auto; */
-  /* scroll-snap-type: x mandatory; */
-  /* scroll-behavior: smooth; */
-  /* -ms-overflow-style: none; */
-  /* scrollbar-width: none; */
+  gap: 32px; /* Spacing between cards */
 }
 
 /* .project-container::-webkit-scrollbar {
@@ -96,9 +90,8 @@ body {
 } */
 
 .projects-cards {
-  width: 450px;
-  height: 530px;
-  /* gap: 32px; */
+  width: 480px;
+  height: 450px;
   background-color: #ffffff;
   border-radius: 16px;
   padding-bottom: 32px;
@@ -109,8 +102,6 @@ body {
 
 .project-image {
   height: 300px;
-  width: 100%;
-  max-height: 300px;
   object-fit: cover;
 }
 
@@ -130,6 +121,7 @@ body {
 .project-des {
   color: rgba(83, 88, 98, 1);
   font-weight: 400;
+  margin-top: 30px;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   max-height: 56px;

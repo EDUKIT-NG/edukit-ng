@@ -1,88 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
 
 .mission-banner {
-    position: relative;
-    width: 100%;
-    min-height: 600px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    transition: background-image 0.9s ease-in-out;
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  transition: background-image 0.9s ease-in-out;
 }
 
 .mission-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* width: 1440px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 1440px;
     height: 800px;
     gap: 8px; */
 }
 
 .mission-content {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 150px;
-    width: 100%;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 150px;
+  width: 100%;
 }
 
 .mission-title {
-    color: white;
-    font-size: 2.5rem;
-    font-family: 'Signika', sans-serif;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-    max-width: 600px;
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Signika", sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  max-width: 600px;
 }
 
 .support-button {
-    background-color: white;
-    color: #0052CC;
-    padding: 1rem 1rem;
-    border: none;
-    border-radius: 9px;
-    border-bottom-color: #0052CC;
-    border-bottom-width: 300px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background-color: white;
+  color: #0052cc;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 9px;
+  border-bottom-color: #0052cc;
+  border-bottom-width: 300px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .support-button:hover {
-    background-color: #f0f0f0;
-    transform: translateY(-2px);
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
-    .mission-banner {
-        min-height: 400px;
-    }
+  .mission-banner {
+    min-height: 400px;
+  }
 
-    .mission-title {
-        font-size: 2.5rem;
-    }
+  .mission-title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .mission-banner {
-        padding: 1.5rem;
-    }
+  .mission-banner {
+    padding: 1.5rem;
+  }
 
-    .mission-title {
-        font-size: 2rem;
-    }
+  .mission-title {
+    font-size: 2rem;
+  }
 
-    .support-button {
-        padding: 0.875rem 1.5rem;
-    }
+  .support-button {
+    padding: 0.875rem 1.5rem;
+  }
 }
