@@ -77,11 +77,17 @@
   display: flex;
   justify-content: space-between; /* Ensures equal spacing between cards */
   gap: 20px; /* Spacing between cards */
+  margin: 40px auto; /* Centers the container horizontally */
+  display: flex;
+  justify-content: space-between; /* Ensures equal spacing between cards */
+  gap: 32px; /* Spacing between cards */
 }
 
 .projects-cards {
   width: 450px;
   height: 530px;
+  width: 480px;
+  height: 450px;
   background-color: #ffffff;
   border-radius: 16px;
   padding-bottom: 32px;
