@@ -116,7 +116,11 @@ const ProjectsSection = () => {
       <div className="project-container">
         {displayedProjects.map((projects) => (
           <div key={projects.id} className="projects-cards">
-            <img src={projects.img} className="project-image" />
+            {projects.img ? (
+              <img src={projects.img} alt="" className="project-image" />
+            ) : (
+              <div>{getInitials(projects.title)}</div>
+            )}
             <div className="project-info">
               <h4 className="project-title">{projects.title}</h4>
               <p className="project-des">{projects.description}</p>
