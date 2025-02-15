@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./TestimonialSection.css";
+import avatar1 from "../Avatar/avatar 3.png";
+import avatar2 from "../Avatar/Avatar.png";
+import avatar3 from "../Avatar/Avatar2.png";
 
 const TestimonialSection = () => {
   const [testimonials] = useState([
@@ -8,21 +11,21 @@ const TestimonialSection = () => {
       text: "“Thanks to EduKit Nigeria, I received the textbooks and supplies I needed to excel in school. It's amazing to know that there are people out there who care about our education and future!”",
       author: "Taiwo Ajayi",
       role: "Student",
-      img: require("../Avatar/avatar 3.png"),
+      img: avatar1,
     },
     {
       id: 2,
       text: "“Supporting EduKit Nigeria has been such a rewarding experience. Knowing that my donations are directly helping students in need inspires me to continue contributing toward a brighter future of students.”",
       author: "John Mathews",
       role: "Donor",
-      img: require("../Avatar/Avatar.png"),
+      img: avatar2,
     },
     {
       id: 3,
       text: "“Volunteering with EduKit Nigeria has allowed me to make a real impact. Each small effort, whether it's sorting supplies or organizing requests, feels like a meaningful step toward helping students succeed.”",
       author: "Rosemary Thompson",
       role: "Volunteer",
-      img: require("../Avatar/Avatar2.png"),
+      img: avatar3,
     },
     {
       id: 4,
@@ -93,7 +96,7 @@ const TestimonialSection = () => {
 
   return (
     <section className="testimonial-section">
-     <h3 className="small-title">TESTIMONIALS</h3>
+      <h3 className="small-title">TESTIMONIALS</h3>
       <h1 className="big-title">VOICES OF IMPACT</h1>
 
       <div className="card-container">

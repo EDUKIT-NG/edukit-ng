@@ -16,11 +16,12 @@
   margin-right: 2rem;
 }
 
-.title {
-  font-family: "Signika", serif;
-  font-size: 30px;
+.features-title {
+  font-family: Signika;
   font-weight: 600;
-  margin: 0 0 10px;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0%;
   color: #004aad;
 }
 
@@ -36,15 +37,15 @@
   color: #252b37;
 }
 
-.description {
-  width: 400px;
+.features-description {
+  width: 482px;
   height: 84px;
-  font-size: 16px;
-  font-weight: 350;
-  font-family: "Open Sans", serif;
-  text-align: left;
-  color: #535862;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 28px;
+  letter-spacing: 0%;
+  color: #535862;
 }
 
 .cta-button {
@@ -61,6 +62,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 24px;
 }
 
 .cta-button:hover {
@@ -76,9 +78,9 @@
 
 .feature-card {
   background-color: white;
-  width: 262px;
-  height: 348px;
-  padding: 24px 16px;
+  width: 280px;
+  height: 372px;
+  padding: 24px;
   border-radius: 16px;
   border: 0.5px solid #ddd;
   text-align: left;
@@ -107,7 +109,7 @@
   line-height: 32px;
   text-align: left;
   margin-bottom: 0.5rem;
-  color: #252b37;
+  color: #004aad;
 }
 
 .feature-text {
@@ -117,6 +119,15 @@
   line-height: 24px;
   text-align: left;
   color: #535862;
+}
+
+.feature-text span {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #004aad;
 }
 
 /* Media Queries */

@@ -1,17 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
 
-body {
-  overflow-x: hidden;
-}
-
 .projects-main {
   width: 100%;
   background-image: linear-gradient(
     rgba(243, 247, 250, 1),
     rgba(255, 255, 255, 1)
   );
-  padding-bottom: 112px;
-  overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .projects-box {
@@ -19,7 +14,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .projects-box h5 {
@@ -66,6 +61,8 @@ body {
   font-size: 14px;
   text-align: center;
   cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .project-buttons:hover {
@@ -80,15 +77,6 @@ body {
   display: flex;
   justify-content: space-between; /* Ensures equal spacing between cards */
   gap: 32px; /* Spacing between cards */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.project-container::-webkit-scrollbar {
-  display: none;
 }
 
 .projects-cards {
@@ -108,7 +96,6 @@ body {
   max-width: 450px;
   object-fit: cover;
 }
-
 .project-info {
   padding: 0px 16px 0px 16px;
 }

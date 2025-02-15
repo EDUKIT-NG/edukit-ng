@@ -5,12 +5,10 @@
 .Navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
+  justify-content: center;
+  padding: 10px 10px;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left:0;
+  max-width: 100%;
   margin: 0;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -35,7 +33,6 @@
   display: flex;
   margin: 0;
   padding: 0;
-  align-items: center;
 }
 
 /* Dropdown Button */
@@ -43,7 +40,7 @@
   background: none;
   border: none;
   font-family: "Open Sans", serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   text-align: left;
@@ -61,7 +58,7 @@
 .NavItems a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 24px;
   text-align: left;
@@ -226,14 +223,13 @@
 }
 
 .bar {
-  display:block;
+  display: block;
   width: 25px;
   height: 3px;
   margin: 5px auto;
   background-color: #000000;
   transition: all 0.3s ease-in-out;
 }
-
 
 /* Responsive style*/
 
@@ -249,10 +245,9 @@
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-
   }
 
-  .NavComp.active{
+  .NavComp.active {
     display: flex;
   }
 
@@ -299,7 +294,6 @@
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     border-color: blue;
-
   }
 
   .dropdown-menu li {
@@ -311,6 +305,4 @@
     text-align: center;
     padding: 10px 0;
   }
-
 }
-

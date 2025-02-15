@@ -8,11 +8,10 @@ const Navbar = () => {
   const [activeSubmenu, setActiveSubmenu] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-
   // toggleMobileMenu function
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
-  }
+  };
 
   const handleDropdownToggle = (menu) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
@@ -56,7 +55,7 @@ const Navbar = () => {
         <div className="bar"></div>
         <div className="bar"></div>
       </button>
-      <div className={`NavComp ${mobileMenuOpen ? 'active' : ''}`} >
+      <div className={`NavComp ${mobileMenuOpen ? "active" : ""}`}>
         <div className="NavItems">
           <ul>
             {/* About Us */}
@@ -65,10 +64,14 @@ const Navbar = () => {
                 About Us
                 <i
                   className={`material-icons ${
-                    activeDropdown === "about-us" ? "expand_less" : "expand_more"
+                    activeDropdown === "about-us"
+                      ? "expand_less"
+                      : "expand_more"
                   }`}
                 >
-                  {activeDropdown === "about-us" ? "expand_less" : "expand_more"}
+                  {activeDropdown === "about-us"
+                    ? "expand_less"
+                    : "expand_more"}
                 </i>
               </button>
               {activeDropdown === "about-us" && (
@@ -94,79 +97,18 @@ const Navbar = () => {
             </li>
 
             {/* Donate */}
-            <li className="dropdown">
-              <button onClick={() => handleDropdownToggle("donate")}>
-                Donate
-                <i
-                  className={`material-icons ${
-                    activeDropdown === "donate" ? "expand_less" : "expand_more"
-                  }`}
-                >
-                  {activeDropdown === "donate" ? "expand_less" : "expand_more"}
-                </i>
-              </button>
-              {activeDropdown === "donate" && (
-                <ul className="dropdown-menu">
-                  <li>
-                    <a href="#">Donate Resources</a>
-                  </li>
-                  <li>
-                    <a href="#">Donate Funds</a>
-                  </li>
-                </ul>
-              )}
+            <li>
+              <a href="">Donate</a>
             </li>
 
             {/* Request */}
-            <li className="dropdown">
-              <button onClick={() => handleDropdownToggle("request")}>
-                Request
-                <i
-                  className={`material-icons ${
-                    activeDropdown === "request" ? "expand_less" : "expand_more"
-                  }`}
-                >
-                  {activeDropdown === "request" ? "expand_less" : "expand_more"}
-                </i>
-              </button>
-              {activeDropdown === "request" && (
-                <ul className="dropdown-menu">
-                  <li>
-                    <a href="#">Request as Student</a>
-                  </li>
-                  <li>
-                    <a href="#">Request as School</a>
-                  </li>
-                </ul>
-              )}
+            <li>
+              <a href="">Request</a>
             </li>
 
             {/* Get Involved */}
-            <li className="dropdown">
-              <button onClick={() => handleDropdownToggle("get-involved")}>
-                Get Involved
-                <i
-                  className={`material-icons ${
-                    activeDropdown === "get-involved"
-                      ? "expand_less"
-                      : "expand_more"
-                  }`}
-                >
-                  {activeDropdown === "get-involved"
-                    ? "expand_less"
-                    : "expand_more"}
-                </i>
-              </button>
-              {activeDropdown === "get-involved" && (
-                <ul className="dropdown-menu">
-                  <li>
-                    <a href="#">Partner with Us</a>
-                  </li>
-                  <li>
-                    <a href="#">Sponsor an Event</a>
-                  </li>
-                </ul>
-              )}
+            <li>
+              <a href="">Get Involved</a>
             </li>
 
             {/* Learning-Hub*/}
