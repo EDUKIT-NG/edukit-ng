@@ -129,7 +129,7 @@ const ProjectsSection = () => {
       </div>
 
       <div className="cards-controls">
-        {[...Array(4)].map((_, index) => (
+        {[...Array(3)].map((_, index) => (
           <button
             key={index}
             className={`button-control ${

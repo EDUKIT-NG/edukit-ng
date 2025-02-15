@@ -26,9 +26,10 @@ body {
   color: rgba(0, 74, 173, 1);
   font-family: "Signika", sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   margin: 80px 0px 0px 0px;
+  line-height: 16px;
 }
 
 .projects-box h2 {
@@ -60,50 +61,55 @@ body {
 
 .project-buttons {
   background-color: rgba(0, 74, 173, 1);
-  color: white;
-  font-family: "Open Sans", sans-serif;
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  font-family: Open Sans;
   font-weight: 600;
   font-size: 14px;
-  text-align: center;
-  cursor: pointer;
+  color: #ffffff;
+  display: flex;
 }
 
 .project-buttons:hover {
-  background-color: white;
+  background-color: rgba(83, 88, 98, 1);
   border: 1px solid rgba(0, 74, 173, 1);
-  color: rgba(0, 74, 173, 1);
+  color: white;
 }
 
 .project-container {
-  max-width: 98%;
+  max-width: 1216px;
   margin: 40px auto; /* Center the container */
   display: flex;
   justify-content: space-between; /* Ensures equal spacing between cards */
-  gap: 32px; /* Spacing between cards */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  gap: 32px;
+  flex-wrap: wrap;
+  /* overflow-x: auto; */
+  /* scroll-snap-type: x mandatory; */
+  /* scroll-behavior: smooth; */
+  /* -ms-overflow-style: none; */
+  /* scrollbar-width: none; */
 }
 
-.project-container::-webkit-scrollbar {
+/* .project-container::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .projects-cards {
-  width: 480px;
-  height: 450px;
+  width: 450px;
+  height: 530px;
+  /* gap: 32px; */
   background-color: #ffffff;
   border-radius: 16px;
   padding-bottom: 32px;
   box-shadow: 0px 20px 24px -4px #0a0d1214;
-  flex: 0 0 auto;
-  scroll-snap-align: start;
+  /* flex: 0 0 auto; */
+  /* scroll-snap-align: start; */
 }
 
 .project-image {
   height: 300px;
+  width: 100%;
   object-fit: cover;
 }
 
