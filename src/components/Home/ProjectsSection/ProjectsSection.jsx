@@ -123,7 +123,7 @@ const ProjectsSection = () => {
           and shaping brighter futures. From providing <br />
           essential learning resources to using technology to enhance education,
           to creating equal opportunities for <br />
-          underserved communities, see how we’re transforming lives and driving
+          under-served communities, see how we’re transforming lives and driving
           meaningful change.
         </p>
         <button className="project-buttons">See More Projects</button>
