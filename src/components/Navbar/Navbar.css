@@ -3,18 +3,20 @@
   font-family: "Open Sans", serif;
 }
 .Navbar {
+  position: fixed;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 10px 10px;
+  align-items: center;
+  padding: 5px 5px;
   width: 100%;
   background-color: #ffffff;
+  z-index: 9999;
 }
 
 /* Logo Section */
 .NavLogo img {
-  height: 55px;
-  margin-left: 50px;
+  height: 50px;
+  margin-right: 70px;
 }
 
 /* Navigation Items */

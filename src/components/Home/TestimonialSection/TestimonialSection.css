@@ -36,7 +36,8 @@
   margin: 80px auto; /* Centers the container horizontally */
   display: flex;
   justify-content: space-between; /* Ensures equal spacing between cards */
-  gap: 32px; /* Spacing between cards */
+  gap: 22px; /* Spacing between cards */
+  /* flex-wrap: wrap; */
 }
 
 .testimonial-card {

@@ -30,7 +30,7 @@
   color: rgba(37, 43, 55, 1);
   font-family: "Signika", sans-serif;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 36px;
   text-align: center;
   margin: 0 auto;
 }
@@ -73,12 +73,13 @@
   max-width: 1216px;
   margin: 30px auto; /* Centers the container horizontally */
   display: flex;
-  justify-content: space-between; /* Ensures equal spacing between cards */
+  justify-content: space-between; /* Ensures equal spacing between cards*/
   gap: 20px; /* Spacing between cards */
+  flex-wrap: wrap;
 }
 
 .projects-cards {
-  width: 450px;
+  width: 380px;
   height: 530px;
   background-color: #ffffff;
   border-radius: 16px;
@@ -90,6 +91,7 @@
   height: 300px;
   width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 .project-info {
   padding: 0px 16px 0px 16px;
