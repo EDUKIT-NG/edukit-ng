@@ -81,51 +81,13 @@ const Navbar = () => {
           </li>
 
           {/* Donate */}
-          <li className="dropdown">
-            <button onClick={() => handleDropdownToggle("donate")}>
-              Donate
-              <i
-                className={`material-icons ${
-                  activeDropdown === "donate" ? "expand_less" : "expand_more"
-                }`}
-              >
-                {activeDropdown === "donate" ? "expand_less" : "expand_more"}
-              </i>
-            </button>
-            {activeDropdown === "donate" && (
-              <ul className="dropdown-menu">
-                <li>
-                  <a href="#">Donate Resources</a>
-                </li>
-                <li>
-                  <a href="#">Donate Funds</a>
-                </li>
-              </ul>
-            )}
+          <li>
+            <a href="#donate">Donate</a>
           </li>
 
           {/* Request */}
-          <li className="dropdown">
-            <button onClick={() => handleDropdownToggle("request")}>
-              Request
-              <i
-                className={`material-icons ${
-                  activeDropdown === "request" ? "expand_less" : "expand_more"
-                }`}
-              >
-                {activeDropdown === "request" ? "expand_less" : "expand_more"}
-              </i>
-            </button>
-            {activeDropdown === "request" && (
-              <ul className="dropdown-menu">
-                <li>
-                  <a href="#">Request as Student</a>
-                </li>
-                <li>
-                  <a href="#">Request as School</a>
-                </li>
-              </ul>
-            )}
+          <li>
+            <a href="#request">Request</a>
           </li>
 
           {/* Get Involved */}
