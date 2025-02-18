@@ -96,15 +96,15 @@ const Navbar = () => {
               )}
             </li>
 
-            {/* Donate */}
-            <li>
-              <a href="">Donate</a>
-            </li>
+          {/* Donate */}
+          <li>
+            <a href="#donate">Donate</a>
+          </li>
 
-            {/* Request */}
-            <li>
-              <a href="">Request</a>
-            </li>
+          {/* Request */}
+          <li>
+            <a href="#request">Request</a>
+          </li>
 
             {/* Get Involved */}
             <li>

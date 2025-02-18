@@ -73,14 +73,14 @@
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 20px;
 }
 
 .feature-card {
   background-color: white;
-  width: 280px;
-  height: 372px;
-  padding: 24px;
+  width: 300px;
+  height: 358px;
+  padding: 24px 16px;
   border-radius: 16px;
   border: 0.5px solid #ddd;
   text-align: left;

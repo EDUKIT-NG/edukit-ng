@@ -3,28 +3,22 @@
   font-family: "Open Sans", serif;
 }
 .Navbar {
+  position: fixed;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 10px 10px;
+  align-items: center;
+  padding: 5px 5px;
   width: 100%;
   max-width: 100%;
   margin: 0;
   box-sizing: border-box;
   background-color: #ffffff;
-  z-index: 1000;
 }
 
 /* Logo Section */
 .NavLogo img {
   height: 55px;
-  margin-left: 20px;
-}
-
-/* Whole Navbar */
-.NavComp {
-  display: flex;
-  align-items: center;
+  margin-left: 50px;
 }
 
 /* Navigation Items */
