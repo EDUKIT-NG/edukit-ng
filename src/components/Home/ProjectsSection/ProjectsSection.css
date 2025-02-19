@@ -137,6 +137,10 @@
 }
 
 @media (max-width: 768px) {
+  .projects-main {
+    margin-top: 600px;
+  }
+
   .project-container {
     flex-direction: column;
     align-items: center;
