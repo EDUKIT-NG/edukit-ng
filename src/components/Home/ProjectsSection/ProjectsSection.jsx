@@ -113,11 +113,11 @@ const ProjectsSection = () => {
   return (
     <section className="projects-main">
       <div className="projects-box">
-        <h5>PROJECTS</h5>
-        <h2>
+        <h2>PROJECTS</h2>
+        <h3>
           OUR PROJECTS, YOUR IMPACT: <br />
           MAKING A DIFFERENCE TOGETHER
-        </h2>
+        </h3>
         <p>
           Discover the impact of our initiatives in bridging the educational gap
           and shaping brighter futures. From providing <br />
