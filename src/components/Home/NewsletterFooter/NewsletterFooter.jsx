@@ -86,22 +86,26 @@ const NewsletterFooter = () => {
         </div>
       </div>
 
-
-      <div className="footer-bottom">
-        <div className="social-links">
+      <div className="social-links">
           <a href="#"><img src={facebook} alt="Facebook" className="social-icon" /></a>
-          <a href="#"><img src={twitter} alt="X" className="social-icon" /></a>
-          <a href="#"><img src={linkedin}alt="LinkedIn" className="social-icon" /></a>
           <a href="#"><img src={instagram} alt="Instagram" className="social-icon" /></a>
+          <a href="#"><img src={linkedin}alt="LinkedIn" className="social-icon" /></a>
+          <a href="#"><img src={twitter} alt="X" className="social-icon" /></a>
         </div>
+
+      
+      <div className="footer-bottom">
+      
         <div className="copyright">
           <p>© 2024 Edukit Nigeria. All rights reserved.</p>
           <div className="legal-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
+             
           </div>
         </div>
       </div>
+         <hr />
     </footer>
   );
 };
