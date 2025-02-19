@@ -7,6 +7,8 @@
     rgba(255, 255, 255, 1)
   );
   padding-bottom: 112px;
+  padding: 5px;
+  margin-bottom: 50px;
 }
 
 .projects-box {
@@ -17,20 +19,20 @@
   gap: 10px;
 }
 
-.projects-box h5 {
+.projects-box h2 {
   color: rgba(0, 74, 173, 1);
   font-family: "Signika", sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.8rem;
   text-align: center;
   margin: 80px 0px 0px 0px;
 }
 
-.projects-box h2 {
+.projects-box h3 {
   color: rgba(37, 43, 55, 1);
   font-family: "Signika", sans-serif;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 1.5rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -39,15 +41,14 @@
   color: rgba(83, 88, 98, 1);
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.3rem;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 10px;
   line-height: 23px;
 }
 
 .projects-box button {
-  width: 180px;
-  height: 55px;
   border: 1px;
   border-radius: 10px;
   padding: 16px 28px 16px 28px;
@@ -58,7 +59,7 @@
   color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1rem;
   text-align: center;
   cursor: pointer;
 }
@@ -133,4 +134,28 @@
 
 .button-control.active {
   background-color: #004aad;
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-cards {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .project-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projects-cards {
+    margin: 10px;
+  }
 }
