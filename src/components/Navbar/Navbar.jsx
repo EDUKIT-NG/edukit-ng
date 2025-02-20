@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 import Logo from "../../assets/EDUKIT LOGO (Main).png";
 import { Link } from "react-router-dom";
 import "./Navbar.css"; // Import the CSS file
+import { FaBars, FaTimes } from "react-icons/fa"; // Import icons for menu toggle
 
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
 
   const handleDropdownToggle = (menu) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
-    setActiveSubmenu(null); // Close any open submenu when switching dropdowns
-  };
-
-  const handleSubmenuToggle = (submenu) => {
-    setActiveSubmenu(activeSubmenu === submenu ? null : submenu);
   };
 
   // Close dropdowns when clicking outside
@@ -23,7 +23,6 @@ const Navbar = () => {
         event.target.closest(".dropdown") || event.target.closest(".NavLogo");
       if (!isDropdownClick) {
         setActiveDropdown(null);
-        setActiveSubmenu(null);
       }
     };
 
@@ -35,7 +34,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="Navbar">
+    <nav className="Navbar">
       {/* Logo Section */}
       <div className="NavLogo">
         <Link to="/">
@@ -43,8 +42,17 @@ const Navbar = () => {
         </Link>
       </div>
 
+      {/* Menu Icon for Small Screens */}
+      <div className="MenuIcon" onClick={toggleNavbar}>
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </div>
+
       {/* Navigation Items */}
-      <div className="NavItems">
+      <div className={`NavItems ${isOpen ? "active" : ""}`}>
+        <div className="MenuIcon" onClick={toggleNavbar}>
+          <FaTimes />
+        </div>
+
         <ul>
           {/* About Us */}
           <li className="dropdown">
@@ -166,7 +174,7 @@ const Navbar = () => {
         <button className="log-in">Log In</button>
         <button className="sign-up">Sign Up</button>
       </div>
-    </div>
+    </nav>
   );
 };
 

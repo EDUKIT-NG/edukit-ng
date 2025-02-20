@@ -81,10 +81,8 @@
 }
 
 .projects-cards {
-  width: 380px;
-  height: 530px;
+  height: auto;
   width: 480px;
-  height: 450px;
   background-color: #ffffff;
   border-radius: 16px;
   padding-bottom: 32px;
@@ -105,7 +103,7 @@
   color: rgba(0, 0, 0, 1);
   font-family: "Signika", sans-serif;
   font-weight: 600;
-  font-size: 23px;
+  font-size: 1.5rem;
   height: 55px;
   margin-top: 5px;
 }
@@ -113,7 +111,7 @@
 .project-des {
   color: rgba(83, 88, 98, 1);
   font-weight: 400;
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   height: 56px;

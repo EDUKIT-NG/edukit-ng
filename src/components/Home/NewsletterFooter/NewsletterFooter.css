@@ -27,14 +27,13 @@
 
 .newsletter-form {
   display: flex;
-  gap: 1rem;
-  max-width: 600px;
+  gap: 5px;
   margin: 0 auto 1rem;
 }
 
 .email-input {
   flex: 1;
-  padding: 0.875rem 1rem;
+  padding: 0.8rem 1rem;
   border: none;
   border-radius: 4px;
   font-size: 1rem;
@@ -98,7 +97,7 @@
 }
 
 .footer-section ul li a:hover {
-  color: #0066CC;
+  color: #0066cc;
 }
 
 .contact-section ul li {
@@ -126,17 +125,17 @@
 .social-links {
   display: flex;
   gap: 1.5rem;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   padding: 0 6% 2rem;
-  margin-left: -0.5rem; 
+  margin-left: -0.5rem;
 }
 
 .social-icon {
   width: 24px;
   height: 24px;
-  opacity: 0.9; 
+  opacity: 0.9;
   transition: all 0.3s ease;
-  filter: brightness(0.8); 
+  filter: brightness(0.8);
 }
 
 .social-icon:hover {
@@ -149,16 +148,15 @@
   position: relative;
 }
 
-
 .footer-bottom::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 5%;
   right: auto;
-  width: calc(100% - 9%); 
+  width: calc(100% - 9%);
   /* max-width: 400px;  */
-  border-top: 2px solid #ccc; 
+  border-top: 2px solid #ccc;
 }
 
 .copyright {
@@ -182,7 +180,7 @@
 }
 
 .legal-links a:hover {
-  color: #0066CC;
+  color: #0066cc;
 }
 
 /* Responsive Design */
@@ -190,29 +188,36 @@
   .footer-content {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .contact-section {
     grid-column: span 3;
   }
 }
 
 @media (max-width: 768px) {
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 auto 1rem;
+  }
+
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .contact-section {
     grid-column: span 2;
   }
-  
+
   .footer-bottom {
-    text-align: left; 
+    text-align: left;
   }
-  
+
   .copyright {
     flex-direction: column;
     gap: 1rem;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
   .legal-links {
@@ -229,18 +234,18 @@
   .footer-content {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-section {
     grid-column: 1;
   }
-  
+
   .legal-links {
     flex-direction: column;
     gap: 1rem;
     font-weight: 600;
     color: #333;
   }
-  
+
   .social-links {
     padding-bottom: 1.5rem;
     margin-left: 0;
