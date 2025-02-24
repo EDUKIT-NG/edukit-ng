@@ -3,7 +3,6 @@ import Logo from "../../assets/EDUKIT LOGO (Main).png";
 import { Link } from "react-router-dom";
 import "./Navbar.css"; // Import the CSS file
 import { FaBars, FaTimes } from "react-icons/fa"; // Import icons for menu toggle
-
 const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -69,7 +68,7 @@ const Navbar = () => {
             {activeDropdown === "about-us" && (
               <ul className="dropdown-menu">
                 <li>
-                  <a href="#">Our Profile</a>
+                  <Link to= "/OurProfile"><a href="#">Our Profile</a></Link>
                 </li>
                 <li>
                   <a href="#">Our Story</a>
