@@ -1,0 +1,287 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap");
+.container{
+  background-image: url("./images/student.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width:1440px;
+  align-items: center;
+  height: 1024px;
+}
+
+.Goal{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.Goal h2{
+  width: 1076px;
+  height:180px;
+  font-family:"Signika", sans-serif;
+  font-weight:500;
+  font-size:48px;
+  line-height:60px;
+  letter-spacing:2%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.don-button{
+  width:424px;
+  height:60px;
+  gap:24px;
+}
+
+.don-button button{
+  width:200px;
+  height:60px;
+  border-radius:8px;
+}
+
+.we-are{
+  height:774px;
+  width: 1440px;
+  max-width: 1440px;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-right: 112px;
+  padding-left: 112px;
+  gap: 72px;
+  margin: 0 auto;
+}
+
+.illustration{
+  width: 624px;
+  height: 432px;
+  
+}
+.description{
+  width: 520px;
+  height: 534px;
+  gap: 24px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+
+.description h1{
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  width: 520px;
+  height: 72px;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 2%;
+}
+
+.description p{
+  font-family: "open sans", sans-serif;
+  font-weight: 400;
+  width: 520px;
+  height: 354px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  align-content: center;
+  font-size: 18px;
+  color: #535862;
+  font-size: 18px;
+  letter-spacing: 0%;
+  margin-bottom: 2px;
+}
+
+.description button{
+  width: 200px;
+  height: 60px;
+}
+
+.story-button{
+  font-family: "open sans";
+  font-weight: 600;
+  font-size:10px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  border-radius: 10px;
+  border: 1px;
+  padding-top: 16px;
+  padding-right:28px ;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  gap: 8px;
+  background-color: #004AAD;
+  border-color: #004AAD;
+}
+
+.we-do{
+  width: 1440px;
+  height: 740px;
+  max-width: 1440px;
+  padding-top: 120px;
+  padding-right: 112px;
+  padding-left: 112px;
+  padding-bottom: 120px;
+  gap: 64px;
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F7FA;
+  justify-content: center;
+}
+
+.what-we-do{
+  width: 1216px;
+  height: 180px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.what-we-do h1{
+  width: 1216px;
+  height: 72px;
+  font-family:"Signika", sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
+.what-we-do p{
+  width: 1216px;
+  height: 84px;
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: justify;
+}
+
+.we-do-images{
+  width: 1216px;
+  max-width: 1216px;
+  height: 256px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+}
+
+.we-do-images Info{
+  width: 280px;
+  height: auto;
+  min-height:256px;
+  border-radius: 16px;
+  border:1px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-color: #E9EAEB;
+}
+
+.we-do-images h2{
+  text-align: center;
+  width: 280px;
+  height: 32px;
+  font-family: "Signika", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #181D27;
+}
+
+.we-do-images p{
+  text-align: center;
+  width: 280px;
+  height: 72px;
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #535862;
+}
+
+.Collect-logo{
+  width:64px;
+  height:64px;
+  border-radius:1000px;
+  background-color: #E9EAEB;
+  display: flex;
+  flex-direction: column;
+  justify-items: center
+}
+
+.Collect-logo img{
+  width:32px;
+  height: 32px;
+  padding-top:16px;
+  padding-left:16px
+
+}
+
+.Info{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+}
+.Values{
+  height: auto;
+  min-height: 1372px;
+  width: 1440px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.Edukit-plan{
+  width: 1440px;
+  max-width: 1440px;
+  height: 322px;
+  border-bottom: 1px;
+  padding:56px 112px;
+  gap: 136px;
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
+  border-color: #E9EAEB;
+}
+
+.Plan-logo{
+  height: 44px;
+  width: 280px;
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 2%;
+  color: #252B37;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.The-plan{
+  width: 800px;
+  height: 140px;
+  font-family: "open sans";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: #535862;
+}
