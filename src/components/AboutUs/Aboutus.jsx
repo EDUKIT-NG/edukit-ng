@@ -15,7 +15,7 @@ const AboutUs =()=> {
 
   return (
     <div>
-      <div className="container">
+      <div className="about-container">
         <div className="Goal">
           <h2>
             Help Us Reach Our Goal of Equipping 1,000,000
