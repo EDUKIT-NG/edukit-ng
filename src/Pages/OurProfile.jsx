@@ -1,9 +1,9 @@
 import React from "react";
-import SDGSection  from "../components/OurProfile/SDGSection/SDG";
+import AboutUs from "../components/AboutUs/Aboutus";
 const OurProfile = () => {
     return ( 
         <div>
-         <SDGSection />   
+            <AboutUs/>
         </div>
     );
 };
