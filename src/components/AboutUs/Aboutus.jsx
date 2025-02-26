@@ -4,6 +4,10 @@ import bookLogo from "./icons/book-2.png";
 import boxLogo from "./icons/box-seam.png";
 import truckLogo from "./icons/truck-delivery.png";
 import heartLogo from "./icons/heart-handshake.png"
+import targetLogo from "./icons/target-arrow.png";
+import eyeLogo from "./icons/eye.png";
+import questionLogo from "./icons/question-mark.png"
+import keyLogo from "./icons/key.png"
 
 import './Aboutus.css'
 
@@ -19,15 +23,15 @@ const AboutUs =()=> {
             Resources Over the Next 5 Years
           </h2>
           <div className="don-button">
-            <button> Make a Donation</button>
-            <button>Volunteer With Us</button>
+            <button id = "btn-1"> Make a Donation</button>
+            <button id = "btn-2">Volunteer With Us</button>
           </div>
         </div>
       </div>
       {/* who we are */}
       <div className="we-are">
         <div className="description">
-          <h1>WHO WE ARE</h1>
+          <h1><span className="highlight">WHO</span> WE ARE</h1>
           <p>
             Edukit Nigeria is an initiative aimed at transforming
             educational access for underprivileged students across
@@ -54,7 +58,7 @@ const AboutUs =()=> {
       {/* what we do */}
       <div className="we-do">
         <div className="what-we-do">
-          <h1>WHAT WE DO</h1>
+          <h1><span className="highlight">WHAT</span> WE DO</h1>
           <p>
             Through our platform, we collect, manage, and distribute donated
             educational resources while also raising funds to purchase new academic
@@ -68,7 +72,7 @@ const AboutUs =()=> {
             <div className = "Collect-logo">
               <img src={bookLogo} alt="Collect icon"/>
             </div>
-            <div className="Info">
+            <div>
               <h2>Collect</h2>
               <p>
                 We gather donated educational materials form individuals and organizations.
@@ -121,7 +125,12 @@ const AboutUs =()=> {
       <div className="Values">
         <div className="Edukit-plan">
           <div className="Plan-logo">
-            <h2>OUR MISSION</h2>
+            <div className="img-logo">
+              <img src={targetLogo} alt="Our Mission" />
+            </div>
+            <div>
+              <h2>OUR MISSION</h2>
+            </div>
           </div>
           <div className="The-plan">
             <p>
@@ -136,7 +145,12 @@ const AboutUs =()=> {
         {/* our vision */}
         <div className="Edukit-plan">
           <div className="Plan-logo">
-            <h2>OUR VISION</h2>
+            <div className="img-logo">
+              <img src = {eyeLogo} alt="Our Vision" />
+            </div>
+            <div>
+              <h2>OUR VISION</h2>
+            </div>
           </div>
           <div className="The-plan">
             <p>
@@ -149,7 +163,12 @@ const AboutUs =()=> {
         {/* our challenge */}
         <div className="Edukit-plan">
           <div className="Plan-logo">
-            <h2>THE CHALLENGE</h2>
+            <div className="img-logo">
+              <img src= {questionLogo} alt="Challenge" />
+            </div>
+            <div>
+              <h2>THE CHALLENGE</h2>
+            </div>
           </div>
           <div className="The-plan">
             <p>
@@ -167,7 +186,12 @@ const AboutUs =()=> {
         {/* our solution */}
         <div className="Edukit-plan">
           <div className="Plan-logo">
-            <h2> THE SOLUTION</h2>
+            <div className="img-logo">
+              <img src={ keyLogo} alt="Solution" />
+            </div>
+            <div>
+              <h2> THE SOLUTION</h2>
+            </div>
           </div>
           <div className="The-plan">
             <p>
