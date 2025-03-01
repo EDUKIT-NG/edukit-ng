@@ -3,7 +3,6 @@
 .impact-section {
   height: 530px;
   width: 100%;
-  border-radius: 10px;
   background-image: url("../ImpactSection/Background.png"); /* Path to your background image */
   background-size: cover;
   background-position: center;

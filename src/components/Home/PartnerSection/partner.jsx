@@ -21,8 +21,10 @@ const partner = () => {
     <div className="container">
       {/* Header Section */}
       <div className="header">
-        <h4 className="sub-title">Key Collaborators</h4>
-        <h2 className="title">Our Partners & Sponsors</h2>
+        <div className="textHolder">
+          <h4 className="sub-title">Key Collaborators</h4>
+          <h2 className="title">Our Partners & Sponsors</h2>
+        </div>
         <p className="description">
           With the generous support of our partners and sponsors,
           underprivileged students across Nigeria gain access to essential
