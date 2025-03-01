@@ -5,6 +5,10 @@
   text-align: center;
   padding: 40px 20px;
   background-color: #f3f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
 }
 
 /* Header Section */
@@ -12,44 +16,54 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  width: 50rem;
+  gap: 32px;
 }
-
+.textHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 .sub-title {
   color: #004aad;
-  font-size: 2rem;
+  font-size: 1.875rem;
   text-transform: uppercase;
   line-height: 2.375rem;
   font-weight: 600;
-  margin: 0 0 10px 0;
+  /* margin: 0 0 10px 0; */
+  font-family: "signika", sans-serif;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 3.75rem;
   font-weight: 600;
   line-height: 4.5rem;
   color: #252b37;
   margin: 0 0 30px 0;
+  font-family: "signika", sans-serif;
 }
 
 .description {
   color: #535862;
-  font-size: 1.5rem;
-  width: 60%;
+  font-size: 1.125rem;
+  min-width: 100%;
   line-height: 1.75rem;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   font-family: "open sans", sans-serif;
   margin: 0;
 }
 
 .button {
+  width: 12.5rem;
+  height: 3.75rem;
   background-color: #004aad;
   color: white;
   padding: 1rem 1rem;
   border: none;
   border-radius: 0.625rem;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-family: "open sans", sans-serif;
   line-height: 1.75rem;
   cursor: pointer;
