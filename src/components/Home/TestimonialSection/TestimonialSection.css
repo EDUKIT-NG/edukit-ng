@@ -11,7 +11,7 @@
 
 .small-title {
   font-family: "Signika", serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 32px;
   text-align: center;
@@ -21,7 +21,7 @@
 
 .big-title {
   font-family: "Signika", serif;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 600;
   line-height: 60px;
   letter-spacing: 0.02em;
@@ -43,9 +43,9 @@
 .testimonial-card {
   background-color: #ffffff;
   box-shadow: 0px 20px 24px -4px #0a0d1214;
-  width: 385px;
-  padding: 20px;
-  height: auto;
+  width: 384px;
+  padding: 32px 24px;
+  height: 324px;
   border-radius: 16px;
   text-align: left;
   border: 0.5px solid #a4a7ae;
@@ -59,6 +59,7 @@
   line-height: 30px;
   text-align: left;
   margin: 24px 0;
+  color: #252b37;
 }
 
 .author-info {
@@ -95,7 +96,7 @@
   font-size: 18px;
   font-weight: 600;
   text-align: left;
-  color: #101828;
+  color: #004aad;
   margin: 0;
 }
 
@@ -103,9 +104,9 @@
   font-family: Open Sans;
   font-size: 16px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 24px;
   text-align: left;
-  color: #667085;
+  color: #535862;
   margin: 0;
 }
 

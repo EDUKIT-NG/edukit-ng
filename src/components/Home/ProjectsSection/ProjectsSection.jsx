@@ -70,8 +70,6 @@ const ProjectsSection = () => {
 
   const projectContainerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const projectsPerPage = 3;
-  const totalPages = 3;
 
   const handleScroll = (index) => {
     const container = projectContainerRef.current;
@@ -84,14 +82,6 @@ const ProjectsSection = () => {
     setActiveIndex(index);
   };
 
-  const getDisplayedProjects = () => {
-    const startIndex = activeIndex * projectsPerPage;
-    const endIndex = startIndex + projectsPerPage;
-    return projects.slice(startIndex, endIndex);
-  };
-
-  const displayedProjects = getDisplayedProjects();
-
   useEffect(() => {
     const container = projectContainerRef.current;
     const handleScroll = () => {
@@ -102,13 +92,6 @@ const ProjectsSection = () => {
     container.addEventListener("scroll", handleScroll);
     return () => container.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const getInitials = (name) => {
-    const names = name.split(" ");
-    return names.length > 1
-      ? `${names[0][0]}${names[1][0]}`.toUpperCase()
-      : name[0]?.toUpperCase();
-  };
 
   return (
     <section className="projects-main">
@@ -123,25 +106,20 @@ const ProjectsSection = () => {
           and shaping brighter futures. From providing <br />
           essential learning resources to using technology to enhance education,
           to creating equal opportunities for <br />
-          under-served communities, see how we’re transforming lives and driving
+          underserved communities, see how we’re transforming lives and driving
           meaningful change.
         </p>
         <button className="project-buttons">See More Projects</button>
       </div>
 
       <div className="project-container" ref={projectContainerRef}>
-        {displayedProjects.map((project) => (
+        {projects.map((project) => (
           <div key={project.id} className="projects-cards">
-            {project.img ? (
-              <img
-                src={project.img}
-                className="project-image"
-                alt={project.title}
-              />
-            ) : (
-              <div>{getInitials.project.title}</div>
-            )}
-
+            <img
+              src={project.img}
+              className="project-image"
+              alt={project.title}
+            />
             <div className="project-info">
               <h4 className="project-title">{project.title}</h4>
               <p className="project-des">{project.description}</p>
@@ -151,7 +129,7 @@ const ProjectsSection = () => {
       </div>
 
       <div className="cards-controls">
-        {Array.from({ length: totalPages }).map((_, index) => (
+        {[...Array(4)].map((_, index) => (
           <button
             key={index}
             className={`button-control ${
