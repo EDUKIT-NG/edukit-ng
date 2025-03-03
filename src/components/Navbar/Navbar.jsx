@@ -35,143 +35,131 @@ const Navbar = () => {
   return (
     <nav className="Navbar">
       {/* Logo Section */}
-      <div className="NavLogo">
-        <Link to="/">
-          <img src={Logo} alt="Logo" />
-        </Link>
-      </div>
-
-      {/* Menu Icon for Small Screens */}
-      <div className="MenuIcon" onClick={toggleNavbar}>
-        {isOpen ? <FaTimes /> : <FaBars />}
-      </div>
-
-      {/* Navigation Items */}
-      <div className={`NavItems ${isOpen ? "active" : ""}`}>
-        <div className="MenuIcon" onClick={toggleNavbar}>
-          <FaTimes />
+      <div className="navWrapper">
+        <div className="NavLogo">
+          <Link to="/">
+            <img src={Logo} alt="Logo" />
+          </Link>
         </div>
 
-        <ul>
-          {/* About Us */}
-          <li className="dropdown">
-            <button onClick={() => handleDropdownToggle("about-us")}>
-              About Us
-              <i
-                className={`material-icons ${
-                  activeDropdown === "about-us" ? "expand_less" : "expand_more"
-                }`}
-              >
-                {activeDropdown === "about-us" ? "expand_less" : "expand_more"}
-              </i>
-            </button>
-            {activeDropdown === "about-us" && (
-              <ul className="dropdown-menu">
-                <li>
-                  <Link to= "/OurProfile"><a href="#">Our Profile</a></Link>
-                </li>
-                <li>
-                  <a href="#">Our Story</a>
-                </li>
-                <li>
-                  <a href="#">Our Team</a>
-                </li>
-                <li>
-                  <a href="#">Impact</a>
-                </li>
+        {/* Menu Icon for Small Screens */}
+        <div className="MenuIcon" onClick={toggleNavbar}>
+          {isOpen ? <FaTimes /> : <FaBars />}
+        </div>
 
-                <li>
-                  <a href="#">Careers</a>
-                </li>
-              </ul>
-            )}
-          </li>
+        {/* Navigation Items */}
+        <div className={`NavItems ${isOpen ? "active" : ""}`}>
+          <div className="MenuIcon" onClick={toggleNavbar}>
+            <FaTimes />
+          </div>
 
-          {/* Donate */}
-          <li>
-            <a href="#donate">Donate</a>
-          </li>
-
-          {/* Request */}
-          <li>
-            <a href="#request">Request</a>
-          </li>
-
-          {/* Get Involved */}
-          <li className="dropdown">
-            <button onClick={() => handleDropdownToggle("get-involved")}>
-              Get Involved
-              <i
-                className={`material-icons ${
-                  activeDropdown === "get-involved"
+          <ul>
+            {/* Home */}
+            <li>
+              <a href="#">Home</a>
+            </li>
+            {/* About Us */}
+            <li className="dropdown">
+              <button onClick={() => handleDropdownToggle("about-us")}>
+                About Us
+                <i
+                  className={`material-icons ${
+                    activeDropdown === "about-us"
+                      ? "expand_less"
+                      : "expand_more"
+                  }`}
+                >
+                  {activeDropdown === "about-us"
                     ? "expand_less"
-                    : "expand_more"
-                }`}
-              >
-                {activeDropdown === "get-involved"
-                  ? "expand_less"
-                  : "expand_more"}
-              </i>
-            </button>
-            {activeDropdown === "get-involved" && (
-              <ul className="dropdown-menu">
-                <li>
-                  <a href="#">Partner with Us</a>
-                </li>
-                <li>
-                  <a href="#">Sponsor an Event</a>
-                </li>
-              </ul>
-            )}
-          </li>
+                    : "expand_more"}
+                </i>
+              </button>
+              {activeDropdown === "about-us" && (
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link to="/OurProfile">
+                      <a href="#">Our Profile</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <a href="#">Our Story</a>
+                  </li>
+                  <li>
+                    <a href="#">Our Team</a>
+                  </li>
+                  <li>
+                    <a href="#">Impact</a>
+                  </li>
 
-          {/* Learning-Hub*/}
-          <li className="dropdown">
-            <button onClick={() => handleDropdownToggle("learning-hub")}>
-              Learning Hub
-              <i
-                className={`material-icons ${
-                  activeDropdown === "learning-hub"
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              )}
+            </li>
+
+            {/* Donate */}
+            <li>
+              <a href="#donate">Donate</a>
+            </li>
+
+            {/* Request */}
+            <li>
+              <a href="#request">Request</a>
+            </li>
+
+            {/* Get Involved */}
+            <li>
+              <a href="#donate">Get Involved</a>
+            </li>
+
+            {/* Learning-Hub*/}
+            <li className="dropdown">
+              <button onClick={() => handleDropdownToggle("learning-hub")}>
+                Learning Hub
+                <i
+                  className={`material-icons ${
+                    activeDropdown === "learning-hub"
+                      ? "expand_less"
+                      : "expand_more"
+                  }`}
+                >
+                  {activeDropdown === "get-involved"
                     ? "expand_less"
-                    : "expand_more"
-                }`}
-              >
-                {activeDropdown === "get-involved"
-                  ? "expand_less"
-                  : "expand_more"}
-              </i>
-            </button>
-            {activeDropdown === "learning-hub" && (
-              <ul className="dropdown-menu">
-                <li>
-                  <a href="#">E-Library</a>
-                </li>
-                <li>
-                  <a href="#">Book a Counselor</a>
-                </li>
-                <li>
-                  <a href="#">Join Student Commmunity</a>
-                </li>
-                <li>
-                  <a href="#">Book an Online Tutor</a>
-                </li>
-              </ul>
-            )}
-          </li>
+                    : "expand_more"}
+                </i>
+              </button>
+              {activeDropdown === "learning-hub" && (
+                <ul className="dropdown-menu">
+                  <li>
+                    <a href="#">E-Library</a>
+                  </li>
+                  <li>
+                    <a href="#">Book a Counselor</a>
+                  </li>
+                  <li>
+                    <a href="#">Join Student Commmunity</a>
+                  </li>
+                  <li>
+                    <a href="#">Book an Online Tutor</a>
+                  </li>
+                </ul>
+              )}
+            </li>
 
-          {/* Contact Us */}
-          <div className="NavOthers">
+            {/* Contact Us */}
+
             <li>
               <a href="#">Contact Us</a>
             </li>
-          </div>
-        </ul>
-      </div>
+          </ul>
+        </div>
 
-      {/* Buttons for Sign Up and Log In */}
-      <div className="NavButtons">
-        <button className="log-in">Log In</button>
-        <button className="sign-up">Sign Up</button>
+        {/* Buttons for Sign Up and Log In */}
+        <div className="NavButtons">
+          <button className="log-in">Log In</button>
+          <button className="sign-up">Sign Up</button>
+        </div>
       </div>
     </nav>
   );
