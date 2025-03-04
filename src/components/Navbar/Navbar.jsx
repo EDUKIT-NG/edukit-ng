@@ -158,7 +158,11 @@ const Navbar = () => {
         {/* Buttons for Sign Up and Log In */}
         <div className="NavButtons">
           <button className="log-in">Log In</button>
-          <button className="sign-up">Sign Up</button>
+          <Link to="/SignUp">
+            <a href="#">
+              <button className="sign-up">Sign Up</button>
+            </a>
+          </Link>
         </div>
       </div>
     </nav>
