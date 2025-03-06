@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import studentImage from "./images/student.png";
 import About from "./images/illustration.png";
 import bookLogo from "./icons/book-2.png";
@@ -9,27 +8,10 @@ import targetLogo from "./icons/target-arrow.png";
 import eyeLogo from "./icons/eye.png";
 import questionLogo from "./icons/question-mark.png"
 import keyLogo from "./icons/key.png"
-import impactImage from "./images/impact.png";
 
 import './Aboutus.css'
 
 const AboutUs =()=> {
-
-  const [openDropdown, setOpenDropdown] = useState(null);
-
-  const handleDropdownClick = (index) => {
-    setOpenDropdown(openDropdown === index ? null : index);
-  };
-
-  const coreValues = [
-    { title: 'equity', content: 'Championing equal access to quality education for all, regardless of background or circumstance.' },
-    { title: 'innovation', content: 'Embracing creative solutions to tackle educational challenges and drive impactful change.' },
-    { title: 'collaboration', content: 'Partnering with individuals, organizations, and communities to amplify our collective impact.' },
-    { title: 'empowerment', content: 'Enabling students, schools, and communities with the tools and resources to thrive.' },
-    { title: 'integrity', content: 'Operating with transparency, accountability, and ethical practices in all we do.' },
-    { title: 'sustainability', content: 'Building long-term solutions that create lasting educational opportunities.' },
-    { title: 'inspiration', content: 'Motivating individuals to dream big and achieve their potential through education.' },
-  ];
 
   return (
     <div>
@@ -48,7 +30,7 @@ const AboutUs =()=> {
       </div>
       {/* who we are */}
       <div className="we-are">
-        <div className="description">
+        <div className="we-are-description">
           <h1><span className="highlight">WHO</span> WE ARE</h1>
           <p>
             Edukit Nigeria is an initiative aimed at transforming
@@ -155,7 +137,7 @@ const AboutUs =()=> {
               Edukit Nigeria is dedicated to bridging the gap between underprivileged students and the
               educational resources they need. By creating a sustainable, community-driven platform that 
               not only redistributes surplus materials but also secures funding to purchase new academic 
-              resources. Edukit empowers students to achieve academic success and reacehs their full potenttial.
+              resources. Edukit empowers students to achieve academic success and reach their full potential.
             </p>
           </div>
         </div>
@@ -224,47 +206,6 @@ const AboutUs =()=> {
           </div>
         </div>
       </div>
-
-      <div className="container-core">
-<div className="heading-core">
-    <h2>our <span>core values</span></h2>
-</div>
-<div className="box-core">
-          {coreValues.map((value, index) => (
-            <div className="core" key={index}>
-              <div className="outline" onClick={() => handleDropdownClick(index)}>
-                <h4>{value.title}</h4>
-                <p className="sign">{openDropdown === index ? '-' : '+'}</p>
-              </div>
-              {openDropdown === index && (
-                <p className='content'>
-                  {value.content}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
-</div>
-
-<div className="container-impact">
-  <div className="impact">
-    <div className="heading-impact">
-      <h2>our <span>impact goal</span></h2>
-    </div>
-    <div className="box-exp">
-      <p>Over the next five years, EduKit Nigeria aims to connect <span>1,000,000</span> underprivileged students with essential learning materials, establish a sustainable donation system, and launch a learning hub to provide beneficiaries with access to digital resources, student community, counselors and online tutors.</p><br />
-      <p>We envision a community where every book donated is a step towards breaking the cycle of poverty and where education becomes the foundation for a brighter future for all children.</p>
-    </div>
-    <div className="btns">
-      <button className="btn-left">support our mission</button>
-      <button className="btn-right">volunteer with us</button>
-    </div>
-  </div>
-  <div className="image-impact">
-    <img src={impactImage} alt="Impact Illustration" />
-  </div>
-</div>
-
     </div>
   )
 }
