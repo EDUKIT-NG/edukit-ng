@@ -77,47 +77,38 @@ body {
 }
 
 .project-container {
-  max-width: 95%;
-  margin: 30px 0 auto auto; /* Centers the container horizontally */
+  max-width: 1216px;
+  margin: 30px auto; /* Centers the container horizontally */
   display: flex;
-  justify-content: space-between; /* Ensures equal spacing between cards*/
+  justify-content: space-between; /* Ensures equal spacing between cards */
   gap: 20px; /* Spacing between cards */
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;
+  flex-wrap: wrap;
 }
+
 .project-container::-webkit-scrollbar {
   display: none; /* Hide scrollbar for WebKit browsers */
 }
 
 .projects-cards {
   height: 552px;
-  width: 488px;
+  width: 384px;
   background-color: #ffffff;
   border-radius: 16px;
   padding-bottom: 30px;
   box-shadow: 0px 20px 24px -4px #0a0d1214;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   gap: 24px;
-  scroll-snap-align: start;
 }
 
 .project-image {
   height: 300px;
   width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 .project-info {
   padding: 0px 16px 0px 16px;
-  width: 488px;
-  height: 136px;
-  display: flex;
-  flex-direction: column;
+  width: 336px;
+  height: 164px;
   gap: 16px;
 }
 
@@ -125,20 +116,30 @@ body {
   color: #000000;
   font-family: "Signika", sans-serif;
   font-weight: 600;
-  font-size: 1.5rem;
-  margin-top: 5px;
-  line-height: 32px;
-  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 20px;
+  width: 358px;
+  height: 40px;
 }
 
 .project-des {
-  color: #535862;
+  font-family: Open Sans;
   font-weight: 400;
-  margin-top: 10px;
-  font-size: 1.125rem;
-  font-family: "Open Sans", sans-serif;
-  height: 56px;
-  width: 92%;
+  font-size: 16px;
+  line-height: 25px;
+  color: #535862;
+  width: 365px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.more {
+  color: rgba(0, 74, 173, 1);
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .cards-controls {
