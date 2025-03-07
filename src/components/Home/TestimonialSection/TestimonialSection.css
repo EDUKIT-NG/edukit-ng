@@ -247,6 +247,27 @@
   }
 }
 
+@media (max-width: 800px) {
+  .testimonial-section {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 884px) {
+  .testimonial-section {
+    margin-bottom: 250px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .controls {
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 992px) {
   .card-container {
     flex-direction: row;
