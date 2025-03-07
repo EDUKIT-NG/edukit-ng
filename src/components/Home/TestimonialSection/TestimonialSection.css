@@ -234,6 +234,15 @@
   color: #000;
 }
 
+@media (max-width: 400px) {
+  .testimonial-section {
+    margin-top: -50px;
+  }
+  .card-container {
+    margin-top: -50px;
+  }
+}
+
 @media (max-width: 768px) {
   .card-container {
     flex-direction: column;
