@@ -179,13 +179,24 @@
     padding: 1.5rem;
   }
 
-  .head {
+  .features-title {
     font-size: 40px;
+    text-align: center;
   }
 
-  .description {
-    font-size: 14px;
-    line-height: 24px;
+  .head {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .features-description {
+    font-size: 30px;
+    line-height: 32px;
+    width: 700px;
+    height: 130px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .key-features-right {
@@ -199,31 +210,42 @@
   }
 
   .feature-heading {
-    font-size: 22px;
+    font-size: 30px;
+    text-align: center;
   }
 
   .feature-text {
-    font-size: 14px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .cta-button {
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    margin-top: 20px;
   }
 }
 
 /* ✅ Small Phones (480px and below) */
 @media screen and (max-width: 480px) {
   .head {
-    font-size: 32px;
+    font-size: 30px;
     text-align: center;
   }
 
-  .title {
+  .features-title {
+    font-size: 25px;
     text-align: center;
-    margin-bottom: 10px;
   }
 
-  .description {
-    font-size: 14px;
-    width: 220px;
+  .features-description {
+    font-size: 20px;
+    width: 350px;
     height: 150px;
-    margin-left: 70px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .key-features {
@@ -243,6 +265,11 @@
 
   .feature-heading {
     font-size: 20px;
+    text-align: center;
+  }
+  .feature-text {
+    font-size: 15px;
+    text-align: center;
   }
 
   .cta-button {
