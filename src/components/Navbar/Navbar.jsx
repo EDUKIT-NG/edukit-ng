@@ -138,7 +138,9 @@ const Navbar = () => {
                     <a href="#">Book a Counselor</a>
                   </li>
                   <li>
-                    <a href="#">Join Student Commmunity</a>
+                    <a className="jsc" href="#">
+                      Join Student Commmunity
+                    </a>
                   </li>
                   <li>
                     <a href="#">Book an Online Tutor</a>

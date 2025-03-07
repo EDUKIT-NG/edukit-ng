@@ -101,7 +101,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   list-style: none;
   padding: 10px 0;
-  margin: 0;
   z-index: 30;
   flex-direction: column;
   border-radius: 12px;
@@ -131,6 +130,10 @@
   font-weight: 600;
   color: #535862;
   display: block;
+}
+
+.jsc {
+  padding-left: 40px;
 }
 
 .dropdown-menu li a:hover {
