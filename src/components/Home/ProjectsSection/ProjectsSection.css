@@ -162,9 +162,9 @@ body {
   background-color: #004aad;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .projects-main {
-    margin-top: 650px;
+    margin-top: 700px;
   }
 
   .project-container {
@@ -180,24 +180,24 @@ body {
     font-size: 1.875rem;
     line-height: 2.375rem;
   }
+
   .project-title {
-    font-size: 20px;
-    font-weight: 400;
-    width: 350px;
+    font-weight: 300;
+    width: 300px;
     line-height: 25px;
     margin-bottom: 10px;
   }
 
   .project-des {
-    font-size: 18px;
+    font-size: 9px;
     font-weight: 200;
-    width: 350px;
+    width: 300px;
   }
 }
 
 @media (max-width: 768px) {
   .projects-main {
-    padding-top: 300px;
+    padding-top: 200px;
   }
 
   .project-container {
@@ -215,23 +215,23 @@ body {
     line-height: 2.375rem;
   }
   .project-title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
-    width: 600px;
+    width: 300px;
     line-height: 25px;
     margin-bottom: 10px;
   }
 
   .project-des {
     margin-top: 15px;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 200;
-    width: 600px;
-    line-height: 35px;
+    width: 300px;
+    line-height: 25px;
   }
 
   .more {
-    font-size: 23px;
+    font-size: 15px;
     font-weight: 200;
   }
 }
