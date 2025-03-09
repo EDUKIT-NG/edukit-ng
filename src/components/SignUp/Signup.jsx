@@ -107,7 +107,7 @@ const SignUp = () => {
                 Next
               </button>
             </div>
-            <div className="footer">
+            <div className="signfooter">
               <div className="text">
                 Have a question?
                 <a href="#" className="link">
