@@ -49,9 +49,9 @@ const Navbar = () => {
 
         {/* Navigation Items */}
         <div className={`NavItems ${isOpen ? "active" : ""}`}>
-          <div className="MenuIcon" onClick={toggleNavbar}>
+          {/* <div className="MenuIcon" onClick={toggleNavbar}>
             <FaTimes />
-          </div>
+          </div> */}
 
           <ul>
             {/* Home */}
