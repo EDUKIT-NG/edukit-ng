@@ -274,7 +274,7 @@
     font-size: 24px;
     cursor: pointer;
     z-index: 10000;
-    position: absolute;
+    position: fixed;
     right: 20px;
     top: 20px;
   }
@@ -308,10 +308,14 @@
     padding-top: 60px;
     transition: right 0.3s ease-in-out;
     z-index: 1000;
+    overflow-y: hidden;  
+    max-height: 100vh;
+    overflow-x: hidden;
   }
 
   .NavItems.active {
     right: 0;
+    overflow-y: auto;
   }
 
   .NavItems ul {
