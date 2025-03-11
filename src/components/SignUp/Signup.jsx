@@ -1,172 +1,79 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom"; // For navigation
-import "./SignUp.css";
-import GoogleLogo from "../../assets/google-logo.svg"; // Add Google logo if available
-import StudentIcon from "../../assets/student-icon.png";
-import SchoolIcon from "../../assets/school-icon.png";
-import NewUserIcon from "../../assets/new-user-icon.png";
+import { useHistory } from "react-router-dom"; // Use useHistory instead of useNavigate
+import "./Signup.css";
+import studentIcon from "../../assets/student-icon.png";
+import schoolIcon from "../../assets/school-icon.png";
+import newUserIcon from "../../assets/new-user-icon.png";
+import questionIcon from "../../assets/question.svg";
 
-const SignUp = () => {
-  const [selectedOption, setSelectedOption] = useState("");
-  const [step, setStep] = useState(1);
-  const history = useHistory();
-
-  const handleSelect = (option) => {
-    setSelectedOption(option);
-  };
+const Signup = () => {
+  const [selectedRole, setSelectedRole] = useState(null);
+  const history = useHistory(); // Initialize useHistory
 
   const handleNext = () => {
-    if (selectedOption) setStep(2);
-  };
-
-  const handleBack = () => {
-    setStep(1);
-    setSelectedOption("");
-  };
-
-  const handleGuestSignIn = () => {
-    history.push("/");
+    if (selectedRole === "student") {
+      history.push("/student");
+    } else if (selectedRole === "school") {
+      history.push("/school");
+    } else if (selectedRole === "newUser") {
+      history.push("/newUser");
+    }
   };
 
   return (
     <div className="signup-container">
-      {/* Left Side - Different Text for Each Step */}
+      {/* Left Section */}
       <div className="signup-left">
-        {step === 1 ? (
-          <>
-            <h2 className="signup-heading">
-              Create Your Edukit Foundation Account
-            </h2>
-            <p className="signup-subtext">
-              Join our community to unlock essential resources, support, and
-              opportunities that empower your educational journey.
-            </p>
-          </>
-        ) : (
-          <>
-            <h2 className="signup-heading">Welcome to Edukit Foundation</h2>
-            <p className="signup-subtext">
-              Start your journey to accessing free learning resources. Fill in
-              your details to create your student beneficiary account and get
-              the support you need.
-            </p>
-          </>
-        )}
+        <h1>Welcome to Our Platform</h1>
+        <p>Join us and explore the possibilities.</p>
       </div>
 
-      {/* Right Side */}
+      {/* Right Section */}
       <div className="signup-right">
-        {step === 1 ? (
-          <>
-            <span className="form-heading">Create Account</span>
-            <p>
-              <span className="form-subtext">
-                Please select the option that best describes you.
-              </span>
-            </p>
+        <h2>Create Account</h2>
+        <p>Please select the option that best describes you</p>
 
-            <div className="options-container">
-              <div
-                className={`option-box ${
-                  selectedOption === "Student" ? "selected" : ""
-                }`}
-                onClick={() => handleSelect("Student")}
-              >
-                <img src={StudentIcon} alt="Student" className="option-icon" />
-                <span>Student</span>
-              </div>
-              <div
-                className={`option-box ${
-                  selectedOption === "School" ? "selected" : ""
-                }`}
-                onClick={() => handleSelect("School")}
-              >
-                <img src={SchoolIcon} alt="School" className="option-icon" />
-                <span>School</span>
-              </div>
-              <div
-                className={`option-box ${
-                  selectedOption === "New User" ? "selected" : ""
-                }`}
-                onClick={() => handleSelect("New User")}
-              >
-                <img src={NewUserIcon} alt="New User" className="option-icon" />
-                <span>New User</span>
-              </div>
+        {/* Selection Boxes */}
+        <div className="options-container">
+          {[
+            { id: "student", label: "Student", icon: studentIcon },
+            { id: "school", label: "School", icon: schoolIcon },
+            { id: "newUser", label: "New User", icon: newUserIcon },
+          ].map((option) => (
+            <div
+              key={option.id}
+              className={`option-box ${
+                selectedRole === option.id ? "selected" : ""
+              }`}
+              onClick={() => setSelectedRole(option.id)}
+            >
+              <img
+                src={option.icon}
+                alt={option.label}
+                className="option-icon"
+              />
+              <span className="option-label">{option.label}</span>
+              <img src={questionIcon} alt="info" className="question-icon" />
             </div>
+          ))}
+        </div>
 
-            <div className="buttons">
-              <button className="guest" onClick={handleGuestSignIn}>
-                Sign In as Guest
-              </button>
-              <button
-                className="next"
-                onClick={handleNext}
-                disabled={!selectedOption}
-              >
-                Next
-              </button>
-            </div>
-            <div className="signfooter">
-              <div className="text">
-                Have a question?
-                <a href="#" className="link">
-                  Contact Us
-                </a>
-              </div>
-            </div>
-          </>
-        ) : (
-          <>
-            <h2 className="form-heading">Create Your Account</h2>
-            <span className="form-subtext">
-              Please fill in the correct details to get started
-            </span>
-
-            <form className="signup-form">
-              <div className="name-fields">
-                <input type="text" placeholder="First Name" required />
-                <input type="text" placeholder="Last Name" required />
-              </div>
-
-              <input type="email" placeholder="Email" required />
-              <input type="tel" placeholder="Phone Number" required />
-              <input type="password" placeholder="Create Password" required />
-              <input type="password" placeholder="Confirm Password" required />
-
-              <p className="password-instruction">
-                Must be at least 8 characters
-              </p>
-
-              <div className="checkbox-container">
-                <input type="checkbox" id="privacy-policy" required />
-                <label htmlFor="privacy-policy">
-                  You agree to our <a href="#">Privacy Policy</a>
-                </label>
-              </div>
-
-              <button type="submit" className="create-account-btn">
-                Create Account
-              </button>
-
-              <button className="google-signup-btn">
-                <img src={GoogleLogo} alt="Google" className="google-icon" />
-                Sign Up with Google
-              </button>
-            </form>
-
-            <p className="login-text">
-              Already have an account? <a href="/login">Log in</a>
-            </p>
-
-            <button className="back-btn" onClick={handleBack}>
-              ← Back
-            </button>
-          </>
-        )}
+        {/* Buttons */}
+        <div className="buttons-container">
+          <button className="guest-button" onClick={() => history.push("/")}>
+            Sign in as Guest
+          </button>
+          <button
+            className={`next-button ${selectedRole ? "" : "disabled"}`}
+            onClick={handleNext}
+            disabled={!selectedRole}
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );
 };
 
-export default SignUp;
+export default Signup;

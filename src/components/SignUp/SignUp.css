@@ -1,393 +1,139 @@
-/* Main container */
 .signup-container {
   display: flex;
-  width: 736px;
-  height: 960px;
-  /* gap: 8px; */
+  height: 100vh;
 }
 
-/* Left Side - Background Image & Text */
+/* Left Section */
 .signup-left {
-  width: 704px;
-  height: 960px;
-  background-image: url("../../assets/SignImage.png"); /* ✅ Set background */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white; /* ✅ Ensure text is readable */
-  text-align: center;
-  position: relative;
-}
-
-/* Dark overlay to improve text readability */
-.signup-left::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* ✅ Dark overlay */
-}
-
-/* Ensure text stays above the overlay */
-.signup-left h2,
-.signup-left p {
-  position: relative;
-  z-index: 1;
-}
-
-.signup-heading {
-  width: 528;
-  height: 120;
-  font-family: Signika;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 60px;
-  letter-spacing: 2%;
-  text-align: center;
-  color: #ffffff;
-}
-
-.signup-subtext {
-  width: 528px;
-  height: 90px;
-  font-family: Open Sans;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
-  margin-top: 24px;
-  color: #ffffff;
-}
-
-/* Right Side - Form */
-.signup-right {
-  flex-direction: column;
-  justify-content: center;
-  margin: 120px 72px 394px 72px;
-  width: 592px;
-  height: 446px;
-  gap: 96px;
-}
-
-.form-heading {
-  width: 415px;
-  height: 44px;
-  font-family: Signika;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-  letter-spacing: 2%;
-  color: #181d27;
-}
-
-.form-subtext {
-  width: 415px;
-  height: 28px;
-  font-family: Open Sans;
-  font-weight: 400;
-  line-height: 28px;
-  color: #535862;
-}
-
-/* Options Section */
-.options-container {
-  display: flex;
-  justify-content: space-between;
-  width: 592px;
-  height: 166px;
-  gap: 32px;
-}
-
-.option-box {
-  width: 176px;
-  height: 166px;
-  gap: 8px;
-  border-radius: 8px;
-  border-width: 1px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.option-box img {
-  width: 56px;
-  height: 56px;
-  top: 4px;
-  left: 4px;
-}
-
-.option-box span {
-  width: 112px;
-  height: 30px;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  color: #535862;
-  text-align: center;
-}
-
-.option-box:hover {
-  background-color: #e5e7eb;
-}
-
-.option-icon {
-  width: 40px;
-  margin-bottom: 10px;
-}
-
-.buttons {
-  width: 592px;
-  height: 48px;
-  justify-content: space-between;
-  margin-top: 96px;
-}
-
-.guest {
-  width: 176px;
-  height: 48px;
-  border-radius: 8px;
-  border-bottom-width: 1px;
-  border-bottom: 1px solid #717680;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  color: Gray/700;
-}
-
-.guest:hover {
-  background-color: #004aad;
-  color: #f1f1f1ff;
-}
-
-.next {
-  width: 77px;
-  height: 48px;
-  margin-left: 339px;
-  padding-top: 12px;
-  padding-right: 20px;
-  padding-bottom: 12px;
-  padding-left: 20px;
-  gap: 8px;
-  border-radius: 10px;
-  border-width: 1px;
-  color: #ffffff;
-  background: #004aad;
-  border: 1px solid #004aad;
-  box-shadow: 0px 1px 2px 0px #0a0d120d;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-}
-
-.next:hover {
-  background-color: #717680;
-  color: #f1f1f1ff;
-}
-
-.signfooter {
-  width: 250px;
-  height: 20px;
-  gap: 4px;
-  margin-top: 318px;
-  margin-left: 474px;
-}
-.text {
-  width: 112px;
-  height: 20px;
-  font-family: Open Sans;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #535862;
-}
-.link {
-  width: 74px;
-  height: 20px;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  color: #004aad;
-  margin-left: 4px;
-}
-
-.signup-container {
-  width: 736px;
-  height: 960px;
-  gap: 8px;
-}
-
-.signup-left {
-  flex: 1;
+  width: 50%;
   background: url("../../assets/SignImage.png") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
+  align-items: center;
   color: white;
-  width: 704px;
-  height: 960px;
-}
-
-.signup-heading {
-  width: 544px;
-  height: 120px;
-  font-family: Signika;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 60px;
-  letter-spacing: 2%;
-  text-align: center;
-  color: #ffffff;
-}
-
-.signup-subtext {
-  width: 544px;
-  height: 90px;
-  font-family: Open Sans;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-}
-
-.signup-right {
-  flex: 1;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.form-heading {
-  width: 415px;
-  height: 44px;
-  font-family: Signika;
-  font-weight: 600;
-  font-size: 36px;
-  /* line-height: 44px; */
-}
-
-.form-subtext {
-  width: 480px;
-  height: 24px;
-  font-family: Open Sans;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.options-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.option-box {
   text-align: center;
   padding: 20px;
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-.option-box.selected {
-  border-color: blue;
-  background-color: rgba(0, 0, 255, 0.1);
+.signup-left h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.signup-form {
-  margin: 0;
-  width: 480px;
-  height: 600px;
-  gap: 24px;
-  /* display: flex; */
-  /* flex-direction: column; */
+.signup-left p {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
-.name-fields {
+/* Right Section */
+.signup-right {
+  width: 50%;
   display: flex;
-  gap: 24px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-top: 24px;
-}
-
-.password-instruction {
-  font-size: 0.9rem;
-  color: gray;
-  margin-bottom: 10px;
-}
-
-.checkbox-container {
-  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
-#privacy-policy {
-  margin: 0;
+.signup-right h2 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.create-account-btn {
-  width: 100%;
-  background: blue;
-  color: white;
-  padding: 12px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.signup-right p {
+  color: #6b7280;
+  margin-top: 10px;
 }
 
-.google-signup-btn {
-  width: 100%;
-  background: transparent;
-  border: 2px solid #ccc;
-  padding: 12px;
-  font-size: 1rem;
-  cursor: pointer;
+/* Selection Boxes */
+.options-container {
   display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Option Box Styling */
+.option-box {
+  width: 176px;
+  height: 166px;
+  border-radius: 8px;
+  border: 1px solid #a4a7ae;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-}
-
-.google-icon {
-  width: 20px;
-}
-
-.login-text {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.back-btn {
-  width: 100%;
-  margin-top: 10px;
-  background: transparent;
-  border: 1px solid #ccc;
-  padding: 10px;
+  gap: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Selected Option - Faded #004AAD */
+.option-box.selected {
+  background-color: rgba(0, 74, 173, 0.2); /* Faded Blue */
+  border-color: #004aad;
+}
+
+/* Ensure the text color remains readable */
+.option-box.selected .option-label {
+  color: #004aad;
+}
+
+.option-box:hover,
+.option-box.selected {
+  border-color: #004aad;
+}
+
+.option-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.option-label {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.question-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+/* Buttons */
+.buttons-container {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.guest-button {
+  width: 176px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #d5d7da;
+  background: gray;
+  color: white;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  cursor: pointer;
+}
+
+.next-button {
+  width: 77px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #004aad;
+  background: #004aad;
+  color: white;
+  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  cursor: pointer;
+}
+
+.next-button.disabled {
+  background: #a4a7ae;
+  border-color: #a4a7ae;
+  cursor: not-allowed;
 }
