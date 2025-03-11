@@ -335,7 +335,7 @@
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1250px) and (max-width: 1300px) {
   .NavItems ul {
     gap: 0px;
   }
@@ -345,7 +345,7 @@
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (min-width: 1301px) and (max-width: 1350px) {
   .NavItems ul {
     gap: 0px;
   }
