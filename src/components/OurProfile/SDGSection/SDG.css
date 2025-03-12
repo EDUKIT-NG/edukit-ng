@@ -36,6 +36,14 @@
   width: 78%;
 }
 
+.blueDes{
+  font-weight: 400;
+  font-size: 1.07rem;
+  line-height: 1.87rem;
+  color: rgba(0, 74, 173, 1);
+  font-family: "Open Sans", sans-serif;
+}
+
 .blueLink{
   color: rgba(0, 74, 173, 1);
   text-decoration: none;

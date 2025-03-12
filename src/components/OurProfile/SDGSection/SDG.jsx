@@ -7,12 +7,23 @@ import sdg12 from "./sectionimages/sdg12.png";
 import sdg17 from "./sectionimages/sdg17.png";
 
 const SDG = () => {
+  const Tooltip_sdg = ({infoTitle,infoText,children}) => {
+
+    return (
+      <div>
+
+      </div>
+    )
+    
+  }
+
+
   return ( 
     <div className="SDG_container">
       <div className="SDG_header">
         <h2 className="SDG_title"> <span className= "blueText">SDG</span> GOALS WE ADDRESS</h2>
         <p className="SDG_description">
-        Edukit Nigeria is committed to driving positive change by addressing critical global challenges through the lens of education. Our efforts align with several of the <span className='blueText'>United Nations Sustainable Development Goals (SDGs)</span>, focusing on reducing inequalities, promoting quality education, and fostering sustainability  <a href="#" className='blueLink'>(https://www.un.org/sustainabledevelopment).</a>
+        Edukit Nigeria is committed to driving positive change by addressing critical global challenges through the lens of education. Our efforts align with several of the <span className='blueDes'>United Nations Sustainable Development Goals (SDGs)</span>, focusing on reducing inequalities, promoting quality education, and fostering sustainability  <a href="#" className='blueLink'>(https://www.un.org/sustainabledevelopment).</a>
         </p>
       </div>
 
