@@ -80,7 +80,7 @@ const Signup = () => {
         </div>
         <div className="sr-bottom">
           <span className="first-part">Have a question? </span>
-          <a href="">
+          <a href="Contact Us">
             <span className="second-part">Contact Us</span>
           </a>
         </div>
