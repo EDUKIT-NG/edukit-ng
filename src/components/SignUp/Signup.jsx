@@ -25,7 +25,7 @@ const Signup = () => {
       {/* Left Section */}
       <div className="signup-left">
         <div className="sl-write-up">
-          <h1>Create Your Edukit Foundation Account</h1>
+          <h1>Create Your Edukit Foundation Account Now</h1>
           <p>
             Join our community to unlock essential resources, support, and
             opportunities that empower your educational journey.
