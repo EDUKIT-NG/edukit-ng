@@ -6,6 +6,7 @@
 /* Left Section */
 .signup-left {
   width: 50%;
+  height: 960px;
   background: url("../../assets/SignImage.png") no-repeat center center/cover;
   display: flex;
   flex-direction: column;
@@ -16,9 +17,23 @@
   padding: 20px;
 }
 
+.sl-write-up {
+  width: 528px;
+  height: 270px;
+  margin: 474px 88px 216px 88px;
+  gap: 24px;
+}
+
 .signup-left h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  width: 528px;
+  height: 120px;
+  font-family: Signika;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 2%;
+  text-align: center;
+  color: #ffffff;
 }
 
 .signup-left p {
@@ -29,28 +44,48 @@
 /* Right Section */
 .signup-right {
   width: 50%;
+  height: 960px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  /* flex-direction: column; */
+}
+
+.sr-form {
+  width: 592px;
+  height: 446px;
+  gap: 96px;
+  margin: 80px 50px 394px 45px;
 }
 
 .signup-right h2 {
-  font-size: 2rem;
-  font-weight: bold;
+  width: 415px;
+  height: 44px;
+  font-family: Signika;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 2%;
+  vertical-align: middle;
+  color: #181d27;
 }
 
 .signup-right p {
-  color: #6b7280;
-  margin-top: 10px;
+  width: 415px;
+  height: 28px;
+  margin-top: 16px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  vertical-align: middle;
 }
 
 /* Selection Boxes */
 .options-container {
+  width: 592px;
+  height: 166px;
   display: flex;
-  gap: 16px;
-  margin-top: 20px;
+  gap: 32px;
+  margin-top: 48px;
 }
 
 /* Option Box Styling */
@@ -91,23 +126,30 @@
 }
 
 .option-label {
+  width: 112px;
+  height: 30px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
   margin-top: 8px;
-  font-weight: bold;
+  color: #535862;
 }
 
 .question-icon {
-  width: 16px;
-  height: 16px;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  width: 13.33333396911621px;
+  height: 13.333333969116211px;
+  margin: 9.33px 9.33px 143.33px 153.33px;
 }
 
 /* Buttons */
 .buttons-container {
   display: flex;
   gap: 16px;
-  margin-top: 20px;
+  margin-top: 96px;
 }
 
 .guest-button {
@@ -115,15 +157,35 @@
   height: 48px;
   border-radius: 10px;
   border: 1px solid #d5d7da;
-  background: gray;
-  color: white;
-  box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+  background: #ffffff;
+  box-shadow: 0px 1px 2px 0px #0a0d120d;
   cursor: pointer;
+  margin-right: 339px;
+}
+
+.guest-button:hover {
+  color: #ffffff;
+  background-color: #414651;
+}
+
+.gb-text:hover {
+  color: #ffffff;
+}
+
+.gb-text {
+  width: 136px;
+  height: 24px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #414651;
 }
 
 .next-button {
   width: 77px;
   height: 48px;
+  gap: 16px;
   border-radius: 10px;
   border: 1px solid #004aad;
   background: #004aad;
@@ -132,8 +194,50 @@
   cursor: pointer;
 }
 
+.n-text {
+  width: 37px;
+  height: 24px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.next-button:hover {
+  background-color: #414651;
+}
+
 .next-button.disabled {
   background: #a4a7ae;
   border-color: #a4a7ae;
   cursor: not-allowed;
+}
+
+.sr-bottom {
+  position: absolute;
+  width: 190px;
+  height: 20px;
+  gap: 4px;
+  margin: 884px 72px 56px 474px;
+}
+
+.first-part {
+  width: 112px;
+  height: 20px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #535862;
+}
+
+.second-part {
+  width: 74px;
+  height: 20px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #004aad;
 }

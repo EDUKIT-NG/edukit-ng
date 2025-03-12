@@ -24,52 +24,65 @@ const Signup = () => {
     <div className="signup-container">
       {/* Left Section */}
       <div className="signup-left">
-        <h1>Welcome to Our Platform</h1>
-        <p>Join us and explore the possibilities.</p>
+        <div className="sl-write-up">
+          <h1>Create Your Edukit Foundation Account</h1>
+          <p>
+            Join our community to unlock essential resources, support, and
+            opportunities that empower your educational journey.
+          </p>
+        </div>
       </div>
 
       {/* Right Section */}
       <div className="signup-right">
-        <h2>Create Account</h2>
-        <p>Please select the option that best describes you</p>
+        <div className="sr-form">
+          <h2>Create Account</h2>
+          <p>Please select the option that best describes you</p>
 
-        {/* Selection Boxes */}
-        <div className="options-container">
-          {[
-            { id: "student", label: "Student", icon: studentIcon },
-            { id: "school", label: "School", icon: schoolIcon },
-            { id: "newUser", label: "New User", icon: newUserIcon },
-          ].map((option) => (
-            <div
-              key={option.id}
-              className={`option-box ${
-                selectedRole === option.id ? "selected" : ""
-              }`}
-              onClick={() => setSelectedRole(option.id)}
+          {/* Selection Boxes */}
+          <div className="options-container">
+            {[
+              { id: "student", label: "Student", icon: studentIcon },
+              { id: "school", label: "School", icon: schoolIcon },
+              { id: "newUser", label: "New User", icon: newUserIcon },
+            ].map((option) => (
+              <div
+                key={option.id}
+                className={`option-box ${
+                  selectedRole === option.id ? "selected" : ""
+                }`}
+                onClick={() => setSelectedRole(option.id)}
+              >
+                <img
+                  src={option.icon}
+                  alt={option.label}
+                  className="option-icon"
+                />
+                <span className="option-label">{option.label}</span>
+                <img src={questionIcon} alt="info" className="question-icon" />
+              </div>
+            ))}
+          </div>
+
+          {/* Buttons */}
+          <div className="buttons-container">
+            <button className="guest-button" onClick={() => history.push("/")}>
+              <span className="gb-text">Sign in as Guest</span>
+            </button>
+            <button
+              className={`next-button ${selectedRole ? "" : "disabled"}`}
+              onClick={handleNext}
+              disabled={!selectedRole}
             >
-              <img
-                src={option.icon}
-                alt={option.label}
-                className="option-icon"
-              />
-              <span className="option-label">{option.label}</span>
-              <img src={questionIcon} alt="info" className="question-icon" />
-            </div>
-          ))}
+              <span className="n-text">Next</span>
+            </button>
+          </div>
         </div>
-
-        {/* Buttons */}
-        <div className="buttons-container">
-          <button className="guest-button" onClick={() => history.push("/")}>
-            Sign in as Guest
-          </button>
-          <button
-            className={`next-button ${selectedRole ? "" : "disabled"}`}
-            onClick={handleNext}
-            disabled={!selectedRole}
-          >
-            Next
-          </button>
+        <div className="sr-bottom">
+          <span className="first-part">Have a question? </span>
+          <a href="">
+            <span className="second-part">Contact Us</span>
+          </a>
         </div>
       </div>
     </div>

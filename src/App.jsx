@@ -4,6 +4,7 @@ import OurProfile from "./Pages/OurProfile";
 import SignUp from "./components/SignUp/Signup.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
+import Student from "./components/Student/Student.jsx";
 // import Profile from "./Pages/Profile";
 
 const App = () => {
@@ -21,6 +22,9 @@ const App = () => {
             </Route>
             <Route exact path="/Signup">
               <SignUp />
+            </Route>
+            <Route exact path="/Student">
+              <Student />
             </Route>
           </Switch>
         </div>
