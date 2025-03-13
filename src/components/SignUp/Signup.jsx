@@ -74,7 +74,7 @@ const Signup = () => {
               onClick={handleNext}
               disabled={!selectedRole}
             >
-              <span className="n-text">Nextt</span>
+              <span className="n-text">Next</span>
             </button>
           </div>
         </div>

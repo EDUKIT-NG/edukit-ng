@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./Pages/Home";
 import OurProfile from "./Pages/OurProfile";
-import SignUp from "./components/SignUp/Signup.jsx";
+import Signup from "./components/Signup/Signup.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Student from "./components/Student/Student.jsx";
@@ -21,7 +21,7 @@ const App = () => {
               <OurProfile />
             </Route>
             <Route exact path="/Signup">
-              <SignUp />
+              <Signup />
             </Route>
             <Route exact path="/Student">
               <Student />
