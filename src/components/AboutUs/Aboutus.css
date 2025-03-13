@@ -136,7 +136,7 @@ body {
 }
 
 .story-button:hover{
-  background-color: #609be9;
+  background-color: grey;
   border: none;
 }
 
@@ -182,7 +182,7 @@ body {
   gap: 32px;
   justify-content: center;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .Info {
@@ -513,12 +513,24 @@ color: #181D27;
   background-color: #004AAD;
   border: none;
   box-shadow: 0px 1px 2px 0px #0A0D120D;
-  
+  cursor: pointer;
 }
+
+.btn-left:hover {
+  background-color: rgba(183, 184, 186, 0.924);
+  color: #FFFFFF;
+}
+
 .btn-right{
   background-color: #ffffff;
   color: #004AAD;
   border: 1px solid #004AAD;
+  cursor: pointer;
+}
+
+.btn-right:hover {
+  background-color: grey;
+  color: white;
 }
 
 .image-impact{
