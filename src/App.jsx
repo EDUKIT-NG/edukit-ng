@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./Pages/Home";
 import OurProfile from "./Pages/OurProfile";
-import Signup from "./components/Signup/Signup.jsx";
+import SignUp from "./components/SignUp/Signup.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Student from "./components/Student/Student.jsx";
@@ -20,8 +20,8 @@ const App = () => {
             <Route exact path="/OurProfile">
               <OurProfile />
             </Route>
-            <Route exact path="/Signup">
-              <Signup />
+            <Route exact path="/SignUp">
+              <SignUp />
             </Route>
             <Route exact path="/Student">
               <Student />
