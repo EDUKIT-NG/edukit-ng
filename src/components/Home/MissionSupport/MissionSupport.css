@@ -59,7 +59,8 @@
 }
 
 .support-button:hover {
-  background-color: #f0f0f0;
+  background-color: #0052cc;
+  color: #ffffff;
   transform: translateY(-2px);
 }
 

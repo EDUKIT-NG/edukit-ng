@@ -60,11 +60,11 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   align-self: center;
-  margin-top: 1rem;
+  margin-left: 0.625rem;
 }
 
 .subscribe-button:hover {
-  background-color: #003d99;
+  background-color: #414651;
 }
 
 .privacy-note {

@@ -308,7 +308,7 @@
     padding-top: 60px;
     transition: right 0.3s ease-in-out;
     z-index: 1000;
-    overflow-y: hidden;  
+    overflow-y: hidden;
     max-height: 100vh;
     overflow-x: hidden;
   }

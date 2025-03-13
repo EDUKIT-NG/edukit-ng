@@ -77,10 +77,8 @@ const Navbar = () => {
               {activeDropdown === "about-us" && (
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="/OurProfile">
-                      <a className="dml" href="#">
-                        Our Profile
-                      </a>
+                    <Link to="/OurProfile" className="dml">
+                      Our Profile
                     </Link>
                   </li>
                   <li>
