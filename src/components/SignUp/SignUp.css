@@ -53,7 +53,7 @@
   width: 592px;
   height: 446px;
   gap: 96px;
-  margin: 80px 50px 394px 45px;
+  margin: 40px 50px 394px 45px;
 }
 
 .signup-right h2 {
@@ -219,7 +219,7 @@
   width: 190px;
   height: 20px;
   gap: 4px;
-  margin: 884px 72px 56px 474px;
+  margin: 318px 72px 56px 402px;
 }
 
 .first-part {
@@ -240,4 +240,548 @@
   font-size: 14px;
   line-height: 20px;
   color: #004aad;
+}
+
+@media (max-width: 428px) {
+  /* Hide left section */
+  .signup-left {
+    display: none;
+  }
+
+  /* Make right section take full width */
+  .signup-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -100px;
+  }
+
+  /* Adjust form width and spacing */
+  .sr-form {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 90px;
+  }
+
+  /* Center heading */
+  .signup-right h2 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  /* Center paragraph text */
+  .signup-right p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: -2px;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  /* Stack option boxes vertically */
+  .options-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    /* margin-top: 24px; */
+  }
+
+  .option-box {
+    width: 100%;
+    max-width: 343px;
+    height: 166px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    border-width: 1px;
+    position: relative; /* Ensure question icon is positioned correctly */
+  }
+
+  .option-label {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .option-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* Position question icon inside each option box */
+  .question-icon {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Keep buttons in a row */
+  .buttons-container {
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    margin-top: 400px;
+  }
+
+  .guest-button {
+    width: 176px;
+    height: 48px;
+    gap: 8px;
+    border-radius: 10px;
+    margin: 0;
+    border-width: 1px;
+  }
+
+  .next-button {
+    width: 77px;
+    height: 48px;
+    border-radius: 8px;
+  }
+
+  .gb-text,
+  .n-text {
+    font-size: 12px;
+  }
+
+  /* Position bottom text slightly below buttons, aligned more to the right */
+  .sr-bottom {
+    position: relative;
+    width: 190px;
+    height: 20px;
+    align-items: center;
+    gap: 4px;
+    margin: 60px 72px 40px 110px;
+  }
+
+  .first-part {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .second-part {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 884px) and (min-width: 767px) {
+  /* Hide left section */
+  .signup-left {
+    display: none;
+  }
+
+  /* Make right section take full width */
+  .signup-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -150px;
+  }
+
+  /* Adjust form width and spacing */
+  .sr-form {
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+    padding: 16px;
+    margin-top: 170px;
+  }
+
+  /* Center heading */
+  .signup-right h2 {
+    width: 100%;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
+  }
+
+  /* Center paragraph text */
+  .signup-right p {
+    width: 110%;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 15px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  /* Stack option boxes vertically */
+  .options-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+
+  .option-box {
+    width: 100%;
+    max-width: 520px;
+    height: 2000px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 10px;
+    border-width: 1.5px;
+    position: relative; /* Ensure question icon is positioned correctly */
+  }
+
+  .option-label {
+    width: 150px;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .option-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Position question icon inside each option box */
+  .question-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Keep buttons in a row */
+  .buttons-container {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 600px;
+  }
+
+  .guest-button {
+    width: 240px;
+    height: 76px;
+    gap: 10px;
+    border-radius: 12px;
+    margin: 0;
+    border-width: 1.5px;
+  }
+
+  .next-button {
+    width: 120px;
+    height: 76px;
+    border-radius: 10px;
+  }
+
+  .gb-text,
+  .n-text {
+    font-size: 24px;
+  }
+
+  /* Position bottom text slightly below buttons, aligned more to the right */
+  .sr-bottom {
+    position: relative;
+    width: 400px;
+    height: 24px;
+    align-items: center;
+    gap: 6px;
+    margin: 80px 100px 50px 160px;
+  }
+
+  .first-part {
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  .second-part {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 22px;
+  }
+}
+
+@media (width: 1114px) {
+  /* Adjust left section */
+  .signup-left {
+    width: 50%;
+    height: 100%; /* Full-screen height */
+    background: url("../../assets/SignImage.png") no-repeat center center/cover;
+  }
+
+  .signup-left h1 {
+    font-size: 36px;
+    line-height: 46px;
+    width: 100%;
+  }
+
+  .signup-left p {
+    font-size: 16px;
+  }
+
+  /* Adjust right section */
+  .signup-right {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+  }
+
+  /* Adjust form width */
+  .sr-form {
+    width: 100%;
+    max-width: 500px;
+    margin-top: -25px;
+  }
+
+  /* Adjust heading */
+  .signup-right h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  /* Adjust paragraph text */
+  .signup-right p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    margin-top: -10px;
+  }
+
+  /* Adjust selection boxes */
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px; /* Space between the boxes */
+    margin-top: 5px;
+  }
+
+  .option-box {
+    width: 100%; /* Make option boxes take full width */
+    max-width: 500px; /* Limit max width */
+    height: 160px;
+    position: relative; /* Ensures question icon is positioned correctly */
+  }
+
+  .option-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .option-label {
+    font-size: 18px;
+  }
+
+  .question-icon {
+    position: absolute;
+    top: 8px; /* Adjust distance from the top */
+    right: 8px; /* Adjust distance from the right */
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Adjust buttons */
+  .buttons-container {
+    gap: 12px;
+    margin-top: 350px;
+  }
+
+  .guest-button {
+    width: 180px;
+    height: 50px;
+    margin-right: 150px;
+  }
+
+  .next-button {
+    width: 100px;
+    height: 50px;
+  }
+
+  .gb-text,
+  .n-text {
+    font-size: 20px;
+  }
+
+  /* Adjust bottom text */
+  .sr-bottom {
+    width: 220px;
+    margin: 10px 0px 10px 260px;
+    font-size: 20px;
+  }
+}
+
+@media (width: 1280px) {
+  /* Left Section */
+  .signup-left {
+    width: 50%;
+    height: auto;
+    background: url("../../assets/SignImage.png") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .signup-left h1 {
+    font-size: 42px;
+    line-height: 54px;
+    width: 90%;
+  }
+
+  .signup-left p {
+    font-size: 16px;
+    width: 85%;
+  }
+
+  /* Right Section */
+  .signup-right {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    margin-top: -32px;
+  }
+
+  /* Adjust form width */
+  .sr-form {
+    width: 100%;
+    max-width: 520px;
+    margin-top: 15px;
+  }
+
+  /* Adjust heading */
+  .signup-right h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  /* Adjust paragraph text */
+  .signup-right p {
+    font-size: 22px;
+    line-height: 26px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Selection Boxes */
+  .options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 24px; /* Reduced gap for better fit */
+    margin-top: 50px;
+  }
+
+  .option-box {
+    width: 190px;
+    height: 170px;
+    border-radius: 8px;
+    border: 1px solid #a4a7ae;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    position: relative; /* Ensure question icon is positioned correctly */
+  }
+
+  /* Position question icon inside each option box */
+  .question-icon {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .option-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .option-label {
+    font-size: 23px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  /* Buttons */
+  .buttons-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 100px;
+  }
+
+  .guest-button {
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 150px;
+  }
+
+  .next-button {
+    width: 160px;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .gb-text,
+  .n-text {
+    font-size: 23px;
+  }
+
+  /* Bottom Text */
+  .sr-bottom {
+    width: 500px;
+    margin: 300px 0 10px 230px;
+  }
+
+  .first-part {
+    font-size: 22px;
+  }
+
+  .second-part {
+    font-size: 22px;
+  }
 }
