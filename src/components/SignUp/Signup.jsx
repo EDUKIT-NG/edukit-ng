@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom"; // Use useHistory instead of useNavigate
-import "./SignUp.css";
+import "./Signup.css";
 import studentIcon from "../../assets/student-icon.png";
 import schoolIcon from "../../assets/school-icon.png";
 import newUserIcon from "../../assets/new-user-icon.png";
@@ -74,7 +74,7 @@ const Signup = () => {
               onClick={handleNext}
               disabled={!selectedRole}
             >
-              <span className="n-text">Next</span>
+              <span className="n-text">Nextt</span>
             </button>
           </div>
         </div>
