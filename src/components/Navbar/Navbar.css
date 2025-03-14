@@ -93,7 +93,7 @@
 /* Dropdown Menu */
 .dropdown-menu {
   width: 264px;
-  height: 312px;
+  height: auto;
   padding-left: 20px;
   padding-right: 20px;
   gap: 8px;
@@ -106,6 +106,7 @@
   flex-direction: column;
   border-radius: 12px;
   text-align: left; /* Align text to the start */
+  /* margin-bottom: 40px; */
 }
 
 .dml {
@@ -221,7 +222,7 @@
   font-weight: 600;
 }
 
-.sign-up {
+.NavButtons .sign-up {
   background-color: #004aad;
   color: #ffffff;
 }
@@ -231,7 +232,7 @@
   color: #004aad;
 }
 
-.log-in {
+.NavButtons .log-in {
   background-color: transparent;
   color: #535862;
   border: 2px solid #535862;
@@ -287,11 +288,8 @@
   }
 
   .NavButtons {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-    gap: 10px;
+    padding-top: 30px;
+
   }
 }
 
@@ -335,7 +333,8 @@
   }
 
   .NavButtons {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
 }
 
