@@ -77,10 +77,8 @@ const Navbar = () => {
               {activeDropdown === "about-us" && (
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="/OurProfile">
-                      <a className="dml" href="#">
-                        Our Profile
-                      </a>
+                    <Link to="/OurProfile" className="dml">
+                      Our Profile
                     </Link>
                   </li>
                   <li>
@@ -171,16 +169,17 @@ const Navbar = () => {
               <a href="#">Contact Us</a>
             </li>
           </ul>
-        </div>
+        
 
-        {/* Buttons for Sign Up and Log In */}
-        <div className="NavButtons">
-          <button className="log-in">Log In</button>
-          <Link to="/SignUp">
-            <a href="#">
-              <button className="sign-up">Sign Up</button>
-            </a>
-          </Link>
+          {/* Buttons for Sign Up and Log In */}
+          <div className="NavButtons">
+            <button className="log-in">Log In</button>
+            <Link to="/SignUp">
+              <a href="#">
+                <button className="sign-up">Sign Up</button>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

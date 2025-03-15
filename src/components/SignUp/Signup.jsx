@@ -77,12 +77,12 @@ const Signup = () => {
               <span className="n-text">Next</span>
             </button>
           </div>
-        </div>
-        <div className="sr-bottom">
-          <span className="first-part">Have a question? </span>
-          <a href="Contact Us">
-            <span className="second-part">Contact Us</span>
-          </a>
+          <div className="sr-bottom">
+            <span className="first-part">Have a question? </span>
+            <a href="Contact Us">
+              <span className="second-part">Contact Us</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
