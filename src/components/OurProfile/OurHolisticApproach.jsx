@@ -6,12 +6,11 @@ const styles = `
   font-family: Arial, sans-serif;
   width: 100%;
   margin: 0 auto;
-  padding: 20px 50px 40px 50px; /* Reduced padding */
+  padding: 20px 50px 40px 50px;
   background-color: #FFFFFF;
 }
 
 .header {
-//   text-align: center;
   margin-top: 60px; 
   margin-bottom: 50px; 
   padding-bottom: 5px;
@@ -19,7 +18,7 @@ const styles = `
 }
 
 .header h1 {
-  font-size: 1.9rem; /* Slightly smaller font */
+  font-size: 1.9rem;
   margin: 0;
   font-weight: bold;
 }
@@ -31,22 +30,25 @@ const styles = `
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px; /* REDUCED: from 30px to 20px */
-  width: 60%; /* REDUCED: from 100% to 90% to make cards narrower */  
+  gap: 40px;
+  width: 80%; /* INCREASED: from 60% to 80% to make better use of large screens */  
   margin: 0 auto;  
+  max-width: 1400px; /* Added max-width to control expansion on very large screens */
 }
 
 .box {
   border-radius: 15px;
-  padding: 20px; /* Reduced padding from 30px to 20px */
+  padding: 30px; /* Increased padding for more content space */
   position: relative;
   text-align: center;
   border: 3px solid;
   opacity: 0;
   transform: translateY(50px) scale(0.8);
   transition: all 1s cubic-bezier(0.34, 1.56, 0.64, 1);
-  max-width: 400px; /* REDUCED: from 500px to 400px */  
-  margin: 0 auto;  
+  min-height: 250px; /* Added min-height to ensure consistent box sizing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box.animate {
@@ -75,8 +77,8 @@ const styles = `
 }
 
 .circle {
-  width: 50px; /* Smaller circle */
-  height: 50px; /* Smaller circle */
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -90,7 +92,7 @@ const styles = `
 
 .circle span {
   color: #FFFFFF;
-  font-size: 22px; /* Slightly smaller font */
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -117,18 +119,30 @@ const styles = `
 }
 
 h2 {
-  font-size: 1.3rem; /* Smaller heading */
-  margin: 25px 0 10px; /* Reduced margins */
+  font-size: 1.3rem;
+  margin: 25px 0 10px;
 }
 
 p {
-  font-size: 0.85rem; /* Smaller text */
-  line-height: 1.6; /* Slightly tighter line height */
+  font-size: 0.85rem;
+  line-height: 1.6;
   text-align: center;
-  margin-bottom: 0; /* Remove bottom margin */
+  margin-bottom: 0;
 }
 
 /* Responsive design */
+@media (max-width: 1200px) {
+  .grid-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .grid-container {
+    width: 95%;
+  }
+}
+
 @media (max-width: 768px) {
   .grid-container {
     grid-template-columns: 1fr;
@@ -141,10 +155,18 @@ p {
   
   .box {
     padding: 15px;
+    min-height: auto;
   }
   
   .lead-container {
     padding: 30px 15px;  
+  }
+}
+
+/* Extra large screens */
+@media (min-width: 1600px) {
+  .grid-container {
+    width: 70%;
   }
 }
 
