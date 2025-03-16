@@ -140,7 +140,7 @@ const NewsletterFooter = () => {
 
       <div className="footer-bottom">
         <div className="copyright">
-          <p>© 2024 Edukit Nigeria. All rights reserved.</p>
+          <p>© 2024 Edukit Foundation. All rights reserved.</p>
           <div className="legal-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>

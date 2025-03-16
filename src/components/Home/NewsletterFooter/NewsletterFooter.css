@@ -60,7 +60,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   align-self: center;
-  margin-left: 0.625rem;
+  /* margin-top: 1rem; */
 }
 
 .subscribe-button:hover {

@@ -77,13 +77,32 @@
 
 /* Sponsor Grid */
 .sponsors-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 11em);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin-top: 20px;
   padding: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.sponsor-box {
+  width: 88px;
+  height: 80px;
+  max-width: 120px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsor-logo {
+  width: 60px; /* Reduced width */
+  height: auto;
 }
 
 /* Responsive adjustments */
@@ -203,17 +222,17 @@
   }
 
   .sponsor-box {
-    width: 100%;
-    max-width: 200px; /* Control image box size */
-    padding: 10px;
-    border-radius: 12px;
+    width: 88px;
+    height: 80px;
+    max-width: 120px;
+    padding: 5px;
+    border-radius: 8px;
     background-color: white; /* Ensure contrast */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .sponsor-logo {
-    width: 100%;
-    max-width: 120px; /* Resize logos */
+    width: 50px; /* Reduced width */
     height: auto;
   }
 }
