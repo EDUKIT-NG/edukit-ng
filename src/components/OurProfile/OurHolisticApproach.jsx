@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 
+
 const styles = `
 .lead-container {
   font-family: Arial, sans-serif;
