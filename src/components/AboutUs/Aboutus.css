@@ -111,9 +111,10 @@ body {
 }
 
 .we-are-description p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .we-are-description button {
@@ -172,6 +173,7 @@ body {
 .what-we-do p {
   font-size: 18px;
   line-height: 28px;
+  text-align: left;
 }
 
 .we-do-images {
@@ -233,6 +235,10 @@ body {
   padding-top: 56px;
   padding-bottom: 56px;
   background-color: #FFFFFF;
+}
+
+.Values p{
+  text-align: left;
 }
 
 .Edukit-plan {
@@ -337,6 +343,10 @@ body {
   }
   .The-plan{
     margin-left: 0;
+  }
+
+  .Edukit-plan p{
+    text-align: left;
   }
 
   .Plan-logo{
@@ -492,8 +502,20 @@ color: #181D27;
   font-weight: 400;
   margin-bottom: 18px;
   color: #535862;
-  text-align: justify;
+  text-align: left;
 }
+
+.box-exp p{
+  /* width: 520px; */
+  /* padding: 20px 0; */
+  /* font-size: 18px; */
+  /* line-height: 28px; */
+  font-family: "Open Sans";
+  /* font-weight: 400; */
+  /* margin-bottom: 18px; */
+  text-align: left;
+}
+
 .btns{
   width: 474px;
   display: flex;
@@ -573,10 +595,11 @@ color: #181D27;
     width: 100%;
     margin: 0 auto;
   }
-  .box-exp{
+  .box-exp p{
     width: 100%;
     text-align: left;
     padding: 0 0 10px 0;
+    text-align: left;
   }
   .btns{
     width: 100%;
@@ -627,7 +650,7 @@ color: #181D27;
     margin: 0 auto;
     margin-bottom: 30px;
   }
-  .box-exp{
+  .box-exp p{
     width: 100%;
     text-align: left;
     padding: 0 0 10px 0;

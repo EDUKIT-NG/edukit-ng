@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./SDG.css";
 import sdg1 from "./sectionimages/sdg1.png";
 import sdg4 from "./sectionimages/sdg4.png";
@@ -8,14 +8,27 @@ import sdg17 from "./sectionimages/sdg17.png";
 
 const SDG = () => {
   const Tooltip_sdg = ({infoTitle,infoText,children}) => {
+    // state to manage tooltip visibility
+    const [showTooltip_sdg, setShowTooltip_sdg] = useState(false);
 
-    return (
-      <div>
+  return (
+    <span className='tooltip-container'
+      onMouseEnter={() => setShowTooltip_sdg(true)}
+      onMouseLeave={() => setShowTooltip_sdg(false)}
+    >
 
-      </div>
-    )
-    
-  }
+      {children}
+
+      {/* tooltip content */}
+      {showTooltip_sdg && <div className= 'tooltip_sdg'  > 
+        <h3 className='infoTitle'>{infoTitle}</h3>
+        <p className='infoText'>{infoText}</p>
+        <div className="tooltip-arrow"/>
+      </div> }
+
+    </span>
+  )
+} 
 
 
   return ( 
@@ -23,7 +36,7 @@ const SDG = () => {
       <div className="SDG_header">
         <h2 className="SDG_title"> <span className= "blueText">SDG</span> GOALS WE ADDRESS</h2>
         <p className="SDG_description">
-        Edukit Nigeria is committed to driving positive change by addressing critical global challenges through the lens of education. Our efforts align with several of the <span className='blueDes'>United Nations Sustainable Development Goals (SDGs)</span>, focusing on reducing inequalities, promoting quality education, and fostering sustainability  <a href="#" className='blueLink'>(https://www.un.org/sustainabledevelopment).</a>
+        Edukit Nigeria is committed to driving positive change by addressing critical global challenges through the lens of education. Our efforts align with several of the <Tooltip_sdg infoTitle="Disclaimer " infoText= "The content of this publication has not been approved by the United Nations and does not reflect the views of the United Nations or its officials or Member States.  "><span className='blueDes'>United Nations Sustainable Development Goals (SDGs)</span></Tooltip_sdg>, focusing on reducing inequalities, promoting quality education, and fostering sustainability  <a href="#" className='blueLink'>(https://www.un.org/sustainabledevelopment).</a>
         </p>
       </div>
 
