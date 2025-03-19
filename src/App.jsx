@@ -10,13 +10,13 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Student from "./components/Student/Student.jsx";
-// import Profile from "./Pages/Profile";
+import School from "./components/School/School.jsx"; // Import the School component
 
 const App = () => {
   const location = useLocation();
 
   // List of routes where the Navbar should not be displayed
-  const noNavbarRoutes = ["/student"];
+  const noNavbarRoutes = ["/student", "/school"]; // Add "/school" to the list
 
   return (
     <div className="">
@@ -35,6 +35,9 @@ const App = () => {
           </Route>
           <Route exact path="/Student">
             <Student />
+          </Route>
+          <Route exact path="/School">
+            <School /> {/* Add the route for the School page */}
           </Route>
         </Switch>
       </div>
