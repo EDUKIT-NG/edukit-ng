@@ -28,8 +28,9 @@ const School = () => {
           <div className="school-overlay">
             <h3>Welcome to Edukit Foundation</h3>
             <p>
-              Register your school to access resources, tools, and opportunities
-              tailored to support quality education.
+              Start your journey to accessing free learning resources. Fill in
+              your details to create your school beneficiary account and get the
+              support you need.
             </p>
           </div>
         </div>

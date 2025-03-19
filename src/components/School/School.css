@@ -46,7 +46,7 @@ html {
   align-items: center;
   text-align: center;
   padding: 20px;
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 .school-overlay h3 {
@@ -62,7 +62,7 @@ html {
   line-height: 30px;
   font-weight: 400;
   font-family: "open sans", sans-serif;
-  width: 90%;
+  width: 80%;
 }
 
 /* Right Section */
