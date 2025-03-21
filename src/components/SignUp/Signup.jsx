@@ -67,7 +67,7 @@ const Signup = () => {
           {/* Buttons */}
           <div className="buttons-container">
             <button className="guest-button" onClick={() => history.push("/")}>
-              <span className="gb-text">Sign in as Guest</span>
+              Sign in as Guest
             </button>
             <button
               className={`next-button ${selectedRole ? "" : "disabled"}`}
