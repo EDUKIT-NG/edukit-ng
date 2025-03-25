@@ -20,6 +20,11 @@ const App = () => {
             <Route exact path="/OurProfile">
               <OurProfile />
             </Route>
+
+            {/* <Route exact path="/OurStory">
+              <OurStory />
+            </Route> */}
+          
             <Route exact path="/SignUp">
               <SignUp />
             </Route>
