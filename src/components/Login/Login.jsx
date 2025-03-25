@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import GoogleIcon from "../../assets/Google icon.png";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -15,33 +16,39 @@ const LoginForm = () => {
       <div className="login-wrapper">
         <h2 className="login-title">Log in to your account</h2>
         <p className="login-subtitle">
-          I'm not done with the page yet, i'll finish up when i come back😊.
+          Welcome back! Please enter your details.
         </p>
 
         <form className="login-form">
           <label>Email</label>
-          <input type="email" placeholder="Enter your email" />
+          <div className="inputWrapper">
+            <input type="email" placeholder="Enter your email" />
+          </div>
 
           <label>Password</label>
-          <div className="password-field">
-            <FontAwesomeIcon
-              icon={showPassword ? faEye : faEyeSlash}
-              className="password-toggle-icon"
-              onClick={togglePasswordVisibility}
-              role="button"
-              aria-label="Toggle password visibility"
-            />
+          {/* Toggle between faEye and faEyeSlash based on showPassword */}
+          <div className="pass-input">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
             />
-            {/* Toggle between faEye and faEyeSlash based on showPassword */}
+            <FontAwesomeIcon
+              icon={showPassword ? faEye : faEyeSlash}
+              className="Login-password-toggle-icon"
+              onClick={(e) => {
+                e.preventDefault(); // Prevent default behavior
+                togglePasswordVisibility();
+              }}
+              role="button"
+              aria-label="Toggle password visibility"
+            />
           </div>
 
           <div className="remember-forgot">
-            <label>
-              <input type="checkbox" /> Remember me
-            </label>
+            <div className="login-Checkbox">
+              <input type="checkbox" id="remember" />
+              <label htmlFor="remember">Remember me</label>
+            </div>
             <a href="#" className="forgot-password">
               Forgot password
             </a>
@@ -50,10 +57,7 @@ const LoginForm = () => {
           <button className="sign-in-btn">Sign in</button>
 
           <button className="google-sign-in">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-              alt="Google Logo"
-            />
+            <img src={GoogleIcon} alt="Google Logo" />
             Sign in with Google
           </button>
         </form>
