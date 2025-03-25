@@ -503,22 +503,57 @@ color: #181D27;
 .btns button{
   padding: 10px 20px;
   text-transform: capitalize;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: 600;
   width: 235px;
   font-size: 18px;
+  cursor: pointer;
 }
+
 .btn-left{
   color: #ffffff;
   background-color: #004AAD;
   border: none;
-  box-shadow: 0px 1px 2px 0px #0A0D120D;
-  
+  box-shadow: 0px 1px 2px 0px #0A0D12;
 }
+.btn-left:hover{
+  background-color: white;
+  color: #004AAD;
+  border: #004AAD;
+  box-shadow: 0px 1px 2px 0px #0A0D12;
+
+}
+.btn-left:focus{
+  background-color: #005CD6;
+  color: white;
+  border-color: #005CD6;
+  box-shadow: 0px 1px 2px 0px #0A0D120D;
+}
+.btn-left:disabled,
+.btn-right:disabled{
+  color: #ffffff;
+  background-color: #A4A7AE;
+  border-color: #A4A7AE;
+  box-shadow: 0px 1px 2px 0px #0A0D12;
+
+}
+
 .btn-right{
   background-color: #ffffff;
   color: #004AAD;
   border: 1px solid #004AAD;
+}
+.btn-right:hover{
+  background-color: #004AAD;
+  color: white;
+  box-shadow: 0px 1px 2px 0px #0A0D12;
+}
+.btn-right:focus{
+  background-color: #E5F1FF;
+  color: #005CD6;
+  border-color: #005CD6;
+  box-shadow: 0px 1px 2px 0px #0A0D120D;
+
 }
 
 .image-impact{
@@ -684,6 +719,7 @@ color: #181D27;
     width: 80%;
     margin: auto;
     font-size: 16px;
+    
   }
   .image-impact{
     width: 90%;
