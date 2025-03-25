@@ -45,7 +45,7 @@ const School = () => {
             <form>
               <div className="school-input-group">
                 <div className="input-wrapper">
-                  <label htmlFor="school-name">School Name* </label>
+                  <label htmlFor="school-name">School Name </label>
                   <input
                     type="text"
                     id="school-name"
@@ -54,7 +54,7 @@ const School = () => {
                 </div>
                 <div className="input-wrapper">
                   <label htmlFor="school-type">
-                    Contact Person’s Full Name*
+                    Contact Person’s Full Name
                   </label>
                   <input
                     type="text"

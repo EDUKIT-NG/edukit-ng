@@ -5,27 +5,37 @@
   align-items: center;
   height: 100vh;
   background-color: white;
+  padding: 20px; /* Add padding for smaller screens */
 }
 
 .login-wrapper {
   padding: 40px;
   border-radius: 8px;
   width: 100%;
-  max-width: 35rem;
+  max-width: 35rem; /* Limit the form width */
   text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
 }
 
 /* Title and subtitle */
 .login-title {
-  font-size: 22px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Signika", sans-serif;
   margin-bottom: 5px;
+  color: #181d27;
+  text-align: center;
 }
 
 .login-subtitle {
-  font-size: 14px;
-  color: #6c757d;
+  font-size: 16px;
+  color: #535862;
   margin-bottom: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "open sans", sans-serif;
+  text-align: center;
 }
 
 /* Form styling */
@@ -33,41 +43,55 @@
   display: flex;
   flex-direction: column;
   text-align: left;
+  position: relative;
   gap: 16px; /* Add spacing between form elements */
 }
 
 label {
   font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 5px;
+  font-weight: 600;
+  color: #414651;
+}
+
+.inputWrapper {
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
+  flex: 1;
   font-size: 14px;
+  padding-left: 1rem;
 }
 
 /* Password field styling */
-.password-field {
-  position: relative;
-}
-
-.password-field input {
-  width: 100%;
-  padding-right: 40px; /* Space for the eye icon */
-}
-
-.password-toggle-icon {
+.Login-password-toggle-icon {
   position: absolute;
-  right: 12px;
+  right: 10px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-130%);
   cursor: pointer;
   color: #6c757d;
   font-size: 16px;
+  position: absolute;
+  left: 10px;
+}
+
+.pass-input {
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pass-input input {
+  padding-left: 2.5rem;
 }
 
 /* Remember me & Forgot password */
@@ -76,6 +100,38 @@ input {
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
+  width: 100%;
+}
+
+.login-Checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="checkbox"] {
+  all: unset;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  appearance: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #0056d2;
+  border-color: #0056d2;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 10px;
+  display: block;
+  text-align: center;
+  line-height: 16px;
 }
 
 .forgot-password {
@@ -142,4 +198,53 @@ input {
 
 .signup-text a:hover {
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-wrapper {
+    padding: 20px;
+    max-width: 100%; /* Allow the form to take full width */
+    box-shadow: none; /* Remove shadow for smaller screens */
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-subtitle {
+    font-size: 14px;
+  }
+
+  .sign-in-btn,
+  .google-sign-in {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .Login-password-toggle-icon {
+    transform: translateY(-100%);
+  }
+}
+
+@media (max-width: 480px) {
+  .login-title {
+    font-size: 20px;
+  }
+
+  .login-subtitle {
+    font-size: 12px;
+  }
+
+  .sign-in-btn,
+  .google-sign-in {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .signup-text {
+    font-size: 12px;
+  }
+  .Login-password-toggle-icon {
+    transform: translateY(-70%);
+  }
 }
