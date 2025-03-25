@@ -6,7 +6,7 @@ import AboutUs from "../components/AboutUs/Aboutus";
 const OurStory = () => {
   return (
     <div>
-      <AboutUs />
+      
     </div>
   )
 }
