@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Student from "./components/Student/Student.jsx";
 // import Profile from "./Pages/Profile";
+import OurStory from "./Pages/OurStory";
 
 const App = () => {
   return (
@@ -21,9 +22,9 @@ const App = () => {
               <OurProfile />
             </Route>
 
-            {/* <Route exact path="/OurStory">
+            <Route exact path="/OurStory">
               <OurStory />
-            </Route> */}
+            </Route>
           
             <Route exact path="/SignUp">
               <SignUp />
