@@ -28,7 +28,7 @@ const NewUser = () => {
           <div className="new-user-overlay">
             <h3>Welcome to Edukit Foundation</h3>
             <p>
-              Start your journey us, create an account to explore and support
+              1Start your journey us, create an account to explore and support
               educational initiatives.
             </p>
           </div>
