@@ -82,9 +82,9 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <a className="dml" href="#">
+                    <Link to="/OurStory" className="dml">
                       Our Story
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a className="dml" href="#">
