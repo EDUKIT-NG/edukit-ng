@@ -12,6 +12,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Student from "./components/Student/Student.jsx";
 import School from "./components/School/School.jsx";
 import Login from "./components/Login/Login.jsx"; // Import the Login component
+import OurStory from "./Pages/OurStory.jsx";
 
 const App = () => {
   const location = useLocation();
@@ -30,6 +31,9 @@ const App = () => {
           </Route>
           <Route exact path="/OurProfile">
             <OurProfile />
+          </Route>
+          <Route exact path="/OurStory">
+            <OurStory />
           </Route>
           <Route exact path="/SignUp">
             <SignUp />
