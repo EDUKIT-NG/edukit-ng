@@ -45,6 +45,12 @@
 }
 
 .subscribe-button {
+  width: 112px;
+  height: 44px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #004aad;
   color: white;
   padding: 0.875rem 2rem;
@@ -53,10 +59,12 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  align-self: center;
+  /* margin-top: 1rem; */
 }
 
 .subscribe-button:hover {
-  background-color: #003d99;
+  background-color: #414651;
 }
 
 .privacy-note {

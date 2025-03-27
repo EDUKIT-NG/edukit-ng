@@ -49,9 +49,9 @@ const Navbar = () => {
 
         {/* Navigation Items */}
         <div className={`NavItems ${isOpen ? "active" : ""}`}>
-          <div className="MenuIcon" onClick={toggleNavbar}>
+          {/* <div className="MenuIcon" onClick={toggleNavbar}>
             <FaTimes />
-          </div>
+          </div> */}
 
           <ul>
             {/* Home */}
@@ -77,22 +77,30 @@ const Navbar = () => {
               {activeDropdown === "about-us" && (
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="/OurProfile">
-                      <a href="#">Our Profile</a>
+                    <Link to="/OurProfile" className="dml">
+                      Our Profile
                     </Link>
                   </li>
                   <li>
-                    <a href="#">Our Story</a>
+                    <Link to="/OurStory" className="dml">
+                      Our Story
+                    </Link>
                   </li>
                   <li>
-                    <a href="#">Our Team</a>
+                    <a className="dml" href="#">
+                      Our Team
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Impact</a>
+                    <a className="dml" href="#">
+                      Impact
+                    </a>
                   </li>
 
                   <li>
-                    <a href="#">Blog</a>
+                    <a className="dml" href="#">
+                      Blog
+                    </a>
                   </li>
                 </ul>
               )}
@@ -132,18 +140,24 @@ const Navbar = () => {
               {activeDropdown === "learning-hub" && (
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="#">E-Library</a>
+                    <a className="dml" href="#">
+                      E-Library
+                    </a>
                   </li>
                   <li>
-                    <a href="#">Book a Counselor</a>
+                    <a className="dml" href="#">
+                      Book a Counselor
+                    </a>
                   </li>
                   <li>
-                    <a className="jsc" href="#">
+                    <a className="dml" href="#">
                       Join Student Commmunity
                     </a>
                   </li>
                   <li>
-                    <a href="#">Book an Online Tutor</a>
+                    <a className="dml" href="#">
+                      Book an Online Tutor
+                    </a>
                   </li>
                 </ul>
               )}
@@ -155,16 +169,18 @@ const Navbar = () => {
               <a href="#">Contact Us</a>
             </li>
           </ul>
-        </div>
 
-        {/* Buttons for Sign Up and Log In */}
-        <div className="NavButtons">
-          <button className="log-in">Log In</button>
-          <Link to="/SignUp">
-            <a href="#">
-              <button className="sign-up">Sign Up</button>
-            </a>
-          </Link>
+          {/* Buttons for Sign Up and Log In */}
+          <div className="NavButtons">
+            <Link to="/LogIn">
+              <button className="log-in">Log In</button>
+            </Link>
+            <Link to="/SignUp">
+              <a href="#">
+                <button className="sign-up">Sign Up</button>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

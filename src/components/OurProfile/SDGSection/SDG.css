@@ -33,7 +33,15 @@
   font-size: 1.07rem;
   line-height: 1.87rem;
   color: #535862;
-  width: 78%;
+  width: 85%;
+}
+
+.blueDes{
+  font-weight: 400;
+  font-size: 1.07rem;
+  line-height: 1.87rem;
+  color: rgba(0, 74, 173, 1);
+  font-family: "Open Sans", sans-serif;
 }
 
 .blueLink{
@@ -68,6 +76,10 @@
   height: 26rem;
 }
 
+.SDG_box:hover{
+  transform: translateY(-5px);
+}
+
 .SDG_image{
   width: 11rem;
   height: 11rem;
@@ -89,4 +101,127 @@
   line-height: 1.75rem;
   margin-top: 13px;
   width: 20rem;
+}
+
+.tooltip-container{
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+}
+
+.tooltip_sdg{
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 99;
+  bottom: 100%;
+  left: 90%;
+  transform: translateX(-50%);
+  opacity: 100;
+  width: 20rem;
+  height: fit-content;
+}
+
+.infoTitle{
+  font-weight: 600;
+  font-size: 0.74rem;
+  line-height: 1.12rem;
+  color: #181D27;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.infoText {
+  font-weight: 400;
+  font-size: 0.74rem;
+  line-height: 1.12rem;
+  color: #535862;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.tooltip-arrow{
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  position: absolute;
+  bottom: -12px;
+  left: calc(10% - 12px);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px){
+  .SDG_grid{
+    grid-template-columns: repeat(2, 24rem);
+    gap: 2rem;
+  }
+
+  .SDG_description{
+    width: 92%;
+  }
+
+  .tooltip_sdg{
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 768px){
+ .SDG_grid{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+ }
+}
+
+@media screen and (max-width: 612px){
+  .SDG_grid{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+  }
+
+  .tooltip_sdg{
+    width: 12rem;
+    overflow: hidden;
+  }
+
+  .infoText{
+    font-size: 0.54rem;
+    line-height: 0.75rem;
+    overflow: hidden;
+  }
+
+  .blueLink{
+    text-align: center;
+  }
+
+  .SDG_box{
+    padding: 1px;
+  }
+
+  .SDG_title{
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .SDG_description{
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+    width: 17.4rem;
+  }
+
+  .card-title{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .SDG_text{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .SDG_image{
+    margin-top: 40px;
+  }
 }

@@ -12,6 +12,7 @@ import keyLogo from "./icons/key.png"
 import impactImage from "./images/impact.png";
 
 import './Aboutus.css'
+import { AlignCenter, AlignLeft } from "lucide-react";
 
 const AboutUs =()=> {
 

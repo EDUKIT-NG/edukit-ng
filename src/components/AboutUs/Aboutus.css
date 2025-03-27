@@ -111,9 +111,10 @@ body {
 }
 
 .we-are-description p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .we-are-description button {
@@ -136,7 +137,7 @@ body {
 }
 
 .story-button:hover{
-  background-color: #609be9;
+  background-color: grey;
   border: none;
 }
 
@@ -172,6 +173,7 @@ body {
 .what-we-do p {
   font-size: 18px;
   line-height: 28px;
+  text-align: left;
 }
 
 .we-do-images {
@@ -182,7 +184,7 @@ body {
   gap: 32px;
   justify-content: center;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .Info {
@@ -233,6 +235,10 @@ body {
   padding-top: 56px;
   padding-bottom: 56px;
   background-color: #FFFFFF;
+}
+
+.Values p{
+  text-align: left;
 }
 
 .Edukit-plan {
@@ -337,6 +343,10 @@ body {
   }
   .The-plan{
     margin-left: 0;
+  }
+
+  .Edukit-plan p{
+    text-align: left;
   }
 
   .Plan-logo{

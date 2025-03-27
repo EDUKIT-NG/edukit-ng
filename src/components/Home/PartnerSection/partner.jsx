@@ -9,12 +9,6 @@ const partner = () => {
     "/logos/logo4.png",
     "/logos/logo5.png",
     "/logos/logo6.png",
-    "/logos/logo7.png",
-    "/logos/logo8.png",
-    "/logos/logo9.png",
-    "/logos/logo10.png",
-    "/logos/logo11.png",
-    "/logos/logo12.png",
   ];
 
   return (
