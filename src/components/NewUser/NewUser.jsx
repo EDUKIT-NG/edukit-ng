@@ -38,7 +38,7 @@ const NewUser = () => {
         <div className="new-user-right-section">
           <div className="new-user-formWrapper">
             <div className="new-user-header">
-              <h2>Create Accounts</h2>
+              <h2>Create Account</h2>
               <p>Please fill in the correct details to get started</p>
             </div>
             <form>
