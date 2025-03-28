@@ -82,9 +82,9 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <a className="dml" href="#">
+                    <Link to="/OurStory" className="dml">
                       Our Story
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a className="dml" href="#">
@@ -169,11 +169,12 @@ const Navbar = () => {
               <a href="#">Contact Us</a>
             </li>
           </ul>
-        
 
           {/* Buttons for Sign Up and Log In */}
           <div className="NavButtons">
-            <button className="log-in">Log In</button>
+            <Link to="/LogIn">
+              <button className="log-in">Log In</button>
+            </Link>
             <Link to="/SignUp">
               <a href="#">
                 <button className="sign-up">Sign Up</button>
