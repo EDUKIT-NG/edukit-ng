@@ -27,7 +27,7 @@ const Signup = () => {
         <div className="sl-write-up">
           <h1>Create Your Edukit Foundation Account</h1>
           <p>
-            Join our community to unlock essential resources, support, and
+            Join1 our community to unlock essential resources, support, and
             opportunities that empower your educational journey.
           </p>
         </div>
@@ -67,7 +67,7 @@ const Signup = () => {
           {/* Buttons */}
           <div className="buttons-container">
             <button className="guest-button" onClick={() => history.push("/")}>
-              <span className="gb-text">Sign in as Guest</span>
+              Sign in as Guest
             </button>
             <button
               className={`next-button ${selectedRole ? "" : "disabled"}`}
