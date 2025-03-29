@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Student from "./components/Student/Student.jsx";
+
+import NewUser from "./components/NewUser/NewUser.jsx";
 import School from "./components/School/School.jsx";
 import Login from "./components/Login/Login.jsx"; // Import the Login component
 import OurStory from "./Pages/OurStory.jsx";
@@ -18,7 +20,7 @@ const App = () => {
   const location = useLocation();
 
   // List of routes where the Navbar should not be displayed
-  const noNavbarRoutes = ["/student", "/school"]; // Do not include "/login" here
+  const noNavbarRoutes = ["/student", "/school", "/signup", "/newuser"]; // Add "/school" to the list
 
   return (
     <div className="">
@@ -46,6 +48,9 @@ const App = () => {
           </Route>
           <Route exact path="/Login">
             <Login /> {/* Add the route for the Login page */}
+          </Route>
+          <Route exact path="/NewUser">
+            <NewUser />
           </Route>
         </Switch>
       </div>

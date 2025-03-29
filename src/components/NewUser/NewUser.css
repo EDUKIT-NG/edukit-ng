@@ -1,0 +1,292 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.new-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.new-user-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section */
+.new-user-left-section {
+  width: 50%;
+  background: url("../../assets/SignImage.png") no-repeat center center/cover;
+  position: relative;
+  display: block; /* Keep it visible on desktop */
+}
+
+.new-user-left-section .new-user-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-top: 16rem;
+}
+
+.new-user-overlay h3 {
+  width: 544px;
+  height: 120px;
+  font-family: Signika;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 2%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.new-user-overlay p {
+  width: 544px;
+  height: 60px;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* Right Section */
+.new-user-right-section {
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.new-user-formWrapper {
+  width: 480px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start */
+  gap: 16px;
+}
+
+.new-user-header {
+  text-align: left; /* Left align the header text */
+  width: 100%;
+}
+.new-user-header h2 {
+  text-align: left;
+  font-family: Signika;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  color: #181d27;
+}
+
+.new-user-header p {
+  text-align: left;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535862;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.new-user-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.input-wrapper.half-width {
+  width: calc(50% - 5px);
+}
+
+.input-wrapper label {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #414651;
+}
+
+.new-user-input-group input,
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-input-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input-container input {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.help-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.new-user-primary-btn {
+  background: #004aad;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.new-user-primary-btn:hover {
+  background: #344054;
+}
+
+.new-user-google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #535862;
+}
+
+.new-user-google-btn img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.new-user-google-btn:hover {
+  background: #535862;
+  color: #ffffff;
+}
+
+.new-user-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.new-user-checkbox input {
+  width: 16px;
+  height: 16px;
+}
+
+.new-user-footer {
+  text-align: center; /* Center align the footer text */
+  width: 100%;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #535862;
+}
+
+.new-user-footer a {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #004aad;
+  text-decoration: none;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .new-user-wrapper {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .new-user-left-section {
+    display: none;
+  }
+
+  .new-user-right-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .new-user-formWrapper {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .new-user-primary-btn,
+  .new-user-google-btn {
+    width: 100%;
+  }
+
+  .input-wrapper.half-width {
+    width: 100%;
+  }
+}

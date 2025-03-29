@@ -1,6 +1,19 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .signup-container {
   display: flex;
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f3f4f6;
 }
 
 /* Left Section */
@@ -46,6 +59,7 @@
   width: 50%;
   height: 960px;
   display: flex;
+  justify-content: center;
   /* flex-direction: column; */
 }
 
@@ -53,7 +67,7 @@
   width: 592px;
   height: 446px;
   gap: 96px;
-  margin: 40px 50px 394px 45px;
+  margin: 120px 72px 394px 72px;
 }
 
 .signup-right h2 {
@@ -161,25 +175,16 @@
   box-shadow: 0px 1px 2px 0px #0a0d120d;
   cursor: pointer;
   margin-right: 339px;
-}
-
-.guest-button:hover {
-  color: #ffffff;
-  background-color: #414651;
-}
-
-.gb-text:hover {
-  color: #ffffff;
-}
-
-.gb-text {
-  width: 136px;
-  height: 24px;
   font-family: Open Sans;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #414651;
+}
+
+.guest-button:hover {
+  background: #535862;
+  color: #ffffff;
 }
 
 .next-button {
