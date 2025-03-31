@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap");
+
+.Hstory-container{
+    margin-top: 80px;
+    max-width: 100%;
+}
+
+.Hstory-text{
+    background-image: url("./StoryBackdrop.png");
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hstory-text h2{
+    color: white;
+    font-family:"Signika", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.Hstory-container img{
+    width: 100%;
+    height:34rem ;
+    object-fit: cover;
+}
+
+.WWS-container{
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+    width: 100%;
+    padding: 6.87rem 6.25rem;
+    gap: 2rem;
+}
+.WWS1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px; 
+}
+
+.WWS1 h2{
+    font-family: "Signika", sans-serif;
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.WWS1 h2::before{
+    content: "WHY";
+    color: #004AAD;
+}
+
+.WWS1-Text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: #414651;
+    text-align: start;
+}
+
+.WWS-drop{
+    color: #181D27;
+    border-radius: 7px;
+    background-color: white;
+    border: 1px solid #D5D7DA;
+    margin: 1.25rem;
+    margin-left: -4px;
+}
+
+.WWS-header{
+    width: 100%;
+    height: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 0 15px;
+}
+
+.WWS-header h4, .WWS-plus{
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+}
+
+.WWS-info{
+    text-align: start;
+    font-family: "Open Sans", sans-serif;
+    padding: 15px;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    color: #535862;
+}
+
+.WWS2{
+    background-image: url("./FounderImage.png") ;
+    width: 27.18rem;
+    min-height: 28.75rem;
+    border-radius: 0.8rem;
+    object-fit: cover;
+    position: relative;
+}
+
+.founder-card{
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    width: 20rem;
+    min-height: 7.8rem;
+    left: 13%;
+    bottom: 17px;
+    padding: 3px 12px;
+}
+
+.founder-card h2{
+    color: white;
+    font-size: 1.875rem;
+    font-weight: 500;
+    font-family: "Signika", sans-serif;
+    margin-top: 10px;
+}
+
+.founder-card p{
+    color: white;
+    text-align: start;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
