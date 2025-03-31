@@ -133,9 +133,7 @@ const ProjectsSection = () => {
             <div className="project-info">
               <h4 className="project-title">{project.title}</h4>
               <p className="project-des">{project.description}</p>
-              <a className="more" href=" ">
-                Read More...
-              </a>
+              <a className="more">Read More...</a>
             </div>
           </div>
         ))}
