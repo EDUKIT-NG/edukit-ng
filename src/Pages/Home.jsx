@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar/Navbar";
+// import Navbar from "../components/Navbar/Navbar";
 import HeroSection from "../components/Hero/HeroSection";
 import KeyFeatures from "../components/KeyFeatures/keyfeatures";
 import ImpactSection from "../components/Home/ImpactSection/ImpactSection";

@@ -28,9 +28,7 @@ const NewsletterFooter = () => {
         </div>
         <p className="privacy-note">
           We care about your data in our{" "}
-          <a href="#" className="privacy-link">
-            privacy policy
-          </a>
+          <a className="privacy-link">privacy policy</a>
         </p>
       </div>
 
@@ -39,16 +37,16 @@ const NewsletterFooter = () => {
           <h3>About Us</h3>
           <ul>
             <li>
-              <a href="#">Our Story</a>
+              <a>Our Story</a>
             </li>
             <li>
-              <a href="#">Our Mission</a>
+              <a>Our Mission</a>
             </li>
             <li>
-              <a href="#">Our Vision</a>
+              <a>Our Vision</a>
             </li>
             <li>
-              <a href="#">Impact</a>
+              <a>Impact</a>
             </li>
           </ul>
         </div>
@@ -57,16 +55,16 @@ const NewsletterFooter = () => {
           <h3>Get Involved</h3>
           <ul>
             <li>
-              <a href="#">Donate</a>
+              <a>Donate</a>
             </li>
             <li>
-              <a href="#">Volunteer</a>
+              <a>Volunteer</a>
             </li>
             <li>
-              <a href="#">Partner With Us</a>
+              <a>Partner With Us</a>
             </li>
             <li>
-              <a href="#">Sponsor an Event</a>
+              <a>Sponsor an Event</a>
             </li>
           </ul>
         </div>
@@ -75,16 +73,16 @@ const NewsletterFooter = () => {
           <h3>Request Support</h3>
           <ul>
             <li>
-              <a href="#">Request as a Student</a>
+              <a>Request as a Student</a>
             </li>
             <li>
-              <a href="#">Request as a School</a>
+              <a>Request as a School</a>
             </li>
             <li>
-              <a href="#">Help Centre</a>
+              <a>Help Centre</a>
             </li>
             <li>
-              <a href="#">Support</a>
+              <a>Support</a>
             </li>
           </ul>
         </div>
@@ -93,13 +91,13 @@ const NewsletterFooter = () => {
           <h3>Resources</h3>
           <ul>
             <li>
-              <a href="#">E-Library</a>
+              <a>E-Library</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a>Blog</a>
             </li>
             <li>
-              <a href="#">FAQs</a>
+              <a>FAQs</a>
             </li>
           </ul>
         </div>
@@ -124,16 +122,16 @@ const NewsletterFooter = () => {
       </div>
 
       <div className="social-links">
-        <a href="#">
+        <a>
           <img src={facebook} alt="Facebook" className="social-icon" />
         </a>
-        <a href="#">
+        <a>
           <img src={instagram} alt="Instagram" className="social-icon" />
         </a>
-        <a href="#">
+        <a>
           <img src={linkedin} alt="LinkedIn" className="social-icon" />
         </a>
-        <a href="#">
+        <a>
           <img src={twitter} alt="X" className="social-icon" />
         </a>
       </div>
@@ -142,8 +140,8 @@ const NewsletterFooter = () => {
         <div className="copyright">
           <p>© 2024 Edukit Foundation. All rights reserved.</p>
           <div className="legal-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Conditions</a>
+            <a>Privacy Policy</a>
+            <a>Terms & Conditions</a>
           </div>
         </div>
       </div>
