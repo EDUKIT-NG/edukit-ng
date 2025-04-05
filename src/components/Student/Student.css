@@ -119,18 +119,18 @@ form {
   /* flex-wrap: wrap; */
 }
 
-.input-wrapper {
+.student-input-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: 100%;
 }
 
-.input-wrapper.half-width {
+.student-input-wrapper.half-width {
   width: calc(50% - 5px);
 }
 
-.input-wrapper label {
+.student-input-wrapper label {
   font-size: 14px;
   font-weight: 600;
   color: #414651;
@@ -144,21 +144,21 @@ input {
   border-radius: 5px;
 }
 
-.password-wrapper {
+.student-password-wrapper {
   position: relative;
 }
 
-.password-input-container {
+.student-password-input-container {
   position: relative;
   width: 100%;
 }
 
-.password-input-container input {
+.student-password-input-container input {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.password-toggle-icon {
+.student-password-toggle-icon {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -166,7 +166,7 @@ input {
   cursor: pointer;
 }
 
-.help-icon {
+.student-help-icon {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -199,7 +199,7 @@ input {
   width: 100%;
 }
 
-.student-google-btn img {
+.student-google-icon {
   height: 20px;
   margin-right: 10px;
 }
@@ -253,7 +253,7 @@ input {
     width: 100%;
   }
 
-  .input-wrapper.half-width {
+  .student-input-wrapper.half-width {
     width: 100%;
   }
 }

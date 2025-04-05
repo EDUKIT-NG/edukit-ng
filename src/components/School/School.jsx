@@ -44,7 +44,7 @@ const School = () => {
             </div>
             <form>
               <div className="school-input-group">
-                <div className="input-wrapper">
+                <div className="school-input-wrapper">
                   <label htmlFor="school-name">School Name </label>
                   <input
                     type="text"
@@ -52,7 +52,7 @@ const School = () => {
                     placeholder="Enter the name of the school"
                   />
                 </div>
-                <div className="input-wrapper">
+                <div className="school-input-wrapper">
                   <label htmlFor="school-type">
                     Contact Person’s Full Name
                   </label>
@@ -63,11 +63,11 @@ const School = () => {
                   />
                 </div>
               </div>
-              <div className="input-wrapper">
+              <div className="school-input-wrapper">
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" placeholder="Email" />
               </div>
-              <div className="input-wrapper">
+              <div className="school-input-wrapper">
                 <label htmlFor="phone-number">Phone Number</label>
                 <input
                   type="tel"
@@ -75,16 +75,16 @@ const School = () => {
                   placeholder="Phone Number"
                 />
               </div>
-              <div className="input-wrapper">
+              <div className="school-input-wrapper">
                 <label htmlFor="address">Address</label>
                 <input type="text" id="address" placeholder="Address" />
               </div>
-              <div className="input-wrapper password-wrapper">
+              <div className="school-input-wrapper school-password-wrapper">
                 <label htmlFor="password">Password</label>
-                <div className="password-input-container">
+                <div className="school-password-input-container">
                   <FontAwesomeIcon
                     icon={showPassword ? faEye : faEyeSlash}
-                    className="password-toggle-icon"
+                    className="school-password-toggle-icon"
                     onClick={togglePasswordVisibility}
                   />
                   <input
@@ -94,16 +94,16 @@ const School = () => {
                   />
                   <FontAwesomeIcon
                     icon={faQuestionCircle}
-                    className="help-icon"
+                    className="school-help-icon"
                   />
                 </div>
               </div>
-              <div className="input-wrapper password-wrapper">
+              <div className="school-input-wrapper school-password-wrapper">
                 <label htmlFor="confirm-password">Confirm Password</label>
-                <div className="password-input-container">
+                <div className="school-password-input-container">
                   <FontAwesomeIcon
                     icon={showConfirmPassword ? faEye : faEyeSlash}
-                    className="password-toggle-icon"
+                    className="school-password-toggle-icon"
                     onClick={toggleConfirmPasswordVisibility}
                   />
                   <input
@@ -113,7 +113,7 @@ const School = () => {
                   />
                   <FontAwesomeIcon
                     icon={faQuestionCircle}
-                    className="help-icon"
+                    className="school-help-icon"
                   />
                 </div>
               </div>
@@ -121,7 +121,7 @@ const School = () => {
               <div className="school-checkbox">
                 <input type="checkbox" id="terms" />
                 <label htmlFor="terms">
-                  You agree to our <a>Privacy Policy</a>.
+                  You agree to our <a href="/privacy">Privacy Policy</a>.
                 </label>
               </div>
 
@@ -130,13 +130,13 @@ const School = () => {
                 <img
                   src={GoogleIcon}
                   alt="Google Icon"
-                  className="google-icon"
+                  className="school-google-icon"
                 />{" "}
                 Sign up with Google
               </button>
 
               <p className="school-footer">
-                Already have an account? <a>Log in</a>
+                Already have an account? <a href="/Login">Log in</a>
               </p>
             </form>
           </div>

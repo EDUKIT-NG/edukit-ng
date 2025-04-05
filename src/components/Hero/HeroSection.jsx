@@ -23,24 +23,24 @@ const HeroSection = () => {
   }, [currentSlide, images.length]);
 
   return (
-    <div className="HeroSection">
-      <div className="HeroSlider">
+    <div className="hero-section">
+      <div className="hero-slider">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className={`slide ${
+            className={`hero-slide ${
               index === currentSlide
-                ? "active"
+                ? "hero-active"
                 : index === exitingSlide
-                ? "exiting"
-                : ""
+                  ? "hero-exiting"
+                  : ""
             }`}
           />
         ))}
       </div>
-      <div className="HeroContent">
+      <div className="hero-content">
         <p className="hero-subtitle">EDUKIT FOUNDATION</p>
         <h1 className="hero-title">
           BRIDGING GAPS, <br />
@@ -51,8 +51,8 @@ const HeroSection = () => {
           future.
         </p>
         <div className="hero-buttons">
-          <button className="donation">Make a Donation</button>
-          <button className="request">Make a Request</button>
+          <button className="hero-donation">Make a Donation</button>
+          <button className="hero-request">Make a Request</button>
         </div>
       </div>
     </div>
