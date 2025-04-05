@@ -43,29 +43,21 @@ const NewUser = () => {
             </div>
             <form>
               <div className="new-user-input-group">
-                <div className="input-wrapper">
+                <div className="new-user-input-wrapper">
                   <label htmlFor="full-name">Full Name</label>
                   <input type="text" id="full-name" placeholder="Full name" />
                 </div>
               </div>
-              <div className="input-wrapper">
+              <div className="new-user-input-wrapper">
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" placeholder="Email" />
               </div>
-              {/* <div className="input-wrapper">
-                <label htmlFor="phone-number">Phone Number</label>
-                <input
-                  type="tel"
-                  id="phone-number"
-                  placeholder="Phone number"
-                />
-              </div> */}
-              <div className="input-wrapper password-wrapper">
+              <div className="new-user-input-wrapper new-user-password-wrapper">
                 <label htmlFor="password">Password</label>
-                <div className="password-input-container">
+                <div className="new-user-password-input-container">
                   <FontAwesomeIcon
                     icon={showPassword ? faEye : faEyeSlash}
-                    className="password-toggle-icon"
+                    className="new-user-password-toggle-icon"
                     onClick={togglePasswordVisibility}
                   />
                   <input
@@ -75,16 +67,16 @@ const NewUser = () => {
                   />
                   <FontAwesomeIcon
                     icon={faQuestionCircle}
-                    className="help-icon"
+                    className="new-user-help-icon"
                   />
                 </div>
               </div>
-              <div className="input-wrapper password-wrapper">
+              <div className="new-user-input-wrapper new-user-password-wrapper">
                 <label htmlFor="confirm-password">Confirm Password</label>
-                <div className="password-input-container">
+                <div className="new-user-password-input-container">
                   <FontAwesomeIcon
                     icon={showConfirmPassword ? faEye : faEyeSlash}
-                    className="password-toggle-icon"
+                    className="new-user-password-toggle-icon"
                     onClick={toggleConfirmPasswordVisibility}
                   />
                   <input
@@ -94,7 +86,7 @@ const NewUser = () => {
                   />
                   <FontAwesomeIcon
                     icon={faQuestionCircle}
-                    className="help-icon"
+                    className="new-user-help-icon"
                   />
                 </div>
               </div>
@@ -111,7 +103,7 @@ const NewUser = () => {
                 <img
                   src={GoogleIcon}
                   alt="Google Icon"
-                  className="google-icon"
+                  className="new-user-google-icon"
                 />{" "}
                 Sign up with Google
               </button>

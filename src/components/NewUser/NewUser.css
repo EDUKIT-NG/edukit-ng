@@ -127,18 +127,18 @@ form {
   width: 100%;
 }
 
-.input-wrapper {
+.new-user-input-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: 100%;
 }
 
-.input-wrapper.half-width {
+.new-user-input-wrapper.half-width {
   width: calc(50% - 5px);
 }
 
-.input-wrapper label {
+.new-user-input-wrapper label {
   font-family: Open Sans;
   font-weight: 600;
   font-size: 14px;
@@ -154,21 +154,21 @@ input {
   border-radius: 5px;
 }
 
-.password-wrapper {
+.new-user-password-wrapper {
   position: relative;
 }
 
-.password-input-container {
+.new-user-password-input-container {
   position: relative;
   width: 100%;
 }
 
-.password-input-container input {
+.new-user-password-input-container input {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.password-toggle-icon {
+.new-user-password-toggle-icon {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -176,7 +176,7 @@ input {
   cursor: pointer;
 }
 
-.help-icon {
+.new-user-help-icon {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -217,7 +217,7 @@ input {
   color: #535862;
 }
 
-.new-user-google-btn img {
+.new-user-google-icon {
   height: 20px;
   margin-right: 10px;
 }
@@ -286,7 +286,7 @@ input {
     width: 100%;
   }
 
-  .input-wrapper.half-width {
+  .new-user-input-wrapper.half-width {
     width: 100%;
   }
 }
