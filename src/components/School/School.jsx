@@ -121,7 +121,7 @@ const School = () => {
               <div className="school-checkbox">
                 <input type="checkbox" id="terms" />
                 <label htmlFor="terms">
-                  You agree to our <a>Privacy Policy</a>.
+                  You agree to our <a href="/privacy">Privacy Policy</a>.
                 </label>
               </div>
 
@@ -136,7 +136,7 @@ const School = () => {
               </button>
 
               <p className="school-footer">
-                Already have an account? <a>Log in</a>
+                Already have an account? <a href="/Login">Log in</a>
               </p>
             </form>
           </div>

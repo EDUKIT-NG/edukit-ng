@@ -56,7 +56,7 @@ const Navbar = () => {
           <ul>
             {/* Home */}
             <li>
-              <a href="#">Home</a>
+              <a href="/Home">Home</a>
             </li>
             {/* About Us */}
             <li className="dropdown">
@@ -108,7 +108,7 @@ const Navbar = () => {
 
             {/* Donate */}
             <li>
-              <a href="#">Donate</a>
+              <a href="/Donate">Donate</a>
             </li>
 
             {/* Request */}

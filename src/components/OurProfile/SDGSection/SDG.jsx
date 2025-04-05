@@ -7,7 +7,7 @@ import sdg12 from "./sectionimages/sdg12.png";
 import sdg17 from "./sectionimages/sdg17.png";
 
 const SDG = () => {
-  const Tooltip_sdg = ({ infoTitle, infoText, children }) => {
+  const TooltipSdg = ({ infoTitle, infoText, children }) => {
     // state to manage tooltip visibility
     const [showTooltip_sdg, setShowTooltip_sdg] = useState(false);
 
@@ -42,17 +42,17 @@ const SDG = () => {
           Edukit Nigeria is committed to driving positive change by addressing
           critical global challenges through the lens of education. Our efforts
           align with several of the{" "}
-          <Tooltip_sdg
+          <TooltipSdg
             infoTitle="Disclaimer "
             infoText="The content of this publication has not been approved by the United Nations and does not reflect the views of the United Nations or its officials or Member States.  "
           >
             <span className="sdg-blue-des">
               United Nations Sustainable Development Goals (SDGs)
             </span>
-          </Tooltip_sdg>
+          </TooltipSdg>{" "}
           , focusing on reducing inequalities, promoting quality education, and
           fostering sustainability{" "}
-          <a href="#" className="blueLink">
+          <a href="/sublink" className="blueLink">
             (https://www.un.org/sustainabledevelopment).
           </a>
         </p>
