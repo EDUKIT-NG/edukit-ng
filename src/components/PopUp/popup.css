@@ -1,0 +1,251 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #101828B2;
+    backdrop-filter: blur(6px); /* Blur effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  
+  .popup-box {
+    width: 400px;
+    height: 420px;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow:
+      0px 8px 8px -4px rgba(10, 13, 18, 0.03),
+      0px 20px 24px -4px rgba(10, 13, 18, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+  }
+  
+  .popup-image-placeholder {
+    width: 100%;                  /* Full width inside the box */
+    max-width: 352px;             /* Optional max width to prevent over-expansion */
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+  }
+  
+  .popup-image-placeholder img {
+    width: 100%;                 /* Ensure image scales with container */
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  
+  .popup-heading {
+    width: 352px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Open Sans;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #252B37;
+    margin-bottom: 8px;
+
+
+  }
+  
+  .popup-body-text {
+    width: 352px;
+    height: 48px;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #535862;
+
+
+
+  }
+  
+  .popup-buttons {
+    margin-top: 22px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 24px;
+  }
+  
+  .popup-btn-light {
+    width: 152px;
+    height: 44px;
+    border-radius: 10px;
+    padding: 10px 18px;
+    border: 1px solid #D5D7DA;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+
+  .popup-btn-light:hover {
+    background-color: #f1f1f1ff;
+    color: #004aad;
+  }
+
+  .pbl-text{
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535862;
+    margin-left: 20px;
+
+
+  }
+  
+  .popup-btn-light img {
+    width: 14px;
+    height: 18px;
+    border-width: 1.5px;
+    top: 3px;
+    left: 5px; 
+  }
+  
+  
+  .popup-btn-dark {
+    width: 170px;
+    height: 44px;
+    border-radius: 10px;
+    padding: 10px 18px;
+    border: 1px solid;
+    background-color: #004AAD;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+    cursor: pointer;
+  }
+  
+  .pbd-text{
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+  }
+
+  .popup-btn-dark:hover {
+    background-color: #535862;
+  }
+  
+/* Media Queries */
+  @media (max-width: 768px) {
+    .popup-box {
+      padding: 20px;
+      max-width: 90%;
+    }
+
+    .popup-image-placeholder{
+        margin-top: -15px;
+    }
+  
+    .popup-heading{
+        font-size: 22px;
+    }
+    .popup-body-text {
+      max-width: 100%;
+      font-size: 18px;
+    }
+  
+    .popup-buttons {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .popup-btn-light{
+        width: 100%;
+        justify-content: center;
+        margin-top: -10px;
+
+    }
+    
+    .popup-btn-dark {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .pbl-text {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .popup-heading {
+      font-size: 17px;
+    }
+  
+    .popup-body-text {
+      font-size: 15px;
+    }
+  
+    .popup-box {
+      padding: 16px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .popup-box {
+      padding: 20px;
+      max-width: 90%;
+    }
+
+    .popup-image-placeholder{
+        margin-top: 10px;
+    }
+  
+    .popup-heading{
+        font-size: 18px;
+    }
+    .popup-body-text {
+      max-width: 100%;
+      font-size: 15px;
+      margin-bottom: 25px;
+    }
+  
+    .popup-buttons {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .popup-btn-light{
+        width: 100%;
+        justify-content: center;
+
+    }
+    
+    .popup-btn-dark {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .pbl-text {
+      margin-left: 0;
+    }
+  }

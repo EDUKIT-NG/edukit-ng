@@ -7,21 +7,26 @@ import {
   faEyeSlash,
   faQuestionCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import Popup from "../PopUp/popup";
 
 const Student = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
-
-  const toggleConfirmPasswordVisibility = () => {
+  const togglePasswordVisibility = () => setShowPassword(!showPassword);
+  const toggleConfirmPasswordVisibility = () =>
     setShowConfirmPassword(!showConfirmPassword);
+
+  const handleCreateAccount = (e) => {
+    e.preventDefault();
+    setShowPopup(true);
   };
 
   return (
     <div className="student-container">
+      {showPopup && <Popup onClose={() => setShowPopup(false)} />}
+
       <div className="student-wrapper">
         {/* Left Section */}
         <div className="student-left-section">
@@ -42,7 +47,7 @@ const Student = () => {
               <h2>Create Account</h2>
               <p>Please fill in the correct details to get started</p>
             </div>
-            <form>
+            <form onSubmit={handleCreateAccount}>
               <div className="student-input-group">
                 <div className="student-input-wrapper">
                   <label htmlFor="first-name">First Name</label>
@@ -111,8 +116,10 @@ const Student = () => {
                 </label>
               </div>
 
-              <button className="student-primary-btn">Create Account</button>
-              <button className="student-google-btn">
+              <button type="submit" className="student-primary-btn">
+                Create Account
+              </button>
+              <button type="button" className="student-google-btn">
                 <img
                   src={GoogleIcon}
                   alt="Google Icon"
