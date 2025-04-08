@@ -93,10 +93,9 @@ html {
   width: 100%;
   /* styles for the header */
 }
-.school-header p,
-h2 {
+/* .school-header p {
   text-align: left;
-}
+} */
 .school-header h2 {
   font-size: 30px;
   font-weight: 600;

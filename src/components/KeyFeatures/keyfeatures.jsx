@@ -15,8 +15,8 @@ const KeyFeatures = () => {
         <h2 className="key-features-title">KEY FEATURES</h2>
         <p className="key-features-head">DISCOVER WHO WE ARE</p>
         <p className="key-features-description">
-          Educational Kits for Charity Foundation is an initiative aimed at
-          transforming educational access for underprivileged students across
+          Educational Kits for Charity Foundation is an N.G.O initiative aimed
+          at transforming educational access for underprivileged students across
           Nigeria.
         </p>
         <button className="key-features-cta-button">Learn More About Us</button>
