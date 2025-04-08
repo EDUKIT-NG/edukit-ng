@@ -16,6 +16,7 @@ import School from "./components/School/School.jsx";
 import Login from "./components/Login/Login.jsx"; // Import the Login component
 import OurStory from "./Pages/OurStory.jsx";
 import OurTeam from "./components/OurTeam/OurTeam"; // Update the import path
+import ResetPassword from "./components/ResetPassword/ResetPassword";
 
 const App = () => {
   const location = useLocation();
@@ -55,6 +56,9 @@ const App = () => {
           </Route>
           <Route exact path="/OurTeam">
             <OurTeam />
+          </Route>
+          <Route exact path="/ResetPassword">
+            <ResetPassword />
           </Route>
         </Switch>
       </div>
