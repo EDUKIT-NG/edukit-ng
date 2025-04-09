@@ -21,7 +21,7 @@ const Popup = ({ onClose }) => {
 
         {/* Buttons */}
         <div className="popup-buttons">
-          <button className="popup-btn-light">           
+          <button className="popup-btn-light">
             <div className="pbl-text">Share</div>
             <img src={UploadIcon} alt="Upload" />
           </button>
