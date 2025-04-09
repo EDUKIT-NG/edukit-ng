@@ -39,10 +39,6 @@ const ResetPassword = () => {
     }
   };
 
-  const closePopup = () => {
-    setShowPopup(false);
-  };
-
   return (
     <div className="reset-password-container">
       <div className="reset-password-wrapper">
@@ -71,7 +67,7 @@ const ResetPassword = () => {
             Sign up with Google
           </button>
           <p className="resetpwd-footer">
-            Don’t have an account? <a href="/SignUp">Sign Up</a>
+            Don't have an account? <a href="/SignUp">Sign Up</a>
           </p>
         </form>
       </div>
@@ -112,7 +108,7 @@ const ResetPassword = () => {
               ))}
             </div>
             <div className="rpwd-footer">
-              Didn’t get a code? <a href="">Click to resend.</a>
+              Didn't get a code? <a href="resend">Click to resend.</a>
             </div>
 
             <button className="otp-submit-btn">Reset Password</button>
