@@ -3,6 +3,7 @@ import GoogleIcon from "../../assets/Google icon.png";
 import HeadIcon from "../../assets/head-icon.png";
 import ErrorIcon from "../../assets/error-icon.png"; // Add your error icon image
 import SuccessIcon from "../../assets/success-icon.png";
+import FinalSuccessIcon from "../../assets/final-success-icon.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import "./ResetPassword.css";
@@ -13,14 +14,12 @@ const ResetPassword = () => {
   const [showErrorModal, setShowErrorModal] = useState(false); // 🔴 Error modal state
   const [otp, setOtp] = useState(new Array(6).fill(""));
   const inputRefs = useRef([]);
-  const [showPassword, setShowPassword] = useState(false);
+  const [showNewPassword, setShowNewPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [passwordMismatch, setPasswordMismatch] = useState(false);
-
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
+  const [showFinalSuccessModal, setShowFinalSuccessModal] = useState(false); // State for final success modal
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -66,6 +65,34 @@ const ResetPassword = () => {
     setOtp(new Array(6).fill(""));
     setShowErrorModal(false);
     setShowPopup(true); // Return to OTP screen
+  };
+
+  const handleFinalSuccess = () => {
+    // Close the modal and go to login (you can also redirect here)
+    setShowFinalSuccessModal(true);
+  };
+
+  const handleLoginRedirect = () => {
+    // Redirect to login or close the modal
+    setShowFinalSuccessModal(false);
+    // You can redirect here to the login page or reset the form
+  };
+
+  // Check if passwords are valid (at least 8 characters and match)
+  const isPasswordValid =
+    newPassword.length >= 8 &&
+    confirmPassword.length >= 8 &&
+    newPassword === confirmPassword;
+
+  // Determine the appropriate error message
+  const getPasswordErrorMessage = () => {
+    if (newPassword !== confirmPassword) {
+      return "Passwords do not match";
+    }
+    if (newPassword.length < 8 || confirmPassword.length < 8) {
+      return "Not up to 8 characters";
+    }
+    return "";
   };
 
   return (
@@ -162,7 +189,7 @@ const ResetPassword = () => {
 
             <div className="error-btn-group">
               <button
-                className="back-btn"
+                className="error-back-btn"
                 onClick={() => setShowErrorModal(false)}
               >
                 Back
@@ -193,17 +220,17 @@ const ResetPassword = () => {
               </label>
               <div className="password-input-group">
                 <FontAwesomeIcon
-                  icon={showPassword ? faEye : faEyeSlash}
+                  icon={showNewPassword ? faEye : faEyeSlash}
                   className="password-toggle-icon-left"
                   onClick={(e) => {
                     e.preventDefault();
-                    togglePasswordVisibility();
+                    setShowNewPassword(!showNewPassword);
                   }}
                   role="button"
                   aria-label="Toggle password visibility"
                 />
                 <input
-                  type={showPassword ? "text" : "password"}
+                  type={showNewPassword ? "text" : "password"}
                   id="new-password"
                   className="success-input with-icon-left"
                   placeholder="Enter new password"
@@ -218,9 +245,7 @@ const ResetPassword = () => {
                 />
               </div>
 
-              <p className="input-instruction">
-                Password must be at least 8 characters
-              </p>
+              <p className="input-instruction">Must be at least 8 characters</p>
             </div>
 
             <div className="success-input-wrapper">
@@ -229,17 +254,17 @@ const ResetPassword = () => {
               </label>
               <div className="password-input-group">
                 <FontAwesomeIcon
-                  icon={showPassword ? faEye : faEyeSlash}
+                  icon={showConfirmPassword ? faEye : faEyeSlash}
                   className="password-toggle-icon-left"
                   onClick={(e) => {
                     e.preventDefault();
-                    togglePasswordVisibility();
+                    setShowConfirmPassword(!showConfirmPassword);
                   }}
                   role="button"
-                  aria-label="Toggle password visibility"
+                  aria-label="Toggle confirm password visibility"
                 />
                 <input
-                  type={showPassword ? "text" : "password"}
+                  type={showConfirmPassword ? "text" : "password"}
                   id="confirm-password"
                   className="success-input with-icon-left"
                   placeholder="Re-enter new password"
@@ -255,11 +280,12 @@ const ResetPassword = () => {
               {/* 🔁 Replacing the instruction dynamically */}
               <p
                 className="input-instruction"
-                style={{ color: passwordMismatch ? "red" : "#666" }}
+                style={{
+                  color: passwordMismatch ? "red" : "#666",
+                  fontSize: "14px",
+                }}
               >
-                {passwordMismatch
-                  ? "Passwords do not match"
-                  : "Make sure it matches the one above"}
+                {getPasswordErrorMessage()}
               </p>
             </div>
 
@@ -268,10 +294,40 @@ const ResetPassword = () => {
                 className="back-btn"
                 onClick={() => setShowSuccessModal(false)}
               >
-                Back
+                Cancel
               </button>
-              <button className="reset-btn">Reset Password</button>
+              <button
+                className="reset-btn"
+                disabled={!isPasswordValid}
+                onClick={handleFinalSuccess}
+              >
+                Reset Password
+              </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Final Success Modal */}
+      {showFinalSuccessModal && (
+        <div className="final-success-modal-overlay">
+          <div className="final-success-modal">
+            <div className="final-success-icon">
+              <img src={FinalSuccessIcon} alt="FinalSuccess" />
+            </div>
+            <h3>Password Reset Successful</h3>
+            <p>
+              Your password has been successfully updated. You can now log in
+              with your new password.
+            </p>
+            <a href="/Login">
+              <button
+                className="final-success-login-btn"
+                onClick={handleLoginRedirect}
+              >
+                Login
+              </button>
+            </a>
           </div>
         </div>
       )}
