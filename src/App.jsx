@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./Pages/Home";
 import OurProfile from "./Pages/OurProfile";
-import SignUp from "./components/SignUp/Signup.jsx";
+import Signup from "./components/Signup/Signup.jsx";
 import {
   BrowserRouter as Router,
   Route,
@@ -39,8 +39,8 @@ const App = () => {
           <Route exact path="/OurStory">
             <OurStory />
           </Route>
-          <Route exact path="/SignUp">
-            <SignUp />
+          <Route exact path="/Signup">
+            <Signup />
           </Route>
           <Route exact path="/Student">
             <Student />
