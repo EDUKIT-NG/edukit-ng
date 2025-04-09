@@ -17,6 +17,7 @@ import Login from "./components/Login/Login.jsx"; // Import the Login component
 import OurStory from "./Pages/OurStory.jsx";
 import OurTeam from "./components/OurTeam/OurTeam"; // Update the import path
 import ResetPassword from "./components/ResetPassword/ResetPassword";
+import ErrorScreen from "./components/ErrorScreen/errorscreen.jsx";
 
 const App = () => {
   const location = useLocation();
@@ -59,6 +60,9 @@ const App = () => {
           </Route>
           <Route exact path="/ResetPassword">
             <ResetPassword />
+          </Route>
+          <Route exact path="/ErrorScreen">
+            <ErrorScreen />
           </Route>
         </Switch>
       </div>
