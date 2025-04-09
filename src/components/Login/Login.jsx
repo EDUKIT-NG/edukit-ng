@@ -64,7 +64,7 @@ const LoginForm = () => {
         </form>
 
         <p className="signup-text">
-          Don’t have an account? <a href="/Signup">Sign up</a>
+          Don't have an account? <a href="/Signup">Sign up</a>
         </p>
       </div>
     </div>
