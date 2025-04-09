@@ -59,7 +59,7 @@ const LoginForm = () => {
 
           <button className="google-sign-in">
             <img src={GoogleIcon} alt="Google Logo" />
-            Sign in with Googles
+            Sign in with Google
           </button>
         </form>
 
