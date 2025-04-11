@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom"; // Use useHistory instead of useNavigate
-import "./SignUp.css";
+import "./Signup.css";
 import studentIcon from "../../assets/student-icon.png";
 import schoolIcon from "../../assets/school-icon.png";
 import newUserIcon from "../../assets/new-user-icon.png";
@@ -27,7 +27,7 @@ const Signup = () => {
         <div className="sl-write-up">
           <h1>Create Your Edukit Foundation Account</h1>
           <p>
-            Join1 our community to unlock essential resources, support, and
+            Join our community to unlock essential resources, support, and
             opportunities that empower your educational journey.
           </p>
         </div>

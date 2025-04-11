@@ -115,7 +115,9 @@ html {
   justify-content: center;
   gap: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 /* Selected Option - Faded #004AAD */
@@ -174,7 +176,7 @@ html {
   background: #ffffff;
   box-shadow: 0px 1px 2px 0px #0a0d120d;
   cursor: pointer;
-  margin-right: 339px;
+  margin-right: 315px;
   font-family: Open Sans;
   font-weight: 600;
   font-size: 16px;
@@ -648,6 +650,148 @@ html {
     width: 220px;
     margin: 10px 0px 10px 260px;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1023px) {
+  /* Left Section */
+  .signup-left {
+    width: 50%;
+    height: auto;
+    background: url("../../assets/SignImage.png") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .signup-left h1 {
+    font-size: 42px;
+    line-height: 54px;
+    width: 90%;
+  }
+
+  .signup-left p {
+    font-size: 16px;
+    width: 85%;
+  }
+
+  /* Right Section */
+  .signup-right {
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    margin-top: -32px;
+    margin-left: 15px;
+  }
+
+  /* Adjust form width */
+  .sr-form {
+    width: 100%;
+    max-width: 482px;
+    margin-top: 15px;
+  }
+
+  /* Adjust heading */
+  .signup-right h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  /* Adjust paragraph text */
+  .signup-right p {
+    font-size: 22px;
+    line-height: 26px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Selection Boxes */
+  .options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 24px; /* Reduced gap for better fit */
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+
+  .option-box {
+    width: 190px;
+    height: 170px;
+    border-radius: 8px;
+    border: 1px solid #a4a7ae;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    position: relative; /* Ensure question icon is positioned correctly */
+  }
+
+  /* Position question icon inside each option box */
+  .question-icon {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .option-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .option-label {
+    font-size: 23px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  /* Buttons */
+  .buttons-container {
+    display: flex;
+    gap: 12px;
+    margin-top: 100px;
+  }
+
+  .guest-button {
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 150px;
+  }
+
+  .next-button {
+    width: 160px;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  .gb-text,
+  .n-text {
+    font-size: 23px;
+  }
+
+  /* Bottom Text */
+  .sr-bottom {
+    width: 500px;
+    margin: 300px 0 10px 230px;
+  }
+
+  .first-part {
+    font-size: 22px;
+  }
+
+  .second-part {
+    font-size: 22px;
   }
 }
 

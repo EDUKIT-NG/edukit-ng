@@ -1,5 +1,5 @@
 /* Hero Section Container */
-.HeroSection {
+.hero-section {
   width: 100%;
   height: 600px;
   margin: 2px auto;
@@ -9,7 +9,7 @@
 }
 
 /* Slider Container */
-.HeroSlider {
+.hero-slider {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -17,7 +17,7 @@
 }
 
 /* Individual Slide Images */
-.HeroSlider .slide {
+.hero-slide {
   position: absolute;
   width: 100%;
   height: 880px;
@@ -26,25 +26,27 @@
   left: 0;
   opacity: 0;
   transform: translateX(0);
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transition:
+    opacity 1s ease-in-out,
+    transform 1s ease-in-out;
 }
 
 /* Active Slide */
-.HeroSlider .slide.active {
+.hero-active {
   opacity: 1;
   transform: translateX(0);
   z-index: 2;
 }
 
 /* Exiting Slide */
-.HeroSlider .slide.exiting {
+.hero-exiting {
   opacity: 0;
   transform: translateX(-100%);
   z-index: 1;
 }
 
 /* Hero Content Section */
-.HeroContent {
+.hero-content {
   position: absolute;
   top: 50%; /* Vertically centered */
   left: 5%; /* Position towards the left */
@@ -114,7 +116,7 @@
   cursor: pointer;
 }
 
-.donation {
+.hero-donation {
   background-color: #004aad;
   color: white;
   font-family: Open Sans;
@@ -125,11 +127,11 @@
   text-decoration-skip-ink: none;
 }
 
-.donation:hover {
+.hero-donation:hover {
   background-color: #535862;
 }
 
-.request {
+.hero-request {
   background-color: #fff;
   color: #004aad;
   font-family: Open Sans;
@@ -140,7 +142,7 @@
   text-decoration-skip-ink: none;
 }
 
-.request:hover {
+.hero-request:hover {
   background-color: #535862;
   color: #fff;
 }

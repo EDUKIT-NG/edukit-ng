@@ -63,7 +63,7 @@ label {
 }
 
 input {
-  flex: 1;
+  /* flex: 1; */
   font-size: 14px;
   padding-left: 1rem;
 }

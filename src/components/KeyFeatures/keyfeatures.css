@@ -15,7 +15,7 @@
   flex: 1;
 }
 
-.features-title {
+.key-features-title {
   font-family: "Signika" serif;
   font-weight: 600;
   font-size: 1.875rem;
@@ -24,7 +24,7 @@
   color: #004aad;
 }
 
-.head {
+.key-features-head {
   font-size: 3.75rem;
   letter-spacing: 0.02em;
   margin: 5px 0;
@@ -35,7 +35,7 @@
   width: 80%;
 }
 
-.features-description {
+.key-features-description {
   font-family: "Open" Sans;
   font-weight: 500;
   font-size: 1.125rem;
@@ -45,7 +45,7 @@
   width: 80%;
 }
 
-.cta-button {
+.key-features-cta-button {
   font-family: "Open Sans", serif;
   font-size: 18px;
   font-weight: 600;
@@ -62,7 +62,7 @@
   margin-top: 24px;
 }
 
-.cta-button:hover {
+.key-features-cta-button:hover {
   background-color: #535862;
 }
 
@@ -73,7 +73,7 @@
   gap: 20px;
 }
 
-.feature-card {
+.key-features-card {
   background-color: white;
   width: 280px;
   height: 372px;
@@ -88,18 +88,18 @@
   align-items: flex-start;
 }
 
-.feature-card:hover {
+.key-features-card:hover {
   transform: translateY(-5px);
 }
 
-.feature-image {
+.key-features-image {
   width: 64px;
   height: 64px;
   border-radius: 8px;
   margin-bottom: 16px;
 }
 
-.feature-heading {
+.key-features-heading {
   font-family: "Signika", serif;
   font-size: 1.3rem;
   font-weight: 600;
@@ -110,7 +110,7 @@
   width: 80%;
 }
 
-.feature-text {
+.key-features-text {
   font-family: "Open Sans", serif;
   font-size: 1rem;
   font-weight: 400;
@@ -120,7 +120,7 @@
   width: 93%;
 }
 
-.feature-text span {
+.key-features-text span {
   font-family: Open Sans;
   font-weight: 700;
   font-size: 18px;
@@ -146,7 +146,7 @@
     text-align: center;
   }
 
-  .head {
+  .key-features-head {
     font-size: 48px;
     width: 100%;
     text-align: center;
@@ -157,7 +157,7 @@
     font-size: 16px;
   }
 
-  .cta-button {
+  .key-features-cta-button {
     margin: 1rem auto;
   }
 
@@ -166,7 +166,7 @@
     gap: 16px;
   }
 
-  .feature-card {
+  .key-features-card {
     width: 100%;
     max-width: 280px;
     padding: 20px;
@@ -174,7 +174,7 @@
 }
 
 @media screen and (max-width: 884px) {
-  .features-description {
+  .key-features-description {
     font-size: 25px;
     line-height: 32px;
     width: 700px;
@@ -184,7 +184,7 @@
     margin-right: 50px;
   }
 
-  .cta-button {
+  .key-features-cta-button {
     margin-top: -10px;
     margin-bottom: 25px;
   }
@@ -196,17 +196,17 @@
     padding: 1.5rem;
   }
 
-  .features-title {
+  .key-features-title {
     font-size: 40px;
     text-align: center;
   }
 
-  .head {
+  .key-features-head {
     font-size: 50px;
     text-align: center;
   }
 
-  .features-description {
+  .key-features-description {
     font-size: 30px;
     line-height: 32px;
     width: 700px;
@@ -220,24 +220,24 @@
     grid-template-columns: 1fr;
   }
 
-  .feature-card {
+  .key-features-card {
     max-width: 100%;
     text-align: center;
     align-items: center;
   }
 
-  .feature-heading {
+  .key-features-heading {
     font-size: 30px;
     text-align: center;
   }
 
-  .feature-text {
+  .key-features-text {
     font-size: 25px;
     text-align: center;
     line-height: 30px;
   }
 
-  .cta-button {
+  .key-features-cta-button {
     font-size: 20px;
     padding: 0.5rem 1rem;
     margin-top: 20px;
@@ -246,17 +246,17 @@
 
 /* ✅ Small Phones (480px and below) */
 @media screen and (max-width: 480px) {
-  .head {
+  .key-features-head {
     font-size: 30px;
     text-align: center;
   }
 
-  .features-title {
+  .key-features-title {
     font-size: 25px;
     text-align: center;
   }
 
-  .features-description {
+  .key-features-description {
     font-size: 20px;
     width: 350px;
     height: 150px;
@@ -274,22 +274,22 @@
     gap: 12px;
   }
 
-  .feature-card {
+  .key-features-card {
     margin-top: 20px;
     padding: 15px;
     align-items: center;
   }
 
-  .feature-heading {
+  .key-features-heading {
     font-size: 20px;
     text-align: center;
   }
-  .feature-text {
+  .key-features-text {
     font-size: 15px;
     text-align: center;
   }
 
-  .cta-button {
+  .key-features-cta-button {
     font-size: 16px;
     padding: 0.5rem 1rem;
     margin-top: 20px;

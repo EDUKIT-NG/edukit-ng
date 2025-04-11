@@ -1,0 +1,113 @@
+/* meet our team starts here */
+.meet-our-team {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url("./OurTeam_hero_bacckground.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  text-align: center;
+  background: rgba(0, 52, 122, 0.9);
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-hero-text-content {
+  width: 616px;
+  height: 144px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.team-hero-text-content h2 {
+  font-family: "Signika", sans-serif;
+  font-size: 3rem;
+}
+
+.team-hero-text-content p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .meet-our-team {
+    height: 80vh;
+    background-size: cover;
+  }
+
+  .team-hero-text-content {
+    width: 80%;
+    gap: 16px;
+  }
+
+  .team-hero-text-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .team-hero-text-content p {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .meet-our-team {
+    height: 70vh;
+  }
+
+  .overlay {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .team-hero-text-content {
+    width: 90%;
+    gap: 12px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .meet-our-team {
+    height: 60vh;
+  }
+
+  .overlay {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .team-hero-text-content {
+    width: 100%;
+    gap: 8px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+}
+/* MeetOurTeam ends here   */

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import studentImage from "./images/student.png";
+// import studentImage from "./images/student.png";
 import About from "./images/illustration.png";
 import bookLogo from "./icons/book-2.png";
 import boxLogo from "./icons/box-seam.png";
@@ -12,7 +12,7 @@ import keyLogo from "./icons/key.png";
 import impactImage from "./images/impact.png";
 
 import "./Aboutus.css";
-import { AlignCenter, AlignLeft } from "lucide-react";
+// import { AlignCenter, AlignLeft } from "lucide-react";
 
 const AboutUs = () => {
   const [coreDropdown, setCoreDropdown] = useState(null);

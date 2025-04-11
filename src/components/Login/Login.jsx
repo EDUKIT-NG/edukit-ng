@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import GoogleIcon from "../../assets/Google icon.png";
@@ -49,21 +50,21 @@ const LoginForm = () => {
               <input type="checkbox" id="remember" />
               <label htmlFor="remember">Remember me</label>
             </div>
-            <a href="#" className="forgot-password">
+            <Link className="forgot-password" to="/ResetPassword">
               Forgot password
-            </a>
+            </Link>
           </div>
 
           <button className="sign-in-btn">Sign in</button>
 
           <button className="google-sign-in">
             <img src={GoogleIcon} alt="Google Logo" />
-            Sign in with Google
+            Sign in with Googles
           </button>
         </form>
 
         <p className="signup-text">
-          Don’t have an account? <a href="#">Sign up</a>
+          Don’t have an account? <a href="/Signup">Sign up</a>
         </p>
       </div>
     </div>

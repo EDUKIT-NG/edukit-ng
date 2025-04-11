@@ -7,21 +7,26 @@ import {
   faEyeSlash,
   faQuestionCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import Popup from "../PopUp/popup";
 
 const Student = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword);
-  };
-
-  const toggleConfirmPasswordVisibility = () => {
+  const togglePasswordVisibility = () => setShowPassword(!showPassword);
+  const toggleConfirmPasswordVisibility = () =>
     setShowConfirmPassword(!showConfirmPassword);
+
+  const handleCreateAccount = (e) => {
+    e.preventDefault();
+    setShowPopup(true);
   };
 
   return (
     <div className="student-container">
+      {showPopup && <Popup onClose={() => setShowPopup(false)} />}
+
       <div className="student-wrapper">
         {/* Left Section */}
         <div className="student-left-section">
@@ -42,22 +47,22 @@ const Student = () => {
               <h2>Create Account</h2>
               <p>Please fill in the correct details to get started</p>
             </div>
-            <form>
+            <form onSubmit={handleCreateAccount}>
               <div className="student-input-group">
-                <div className="input-wrapper">
+                <div className="student-input-wrapper">
                   <label htmlFor="first-name">First Name</label>
                   <input type="text" id="first-name" placeholder="First name" />
                 </div>
-                <div className="input-wrapper">
+                <div className="student-input-wrapper">
                   <label htmlFor="last-name">Last Name</label>
                   <input type="text" id="last-name" placeholder="Last name" />
                 </div>
               </div>
-              <div className="input-wrapper">
+              <div className="student-input-wrapper">
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" placeholder="Email" />
               </div>
-              <div className="input-wrapper">
+              <div className="student-input-wrapper">
                 <label htmlFor="phone-number">Phone Number</label>
                 <input
                   type="tel"
@@ -65,12 +70,12 @@ const Student = () => {
                   placeholder="Phone number"
                 />
               </div>
-              <div className="input-wrapper password-wrapper">
+              <div className="student-input-wrapper student-password-wrapper">
                 <label htmlFor="password">Password</label>
-                <div className="password-input-container">
+                <div className="student-password-input-container">
                   <FontAwesomeIcon
                     icon={showPassword ? faEye : faEyeSlash}
-                    className="password-toggle-icon"
+                    className="student-password-toggle-icon"
                     onClick={togglePasswordVisibility}
                   />
                   <input
@@ -80,16 +85,16 @@ const Student = () => {
                   />
                   <FontAwesomeIcon
                     icon={faQuestionCircle}
-                    className="help-icon"
+                    className="student-help-icon"
                   />
                 </div>
               </div>
-              <div className="input-wrapper password-wrapper">
+              <div className="student-input-wrapper student-password-wrapper">
                 <label htmlFor="confirm-password">Confirm Password</label>
-                <div className="password-input-container">
+                <div className="student-password-input-container">
                   <FontAwesomeIcon
                     icon={showConfirmPassword ? faEye : faEyeSlash}
-                    className="password-toggle-icon"
+                    className="student-password-toggle-icon"
                     onClick={toggleConfirmPasswordVisibility}
                   />
                   <input
@@ -99,7 +104,7 @@ const Student = () => {
                   />
                   <FontAwesomeIcon
                     icon={faQuestionCircle}
-                    className="help-icon"
+                    className="student-help-icon"
                   />
                 </div>
               </div>
@@ -107,22 +112,24 @@ const Student = () => {
               <div className="student-checkbox">
                 <input type="checkbox" id="terms" />
                 <label htmlFor="terms">
-                  You agree to our <a href="#">Privacy Policy</a>.
+                  You agree to our <a href="/privacy policy">Privacy Policy</a>.
                 </label>
               </div>
 
-              <button className="student-primary-btn">Create Account</button>
-              <button className="student-google-btn">
+              <button type="submit" className="student-primary-btn">
+                Create Account
+              </button>
+              <button type="button" className="student-google-btn">
                 <img
                   src={GoogleIcon}
                   alt="Google Icon"
-                  className="google-icon"
+                  className="student-google-icon"
                 />{" "}
                 Sign up with Google
               </button>
 
               <p className="student-footer">
-                Already have an account? <a href="#">Log in</a>
+                Already have an account? <a href="/Login">Log in</a>
               </p>
             </form>
           </div>

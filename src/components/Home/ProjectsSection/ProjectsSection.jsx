@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./ProjectsSection.css";
 
 const ProjectsSection = () => {
@@ -74,13 +74,6 @@ const ProjectsSection = () => {
   const totalPages = 3;
 
   const handleScroll = (index) => {
-    // const container = projectContainerRef.current;
-    // const cardWidth = container.children[0].offsetWidth + 32; // Include gap
-    // const scrollPosition = cardWidth * (index * 2); // Adjust for overlap
-    // container.scrollTo({
-    //   left: scrollPosition,
-    //   behavior: "smooth",
-    // });
     setActiveIndex(index);
   };
 
@@ -91,17 +84,6 @@ const ProjectsSection = () => {
   };
 
   const displayedProjects = getDisplayedProjects();
-
-  // useEffect(() => {
-  //   const container = projectContainerRef.current;
-  //   const handleScroll = () => {
-  //     const cardWidth = container.children[0].offsetWidth + 32; // Include gap
-  //     const newIndex = Math.round(container.scrollLeft / (cardWidth * 2)); // Adjust for overlap
-  //     setActiveIndex(newIndex);
-  //   };
-  //   container.addEventListener("scroll", handleScroll);
-  //   return () => container.removeEventListener("scroll", handleScroll);
-  // }, []);
 
   return (
     <section className="projects-main">
@@ -133,7 +115,7 @@ const ProjectsSection = () => {
             <div className="project-info">
               <h4 className="project-title">{project.title}</h4>
               <p className="project-des">{project.description}</p>
-              <a className="more" href=" ">
+              <a className="more" href="read more">
                 Read More...
               </a>
             </div>

@@ -13,6 +13,7 @@ html {
   width: 100%;
   min-height: 100vh;
   background-color: #f3f4f6;
+  /* styles for the container */
 }
 
 .school-wrapper {
@@ -21,6 +22,7 @@ html {
   height: 100%;
   background: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* styles for the wrapper */
 }
 
 /* Left Section */
@@ -29,6 +31,7 @@ html {
   background: url("./signup image.png") no-repeat center center/cover;
   position: relative;
   display: block; /* Keep it visible on desktop */
+  /* styles for the left section */
 }
 
 .school-left-section .school-overlay {
@@ -46,6 +49,7 @@ html {
   text-align: center;
   padding: 20px;
   padding-top: 8rem;
+  /* styles for the overlay */
 }
 
 .school-overlay h3 {
@@ -71,6 +75,7 @@ html {
   padding: 40px;
   display: flex;
   justify-content: center;
+  /* styles for the right section */
 }
 
 .school-formWrapper {
@@ -80,16 +85,17 @@ html {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  /* styles for the form wrapper */
 }
 
 .school-header {
   text-align: left;
   width: 100%;
+  /* styles for the header */
 }
-.school-header p,
-h2 {
+/* .school-header p {
   text-align: left;
-}
+} */
 .school-header h2 {
   font-size: 30px;
   font-weight: 600;
@@ -117,16 +123,18 @@ form {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  /* styles for input group */
 }
 
-.input-wrapper {
+.school-input-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
   width: 100%;
+  /* styles for input wrapper */
 }
 
-.input-wrapper label {
+.school-input-wrapper label {
   font-size: 14px;
   font-weight: 600;
   color: #414651;
@@ -140,34 +148,38 @@ input {
   border-radius: 5px;
 }
 
-.password-wrapper {
+.school-password-wrapper {
   position: relative;
+  /* styles for password wrapper */
 }
 
-.password-input-container {
+.school-password-input-container {
   position: relative;
   width: 100%;
+  /* styles for password input container */
 }
 
-.password-input-container input {
+.school-password-input-container input {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.password-toggle-icon {
+.school-password-toggle-icon {
   position: absolute;
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  /* styles for toggle icon */
 }
 
-.help-icon {
+.school-help-icon {
   position: absolute;
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  /* styles for help icon */
 }
 
 .school-primary-btn {
@@ -178,6 +190,7 @@ input {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  /* styles for primary button */
 }
 
 .school-primary-btn:hover {
@@ -193,11 +206,13 @@ input {
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
+  /* styles for Google button */
 }
 
-.school-google-btn img {
+.school-google-icon {
   height: 20px;
   margin-right: 10px;
+  /* styles for Google icon */
 }
 
 .school-google-btn:hover {
@@ -208,6 +223,7 @@ input {
   display: flex;
   align-items: center;
   gap: 10px;
+  /* styles for checkbox */
 }
 
 .school-checkbox input {
@@ -218,6 +234,7 @@ input {
 .school-footer {
   text-align: center; /* Center align the footer text */
   width: 100%;
+  /* styles for footer */
 }
 
 /* Mobile View Adjustments */
@@ -249,7 +266,7 @@ input {
     width: 100%;
   }
 
-  .input-wrapper.half-width {
+  .school-input-wrapper.half-width {
     width: 100%;
   }
 }
