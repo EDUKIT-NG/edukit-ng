@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom"; // Use useHistory instead of useNavigate
-import "./Signup.css";
+import "./SignUp.css";
 import studentIcon from "../../assets/student-icon.png";
 import schoolIcon from "../../assets/school-icon.png";
 import newUserIcon from "../../assets/new-user-icon.png";

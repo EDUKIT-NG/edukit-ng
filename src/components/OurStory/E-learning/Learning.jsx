@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Learning.css'
-import Boy from './learning_images/boy.png'
+// import Boy from './learning_images/boy.png'
 import Laptop from './learning_images/laptop-on-table.png'
 
 function Learning() {
@@ -40,13 +40,13 @@ function Learning() {
               <p className='learn-content'>{ word.description}</p>
               )} */}
             </div>
-            <p className="Read-symb">{toReadMore === index ? "-" : "+"}</p>
+            <p className="Read-symb">{toReadMore === index ? "-" : "+"} </p>
           </div>
         ))}
 
       </div>
       <div className='on-table'>
-        <img src={Laptop} alt ='picture' />
+        <img src={Laptop} alt ='Laptop' />
       </div>
     </div>
     <div className='found-join'>

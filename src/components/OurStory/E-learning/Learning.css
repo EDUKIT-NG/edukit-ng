@@ -67,8 +67,8 @@
     border-color: #D5D7DA;
     font-family: 'Open Sans';
     font-weight: 600;
-    font-size: 18px;
-    font:bold;
+    /* font-size: 18px; */
+    /* font:bold; */
     color: #181D27;
     display: flex;
     align-items: center;
@@ -80,9 +80,9 @@
 .learn-more:hover{
     cursor: pointer;
 }
-.learn-head{
+/* .learn-head{
     font-size:20px;
-}
+} */
 
 .learn-content{
     display: flex;
